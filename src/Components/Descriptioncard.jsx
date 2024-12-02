@@ -28,7 +28,7 @@ const Descriptioncard = () => {
       >
         <div className="w-fit m-auto">
           <img
-            src={image3}
+            src={image1}
             alt="image1"
             className="w-72 h-30 rounded-2xl md:w-fit md:h-80 md:relative md:left-7 md:mt-64 *:"
           />
@@ -36,7 +36,7 @@ const Descriptioncard = () => {
 
         <div className="relative left-28 bottom-12 -translate-x-12 md:translate-x-60 lg:-translate-x-44 lg:-translate-y-16">
           <img
-            src={image1}
+            src={image3}
             alt="image2"
             className="w-60 md:w-80 rounded-lg lg:w-96 lg:h-[50vh]"
           />
