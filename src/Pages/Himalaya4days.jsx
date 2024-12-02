@@ -3,7 +3,8 @@ import Footer from "../Components/Footer.jsx";
 import { useLanguage } from "../Components/Languagecontext.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import him10 from "../Assets/Images/Himachal/12. HIM 4D DownL Page_9_11zon.jpeg"
+import him10 from "../Assets/Images/Himachal/12. HIM 4D DownL Page_9_11zon.jpeg";
+
 const Himalaya4days = () => {
   useEffect(() => {
     AOS.init({
@@ -44,10 +45,7 @@ const Himalaya4days = () => {
     if (!formData.email.trim()) tempErrors.email = t("emailRequired");
     else if (!/\S+@\S+\.\S+/.test(formData.email))
       tempErrors.email = t("emailInvalid");
-    if (!formData.mobile.trim()) tempErrors.mobile = t("mobileRequired");
     if (!formData.city.trim()) tempErrors.city = t("cityRequired");
-    if (!formData.currentBike.trim())
-      tempErrors.currentBike = t("bikeRequired");
     setErrors(tempErrors);
 
     return Object.keys(tempErrors).length === 0;
@@ -101,13 +99,10 @@ const Himalaya4days = () => {
 
   return (
     <>
-
-<div className="p-5 max-w-screen-lg mx-auto">
-       
-      <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl">
-        {t("contacthead")} for 4 days
-      </p>
-
+      <div className="p-5 max-w-screen-lg mx-auto">
+        <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl">
+          {t("contacthead")} for 4 days
+        </p>
       </div>
       <div
         className="mt-10 w-1/2 md:w-60 m-auto h-0.5 bg-sky-500 mb-1"
@@ -117,17 +112,13 @@ const Himalaya4days = () => {
         className="w-96 md:w-72 m-auto h-0.5 bg-sky-500 mb-12"
         data-aos="fade-right"
       ></div>
-      <div className="w-80 md:w- lg:w-[100vh] mx-auto">
-         <img src={him10} alt="" />
-         </div> 
+      <div className="w-80 md:w-lg:w-[100vh] mx-auto">
+        <img src={him10} alt="Himalaya 4 Days" />
+      </div>
       <div
-      
         className="bg-grey-500 flex items-center justify-center min-h-screen"
         data-aos="fade-up"
       >
-
-
-
         <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
             {t("contactus")}
@@ -137,19 +128,20 @@ const Himalaya4days = () => {
           )}
           <form onSubmit={handleSubmit} className="space-y-4">
             {[
-              { label: t("name1"), name: "name" },
-              { label: t("surname"), name: "surname" },
-              { label: t("email"), name: "email", type: "email" },
-              { label: t("mob"), name: "mobile" },
-              { label: t("city"), name: "city" },
-              { label: t("currentbike"), name: "currentBike" },
+              { label: t("name1"), name: "name", required: true },
+              { label: t("surname"), name: "surname", required: true },
+              { label: t("email"), name: "email", type: "email", required: true },
+              { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
+              { label: t("country"), name: "city", required: true },
+              { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
             ].map((field) => (
               <div key={field.name}>
                 <label
                   htmlFor={field.name}
                   className="block text-sm font-medium text-gray-600"
                 >
-                  {field.label} <span className="text-red-500">*</span>
+                  {field.label}
+                  {field.required && <span className="text-red-500"> *</span>}
                 </label>
                 <input
                   type={field.type || "text"}

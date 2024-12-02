@@ -3,35 +3,27 @@ import Himalaya from "../Assets/Images/Himachal/himach.jpeg";
 import Rajasthan from "../Assets/Images/Rajasthan/raj.png";
 import SouthIndia from "../Assets/Home/southindia.jpg";
 import Goa from "../Assets/Home/Goa.webp";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Link } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { HashLink } from "react-router-hash-link";
 
 const PortraitCarousel = () => {
-
- 
-
-
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
-      offset: window,    // Offset (in px) from the original trigger point
-      easing: 'ease-in-out', // Easing function for animations
-      once: true      // Whether animation should happen only once
+      offset: window, // Offset (in px) from the original trigger point
+      easing: "ease-in-out", // Easing function for animations
+      once: true, // Whether animation should happen only once
     });
   }, []);
 
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
-
   const images = [
-    { src: Himalaya, title: "HIMALAYA" },
-    { src: Rajasthan, title: "RAJASTHAN" },
-    { src: SouthIndia, title: "SOUTH INDIA" },
-    { src: Goa, title: "New Tour : GOA" },
+    { src: Himalaya, title: "HIMALAYA", id: "himalaya" },
+    { src: Rajasthan, title: "RAJASTHAN", id: "rajasthan" },
+    { src: SouthIndia, title: "SOUTH INDIA", id: "south-india" },
+    { src: Goa, title: "GOA", id: "goa" },
   ];
 
   const visibleSlides = window.innerWidth >= 768 ? 3 : 1; // 3 images on desktop, 1 on small screens
@@ -45,9 +37,7 @@ const PortraitCarousel = () => {
   }, []);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex + 1) % images.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrev = () => {
@@ -57,7 +47,10 @@ const PortraitCarousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto overflow-hidden" data-aos="fade-up">
+    <div
+      className="relative w-full max-w-7xl mx-auto overflow-hidden"
+      data-aos="fade-up"
+    >
       {/* Carousel Container */}
       <div
         className="flex transition-transform duration-500"
@@ -72,17 +65,19 @@ const PortraitCarousel = () => {
           >
             {/* Image */}
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={image.src}
-                alt={image.title}
-                className="w-full h-60 sm:h-80 md:h-96 object-cover"
-              />
-              {/* Title Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent text-white flex items-end justify-center pb-4">
-               <Link to="/yournextadventure#himalaya"> <h2 className="text-lg md:text-xl lg:text-2xl font-bold  hover:text-sky-500">
-                  {image.title}
-                </h2> </Link>
-              </div>
+              <HashLink smooth to={`/yournextadventure#${image.id}`}>
+                <img
+                  src={image.src}
+                  alt={image.title}
+                  className="w-full h-60 sm:h-80 md:h-96 object-cover"
+                />
+                {/* Title Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t to-transparent text-orange-500 flex items-end justify-center pb-4">
+                  <h2 className="text-lg md:text-xl lg:text-2xl font-bold hover:text-sky-500">
+                    {image.title}
+                  </h2>
+                </div>
+              </HashLink>
             </div>
           </div>
         ))}
@@ -90,7 +85,7 @@ const PortraitCarousel = () => {
 
       {/* Navigation Buttons */}
       <button
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 p-3 bg-black bg-opacity-60 text-white rounded-full hover:bg-opacity-80 z-10"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 p-3 bg-black text-white rounded-full hover:bg-opacity-80 z-10"
         onClick={handlePrev}
       >
         ❮

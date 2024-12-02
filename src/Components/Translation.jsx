@@ -37,7 +37,7 @@ const translations = {
     , security2: "→ The back-up vehicle carried all needed spares and repair-kits",
     security3: "→ Additionally, we carry for you a spare motorbike in case the mechanic cannot repair your bike for the next day"
     , genuinehead: "2. Genuine ENDURO or Touring Motorcycles"
-    , genuine1: "→ We are the only operator to run tours on KTM EXC-F 450 enduro Motorcycles"
+    , genuine1: "→ We are the only operator to run tours on KTM EXC-F 450 enduro and KTM Adventure"
     , genuine2: "→ You get a genuine adventure experience with real off-road bikes"
     , genuine3: "→ For our riders preferring to explore India in Trail mode (dual purposes), we offer the latest KTM Adventure models or the it’s equivalent"
       ,genuine4 : "→ Our touring agency offers curated rides and tours across India's most stunning landscapes. "
@@ -47,7 +47,7 @@ const translations = {
     demanding3: "→ Your trail journey consists of 50 to 60% easy off-road and small roads",
     uniquehead: "4. Unique environment",
     unique1: "→ The reward of long and hard riding days is the discovery of hidden topographical gems or cultural breaks in remote monasteries and temples"
-    , unique2: "→ Agile and always there team : by limiting the participants to max. 8 riders, the guide can easily adapt the pace and the difficulties of the track to the expectations of the group"
+    , unique2: "→ agile and always there team : by limiting the participants to max. 8 riders, the guide can easily adapt the pace and the difficulties of the track to the expectations of the group” to “Join an intimate group of up to 8 riders and enjoy a tailored experience. Our expert tour leader will adjust the pace, riding time, and difficulty level to suit the group's needs, ensuring everyone has an unforgettable adventure."
     , experiencehead: "5. Experienced Team",
     experience1: "→ Led by a team with 35+ years of combined expertise in off-road adventures, rest assured you're in skilled hands."
     , experience2: "→ beside the Adventure Rides team, a local support team in each and every area crossed for permits, crossing natural sanctuaries, private lands improvise alternate routes in case of sudden natural topographic changes"
@@ -74,7 +74,7 @@ const translations = {
       himalayahead3 : "The Rajasthan Essentials – 10 days",
       himalaya5 : "The aim of this tour is to discover Rajasthan the land of the Maharajas, via savannah and mountain trails. We ride unbeaten offroad tracks in the Thar desert, in many sand dunes, and through various forests and mountains of the Aravillis chain."
       ,himalaya6 :"This ride is a long and intense enduro journey. But when the group, limited to 8 riders, want to take our time to discover this magical historical area, we make breaks to visit a fort or a temple. We ride through the Aravalli range, combining superb nature sanctuaries with typical flora and fauna, dunes, trails through rocky hills and small village roads. … ” …"
-       ,himalayahead4 : "The Rajasthan Essentials – VIP – 10 day"
+       ,himalayahead4 : "The Rajasthan Essentials – VIP – 10 days"
        ,himalaya7 : "The aim of this tour is to discover Rajasthan, the land of the Maharajas, via savannah and mountain trails. Compared with the enduro tour, this ride is shorter and less intense. We take our time to discover this beautiful, historic region and enjoy prestigious hotels offering quality local food, swimming pools and spas or wellness facilities."
        ,himalaya8 : "We ride through the Aravalli range, combining superb nature sanctuaries with typical flora and fauna, dunes, trails through rocky hills and small village roads. You'll also enjoy a cultural immersion during several 'chai breaks' in typical rural villages, visiting a Jain temple or a century-old noria (well system)..."
         
@@ -179,7 +179,7 @@ const translations = {
     security3: "→ De plus, nous avons pour vous une moto de rechange au cas où le mécanicien ne pourrait pas réparer votre moto pour le lendemain"
     
     , genuinehead: "2. Véritables motos ENDURO ou Touring"
-    , genuine1: "→ Nos itinéraires vous emmènent sur des sentiers hors route, des itinéraires de randonnée, des lits de rivières et des single tracks exceptionnels"
+    , genuine1: "→ Nous sommes le seul opérateur à organiser des circuits sur KTM EXC-F 450 enduro et KTM Adventure"
     , genuine2: "→ Vous vivez une véritable expérience d'aventure avec de vrais vélos tout-terrain"
     , genuine3: "→ Pour nos pilotes préférant explorer l'Inde en mode Trail (double usage), nous proposons les derniers modèles KTM Adventure ou son équivalent"
       ,genuine4: "→ Notre agence de tourisme propose des balades organisées et des visites à travers les paysages les plus époustouflants de l'Inde."
@@ -189,7 +189,7 @@ const translations = {
     demanding3: "→ Votre parcours trail est composé à 50 à 60% de tout terrain facile et de petites routes"
     , uniquehead: "4. Environnement unique"
     , unique1: "→ la récompense de longues et dures journées de randonnée est la découverte de joyaux topographiques cachés ou de pauses culturelles dans des monastères et temples isolés"
-    , unique2: "→ équipe agile et toujours là : en limitant les participants à max. 8 coureurs, le guide peut facilement adapter le rythme et les difficultés du parcours aux attentes du groupe"
+    , unique2: "→ équipe agile et toujours là : en limitant les participants au maximum. 8 coureurs, le guide peut facilement adapter le rythme et les difficultés du parcours aux attentes du groupe » à « « Rejoignez un groupe intimiste de 8 cavaliers maximum et profitez d'un expérience sur mesure. Notre guide expert ajustera le rythme, le temps de conduite et niveau de difficulté adapté aux besoins du groupe, garantissant à chacun un moment inoubliable aventure."
     , experiencehead: "5. Équipe expérimentée"
     , experience1: "→ Dirigé par une équipe possédant plus de 35 ans d'expertise combinée dans les aventures hors route, soyez assuré que vous êtes entre de bonnes mains."
     , experience2: "→ aux côtés de l'équipe Adventure Rides, une équipe d'accompagnement locale dans chaque zone traversée pour les permis, traversant des sanctuaires naturels, des terrains privés improvisent des itinéraires alternatifs en cas de brusques changements topographiques naturels",

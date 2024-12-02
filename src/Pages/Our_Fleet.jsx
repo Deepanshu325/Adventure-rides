@@ -24,6 +24,18 @@ const Our_Fleet = () => {
 
   return (
      <>
+
+<div className=' w-full md:pl-20 md:pr-20 pt-8' data-aos="fade-down">
+       <a className=' text-gray-700 font-extrabold text-lg'>{t("advhead")}</a>
+       <div className='font-thin text-gray-700  mt-3'>
+       <p className='font-thin text-justify pb-5'>{t("adv1")}</p>
+       <p className='font-thin text-justify '>{t("adv2")}</p>
+
+       <div className="w-full mb-16 bg-orange-500 h-0.5 mt-12"></div>
+          </div>
+          </div> 
+          
+
       <h1 className="text-center mt-12 mb-6 text-gray-500 text-2xl md:text-5xl md:mb-1" data-aos="fade-down">The KTM EXC-F 450 </h1>
       <div className='w-full md:flex md:mt-14'>
         <div className='md:w-1/2'>

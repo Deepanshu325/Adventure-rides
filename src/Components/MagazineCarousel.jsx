@@ -4,7 +4,6 @@ import magazine2 from "../Assets/Articles/Articleimage/MV IMAGE.png";
 import magazine3 from "../Assets/Articles/Articleimage/MV1.png";
 import articlePDF1 from "../Assets/Articles/article1.pdf";
 import articlePDF2 from "../Assets/Articles/EnduroMag.pdf";
-import articlePDF3 from "../Assets/Articles/MV582.pdf";
 import { useLanguage } from "./Languagecontext";
 
 const MagazineCarousel = () => {
@@ -65,9 +64,7 @@ const MagazineCarousel = () => {
 
   return (
     <div className="relative w-full max-w-7xl mx-auto p-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">
-        {t("magazine")}
-      </h2>
+    
 
       {/* Carousel Wrapper */}
       <div className="relative overflow-hidden">

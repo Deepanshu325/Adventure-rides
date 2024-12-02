@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import youtube from "../Assets/Icons/1. YT logo on video.png"
 import Insta from "../Assets/Icons/InstagramColoricon.webp"
 import facebook from "../Assets/Icons/FacebookColored.png"
 import { useLanguage } from "./Languagecontext";
 import privacy from "../Assets/Privacypolicy/PPAR - Privacy Policy 2024.pdf"
 import term from "../Assets/Privacypolicy/PPAR - T&C 2024.pdf"
-
+import Linkedin from "../Assets/Icons/linkedinlogo.webp"
 
 const Footer = () => {
-  const { t, setLanguage } = useLanguage();
+  const {t} = useLanguage();
   return (
     <footer className="bg-gray-800 text-white py-10">
       <div className="container mx-auto px-4">
@@ -28,7 +27,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">{t('letsconnect')}</h3>
             <button
-              onClick={() => window.location.href = "#contact"}
+              onClick={() => window.location.href = "/download"}
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm"
             >
               {t('contact')}
@@ -68,6 +67,7 @@ const Footer = () => {
               >
                 <img src={Insta} alt="" className="relative bottom-3 w-10" />
               </a>
+              
               <a
                 href="https://www.facebook.com/profile.php?id=100064155602022"
                 target="_blank"
@@ -76,6 +76,16 @@ const Footer = () => {
               >
                 <img src={facebook} alt="" className=" w-7" />
               </a>
+
+              <a
+                href="https://www.linkedin.com/company/adventure-rides/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-gray-200"
+              >
+                <img src={Linkedin} alt="" className=" w-9 -translate-y-1" />
+              </a> 
+
             </div>
           </div>
         </div>

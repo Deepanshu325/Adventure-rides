@@ -15,7 +15,14 @@ import { useEffect } from 'react'
 import map1 from '../Assets/Images/Himachal/Himachalmap10days.png'
 import map2 from '../Assets/Images/Himachal/Himachalmap4days.png'
 import map3 from "../Assets/Images/Rajasthan/RAJASTHAN IN INDIA.jpg"
+
 const Your_next_adventure = () => {
+    
+  
+
+
+
+
 
   useEffect(() => {
     AOS.init({
@@ -65,7 +72,9 @@ const Your_next_adventure = () => {
         <h1 className='mt-8 text-3xl font-extrabold text-center md:mt-28 '>{t("himalaya")}</h1>
 
         </div>
-        <div id="rajasthan">
+
+
+        <div id="himalaya">
      <Adventurecard 
      image={Himalaya} 
      heading={t("himalayahead")}
@@ -82,21 +91,27 @@ maptitle="Goa"
 map={map2} 
 link={"/himalaya4days"}/>
 </div>
-<div id="rajasthan">
-<Adventurecard image={Rajasthan} 
-heading={t("himalayahead3")}  
+
+<div data-aos="fade-in">
+        <h1 className='mt-8 text-3xl font-extrabold text-center md:mt-28 '  >THE RAJASTHAN</h1>
+
+        </div>  
+
+<Adventurecard image={Rajasthanvip} 
+heading={t("himalayahead4")}  
 text1={t("himalaya5")}
 text2={t("himalaya6")}
 map={map3} 
-link={"/rajasthan10days"}
+link={"/rajasthan10daysvip"}
 />
 
-<Adventurecard image={Rajasthanvip} 
-heading={t("himalayahead4")}
+<div  id="rajasthan" >
+<Adventurecard image={Rajasthan} 
+heading={t("himalayahead3")}
 text1={t("himalaya7")}
 text2={t("himalaya8")} 
 map={map3}
-link={"/rajasthan10daysvip"} />
+link={"/rajasthan10days"} />
 </div>
 
        </div>
