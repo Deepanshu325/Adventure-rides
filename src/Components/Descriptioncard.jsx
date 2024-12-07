@@ -38,15 +38,15 @@ const Descriptioncard = () => {
           <img
             src={image3}
             alt="image2"
-            className="w-44 md:w-80 rounded-lg lg:w-72 lg:h-[30vh]"
+            className="w-44 md:w-80 rounded-lg lg:w-72 lg:h-[38vh]"
           />
         </div>
 
-        <div className="relative bottom-28 right-20 lg:right-0 md:bottom-60  lg:-translate-x-80">
+        <div className="relative bottom-28 right-20 lg:right-0 md:bottom-80  lg:-translate-x-80">
           <img
             src={image2}
             alt="image3"
-            className="w-44  lg:w-72 lg:h-[30vh] md:w-80 relative bottom-28 md:top-7 rounded-lg "
+            className="w-44  lg:w-72 lg:h-[45vh] md:w-80 relative bottom-28 md:top-7 rounded-lg "
           />
         </div>
       </div>
