@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../Assets/Videos/PPAR - WS2024 - Landing Page Movie.mp4";
+import video from "../Assets/Videos/PPAR - WS2024 - Landing Page Movie (1) (1).mp4"
 import { useLanguage } from "./Languagecontext";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,18 +36,18 @@ const Videocard = () => {
 
       {/* Text Content */}
       
-      <div className="relative  h-full flex flex-col justify-center items-center text-center px-6 sm:px-12"  data-aos="fade-up">
+      <div className="relative  h-full flex flex-col justify-center text-left px-6 sm:px-12"  data-aos="fade-up">
         
       
-        <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+        <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-tight">
           
-        {t("welcome")} <br />
-        {t("welcome2")}  <br />
+        {t("welcome")}<br></br>
         {t("welcome3")} 
-        </h1>
-        <p className="text-sky-500 text-2xl sm:text-3xl mt-4">
+        <a className="text-sky-500 text-2xl sm:text-3xl mt-4">
         {t("welcome4")} 
-        </p>
+        </a>
+        </h1>
+       
         <p className="font-thin text-white text-base sm:text-lg mt-6">
         {t("welcome5")} 
         </p>

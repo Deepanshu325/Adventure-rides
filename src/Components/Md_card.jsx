@@ -68,7 +68,7 @@ const Md_card = (props) => {
 
         {/* Image Section */}
         {props.image && (
-          <div className="h-fit" data-aos="fade-right">
+          <div className="h-fit lg:w-1/2 w-full content-center" data-aos="fade-right">
             <img
               src={props.image}
               alt={props.alt || ""}
@@ -78,7 +78,7 @@ const Md_card = (props) => {
         )}
 
         {(props.image1 || props.image2) && (
-          <div className="h-fit" data-aos="fade-right">
+          <div className="h-fit lg:w-1/2 w-full content-center" data-aos="fade-right">
             {props.image1 && (
               <img
                 src={props.image1}

@@ -1,9 +1,8 @@
 const translations = {
   en: {
-    welcome: "Welcome to Adventure Rides",
-    welcome2: "Greatest",
-    welcome3: "Motorcycle",
-    welcome4: "ADVENTURES",
+    welcome: "THE WORLD'S GREATEST",
+    welcome3: "MOTORCYCLE ",
+    welcome4: " ADVENTURES",
     welcome5: "Experience World-Class Delivery Excellence",
 
     destitle: "Welcome to Adventure Rides",
@@ -37,7 +36,7 @@ const translations = {
     , security2: "→ The back-up vehicle carried all needed spares and repair-kits",
     security3: "→ Additionally, we carry for you a spare motorbike in case the mechanic cannot repair your bike for the next day"
     , genuinehead: "2. Genuine ENDURO or Touring Motorcycles"
-    , genuine1: "→ We are the only operator to run tours on KTM EXC-F 450 enduro and KTM Adventure"
+    , genuine1: "→ We are the only operator to run tours on KTM EXC-F 450 enduro and KTM Adventure Motorcycles"
     , genuine2: "→ You get a genuine adventure experience with real off-road bikes"
     , genuine3: "→ For our riders preferring to explore India in Trail mode (dual purposes), we offer the latest KTM Adventure models or the it’s equivalent"
       ,genuine4 : "→ Our touring agency offers curated rides and tours across India's most stunning landscapes. "
@@ -141,10 +140,9 @@ const translations = {
 
   },
   fr: {
-    welcome: "Bienvenue chez Adventure Rides",
-    welcome2: "Le plus grand",
-    welcome3: "Moto",
-    welcome4: "AVENTURES",
+    welcome: "LE PLUS GRAND DU MONDE",
+    welcome3: "Moto ",
+    welcome4: " AVENTURES",
     welcome5: "Faites l’expérience d’une excellence de livraison de classe mondiale",
     destitle: "Bienvenue chez Adventure Rides",
     des1: "Adventure Rides est la seule agence proposant du tout-terrain des circuits sur de véritables motos d'enduro, la marque la plus fiable et appréciée du marché, la KTM EXC-F 450. Vous pourrez également vivre les mêmes sensations dans des environnements étonnants sur sentiers faciles et petites routes sur une moto moins exigeante, la KTM Adventure 390."
@@ -179,7 +177,7 @@ const translations = {
     security3: "→ De plus, nous avons pour vous une moto de rechange au cas où le mécanicien ne pourrait pas réparer votre moto pour le lendemain"
     
     , genuinehead: "2. Véritables motos ENDURO ou Touring"
-    , genuine1: "→ Nous sommes le seul opérateur à organiser des circuits sur KTM EXC-F 450 enduro et KTM Adventure"
+    , genuine1: "→ Nous sommes le seul opérateur à organiser des circuits sur KTM EXC-F 450 enduro et KTM Adventure Motorcycles"
     , genuine2: "→ Vous vivez une véritable expérience d'aventure avec de vrais vélos tout-terrain"
     , genuine3: "→ Pour nos pilotes préférant explorer l'Inde en mode Trail (double usage), nous proposons les derniers modèles KTM Adventure ou son équivalent"
       ,genuine4: "→ Notre agence de tourisme propose des balades organisées et des visites à travers les paysages les plus époustouflants de l'Inde."

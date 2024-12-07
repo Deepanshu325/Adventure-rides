@@ -20,40 +20,40 @@ const Descriptioncard = () => {
   }, []);
 
   return (
-    <div className="w-full m-auto lg:flex lg:h-fit lg:-translate-y-20">
+    <div className="w-full  lg:flex lg:max-h-[110vh] ">
       {/* Left Section */}
       <div
-        className="md:w-1/2 flex flex-col items-center lg:items-end space-y-8 md:space-y-12"
+        className="md:w-1/2 max-h-[70vh] lg:max-h-fit flex flex-col items-center lg:items-end space-y-8 md:space-y-1"
         data-aos="fade-right"
       >
         <div className="w-fit m-auto">
           <img
             src={image1}
             alt="image1"
-            className="w-72 h-30 rounded-2xl md:w-fit md:h-80 md:relative md:left-7 md:mt-64 *:"
+            className="w-72  h-30 rounded-2xl md:w-fit md:h-96 md:relative md:left-7 :"
           />
         </div>
 
-        <div className="relative left-28 bottom-12 -translate-x-12 md:translate-x-60 lg:-translate-x-44 lg:-translate-y-16">
+        <div className="relative left-32 bottom-20 lg:top-16 -translate-x-12 md:translate-x-60 lg:-translate-x-44 lg:-translate-y-36">
           <img
             src={image3}
             alt="image2"
-            className="w-60 md:w-80 rounded-lg lg:w-96 lg:h-[50vh]"
+            className="w-44 md:w-80 rounded-lg lg:w-72 lg:h-[30vh]"
           />
         </div>
 
-        <div className="relative bottom-32 md:bottom-56   md:translate-x-32 lg:-translate-x-52">
+        <div className="relative bottom-28 right-20 lg:right-0 md:bottom-60  lg:-translate-x-80">
           <img
             src={image2}
             alt="image3"
-            className="w-56 h-60 lg:w-96 lg:h-[55vh] md:w-80 relative top-7 rounded-lg "
+            className="w-44  lg:w-72 lg:h-[30vh] md:w-80 relative bottom-28 md:top-7 rounded-lg "
           />
         </div>
       </div>
 
       {/* Right Section */}
       <div
-        className="relative md:w-1/2 p-4 md:content-center md:pl-8 md:pr-8 md:mb-12 space-y-6"
+        className="relative md:w-1/2 p-4 md:content-center md:pl-8 md:pr-8 md:mb-1 space-y-6 "
         data-aos="fade-left"
       >
         <h1 className="text-lg text-sky-500 font-extrabold lg:text-4xl">

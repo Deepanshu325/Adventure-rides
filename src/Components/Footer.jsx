@@ -36,7 +36,7 @@ const Footer = () => {
 
           {/* Contact Details */}
           <div>
-            <h3 className="text-lg font-bold mb-4">{t('contact2')}</h3>
+        <Link to="/download">    <h3 className="text-lg font-bold mb-4">{t('contact2')}</h3> </Link>
             <ul className="font-thin text-sm text-gray-400 space-y-2">
             
               <li>Address: DE 153, Block DE, Tagore Garden, Tagore Garden Extension, New Delhi, 

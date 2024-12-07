@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import magazine1 from "../Assets/Articles/Articleimage/ENDURO MAG IMAGE.jpg";
 import magazine2 from "../Assets/Articles/Articleimage/MV IMAGE.png";
-import magazine3 from "../Assets/Articles/Articleimage/MV1.png";
+import magazine3 from "../Assets/Articles/Articleimage/NOPPENNIEUWS IMAGE.jpg";
+import magazine4 from "../Assets/Articles/Articleimage/MOTOREN&TOURISME IMAGE.jpg"
 import articlePDF1 from "../Assets/Articles/article1.pdf";
 import articlePDF2 from "../Assets/Articles/EnduroMag.pdf";
+import articlePDF4 from "../Assets/Articles/PPAR - Motoren&Toerisme India - 2020401.pdf"
+import articlePDF3 from "../Assets/Articles/PPAR - NoppenNieuws1 - 2020.pdf"
 import { useLanguage } from "./Languagecontext";
 
 const MagazineCarousel = () => {
@@ -22,8 +25,14 @@ const MagazineCarousel = () => {
     },
     {
       image: magazine3,
-      title: "Adventure Motorcycle",
-      link: articlePDF1,
+      title: "NoppenNieuws",
+      link: articlePDF3,
+    },
+
+    {
+      image: magazine4,
+      title: "Motoren & Tourisme",
+      link: articlePDF4,
     },
   ];
 

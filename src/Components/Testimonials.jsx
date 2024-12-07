@@ -74,12 +74,12 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row  ">
+    <div className="flex flex-col md:flex-row ">
     <div className="relative w-full mx-auto p-4 md:w-[120vh]" data-aos="fade-right">
       <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mb-6">
         {t("custitle")}
       </h2>
-      <div className="relative   lg:right-4 lg:w-[107vh] overflow-hidden">
+      <div className="relative   lg:right-4 lg:w-[107vh] overflow-hidden mx-auto">
         <div
           className="flex transition-transform duration-500  lg:space-x-8 lg:w-[110vh]  lg:relative lg:left-1" // Added `space-x-4` for horizontal spacing
           style={{
@@ -112,17 +112,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center mt-4 space-x-8">
-        {testimonials.map((_, index) => (
-          <div
-            key={index}
-            className={`h-3 w-3 rounded-full ${
-              currentIndex === index ? "bg-blue-600" : "bg-gray-400"
-            } cursor-pointer`}
-            onClick={() => setCurrentIndex(index)}
-          ></div>
-        ))}
-      </div>
+     
     </div>
   
     <div className="hidden md:block" data-aos="fade-left">

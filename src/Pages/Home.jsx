@@ -40,7 +40,7 @@ const Home = () => {
      <>
      <div className='w-full overflow-hidden'>
      <div>
-        <div className="relative h-auto  bottom-20 overflow-hidden">
+        <div className="relative h-auto  bottom-20 overflow-hidden border border-black">
 
        
 
@@ -53,13 +53,13 @@ const Home = () => {
     <Descriptioncard />
   
 </div> 
-
-<div className="w-full mt-40 md:mt-1 mb-10 lg:mb-48" >
+<div className="w-full mt-16 md:mt-1 mb-20 lg:mb-4" >
     <PortraitCarousel/>
 </div> 
 
- <div className=' pl-4 md:pl-14 lg:w-[180vh] lg:pl-8 mx-auto  md:mt-40' data-aos="fade-down">
+ <div className=' pl-4 md:pl-14 lg:w-full lg:pl-8 mx-auto  md:mt-20' data-aos="fade-down">
  <Link to="/whytotravel"> 
+ <div className='lg:w-[180vh] mx-auto'>
  <h1 className=' w-full lg:w-auto text-sky-600 font-extrabold :800 md:text-4xl'>WHY SHOULD YOU CHOOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?</h1>
     
      <div className=' mt-8  lg:grid lg:grid-cols-3 overflow-hidden'>
@@ -74,12 +74,13 @@ const Home = () => {
 
     
    </div>
+   </div>
    </Link>
    </div>
-<div className='md:mt-40 lg:pr-12'>
+<div className='mt-10 md:mt-10 lg:pr-12'>
 <Testimonials/>
 </div>
- <div className='md:mt-40 md:mb-40' data-aos="fade-up">
+ <div className='mt-16 lg:mt-0 md:mb-40' data-aos="fade-up">
     <MagazineCarousel/>
 </div>
 </div>
