@@ -53,7 +53,7 @@ const Descriptioncard = () => {
 
       {/* Right Section */}
       <div
-        className="relative md:w-1/2 p-4 md:content-center md:pl-8 md:pr-8 md:mb-1 space-y-6 "
+        className="relative md:w-1/2 pl-2  md:pl-8 md:pr-8 md:mb-1 space-y-6 "
         data-aos="fade-left"
       >
         <h1 className="text-lg text-sky-500 font-extrabold lg:text-4xl">
@@ -62,7 +62,7 @@ const Descriptioncard = () => {
 
         <div className="mt-6">
           <a className="text-orange-500 text-xl font-extrabold">{t("des1")}</a>
-          <div className="font-thin text-gray-600 mt-6 text-md space-y-4">
+          <div className="font-semibold  mt-6 text-md space-y-4">
             <p>{t("des2")}</p>
             <p>{t("des3")}</p>
             <p>{t("des4")}</p>

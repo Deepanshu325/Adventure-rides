@@ -77,7 +77,7 @@ const Home = () => {
    </div>
    </Link>
    </div>
-<div className='mt-10 md:mt-10 lg:pr-12'>
+<div className=''>
 <Testimonials/>
 </div>
  <div className='mt-16 lg:mt-0 md:mb-40' data-aos="fade-up">

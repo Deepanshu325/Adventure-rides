@@ -29,15 +29,15 @@ const Md_card = (props) => {
                   {props.heading1}
                 </h2>
               )}
-              <div className="pl-5 pt-2 font-semibold text-lg text-black-500">
+              <div className="pl-5 pt-2 font-semibold text-lg ">
                 {props.point1 && (
-                  <p className="font-thin text-justify pr-5">{props.point1}</p>
+                  <p className="font-semibold text-justify pr-5">{props.point1}</p>
                 )}
                 {props.point2 && (
-                  <p className="font-thin text-justify pr-5">{props.point2}</p>
+                  <p className="font-semibold text-justify pr-5">{props.point2}</p>
                 )}
                 {props.point3 && (
-                  <p className="font-thin text-justify pr-5">{props.point3}</p>
+                  <p className="font-semibold text-justify pr-5">{props.point3}</p>
                 )}
               </div>
             </div>
@@ -51,15 +51,15 @@ const Md_card = (props) => {
                   {props.heading2}
                 </h2>
               )}
-              <div className="pl-5 pt-2 font-semibold text-lg text-black-500">
+              <div className="pl-5 pt-2 font-semibold text-lg ">
                 {props.text1 && (
-                  <p className="font-thin text-justify pr-5">{props.text1}</p>
+                  <p className="font-semibold text-justify pr-5">{props.text1}</p>
                 )}
                 {props.text2 && (
-                  <p className="font-thin text-justify pr-5">{props.text2}</p>
+                  <p className="font-semibold text-justify pr-5">{props.text2}</p>
                 )}
                 {props.text3 && (
-                  <p className="font-thin text-justify pr-5">{props.text3}</p>
+                  <p className="font-semibold text-justify pr-5">{props.text3}</p>
                 )}
               </div>
             </div>

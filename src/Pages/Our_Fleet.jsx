@@ -26,8 +26,8 @@ const Our_Fleet = () => {
      <>
 
 <div className=' w-full md:pl-20 md:pr-20 pt-8 pl-8 pr-8 overflow-hidden' data-aos="fade-down">
-       <a className=' text-gray-700 font-extrabold text-lg'>{t("advhead")}</a>
-       <div className='font-semibold text-gray-700  mt-3'>
+       <a className=' font-extrabold text-lg'>{t("advhead")}</a>
+       <div className='font-semibold  mt-3'>
        <p className='font-semibold text-justify pb-5'>{t("adv1")}</p>
        <p className='font-semibold text-justify '>{t("adv2")}</p>
 
@@ -47,12 +47,12 @@ const Our_Fleet = () => {
       </div>
        
       <div className='p-6 text-justify md:pl-28 md:pr-28  overflow-hidden '>
-        <h1 className="font-thin text-center mt-12 mb-6 text-gray-500 text-2xl md:text-6xl  "  data-aos="fade-in">{t("beasthead")}</h1>
-        <p className='font-thin text-lg pb-6  md:text-xl' data-aos="fade-right">{t("beast1")}</p>
+        <h1 className="font-semibold text-center mt-12 mb-6  text-2xl md:text-6xl  "  data-aos="fade-in">{t("beasthead")}</h1>
+        <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{t("beast1")}</p>
 
-<p className='font-thin text-lg pb-6  md:text-xl'  data-aos="fade-left">{t("beast2")}</p>
+<p className='font-semibold text-lg pb-6  md:text-lg'  data-aos="fade-left">{t("beast2")}</p>
 
-<p className='font-thin text-lg pb-6  md:text-xl' data-aos="fade-right">{t("beast3")}</p>
+<p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{t("beast3")}</p>
       </div>
       <div className='w-full' data-aos="fade-up">
         <img src={fleetposter} alt="" className='mx-auto md:h-96' />

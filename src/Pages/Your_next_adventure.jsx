@@ -45,15 +45,15 @@ const Your_next_adventure = () => {
       <div className=' w-40 md:w-96 m-auto h-0.5 bg-sky-500 mb-12' data-aos="fade-left"></div>
         
         <div className=' w-full md:pl-20 md:pr-20' data-aos="fade-down">
-       <a className=' text-gray-700 font-extrabold text-lg'>{t("advhead")}</a>
-       <div className='font-thin text-gray-700  mt-3'>
+       <a className='  font-extrabold text-lg'>{t("advhead")}</a>
+       <div className='font-thin   mt-3'>
        <p className='font-thin text-justify pb-5'>{t("adv1")}</p>
        <p className='font-thin text-justify '>{t("adv2")}</p>
 
        <div className="w-full mb-16 bg-orange-500 h-0.5 mt-12"></div>
 
 
-       <h1 className='font-thin text-justify text-gray-700  text-lg md:pb-16'>{t("advhead2")}</h1>
+       <h1 className='font-thin text-justify  text-lg md:pb-16'>{t("advhead2")}</h1>
        <div className="w-full md:flex ">
             <div className="md:w-1/2"
         >
@@ -65,7 +65,7 @@ const Your_next_adventure = () => {
             </div>
        </div>
        
-       <p className='font-thin pt-16 text-justify text-gray-700  text-lg' data-aos="fade-down">{t("advdes")}
+       <p className='font-thin pt-16 text-justify   text-lg' data-aos="fade-down">{t("advdes")}
 </p>
        </div>
        <div data-aos="fade-in">

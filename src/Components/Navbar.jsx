@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="w-16 lg:w-24 lg:mb-1">
-          <Link to="/">  <img src={Logo} alt="Logo" className="rounded-lg" /> </Link>
+          <Link to="/" onClick={closeMenu} >  <img src={Logo} alt="Logo" className="rounded-lg" /> </Link>
           </div>
 
           {/* Toggle button: only visible on smaller screens */}
