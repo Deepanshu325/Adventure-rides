@@ -16,7 +16,7 @@ const Md_card = (props) => {
     <>
       <div className="w-full lg:flex overflow-hidden">
         {/* Content Section */}
-        <div className="w-full lg:w-1/2 md:max-w-5xl mt-10 mb-20 md:min-h-[60vh]" data-aos="fade-down">
+        <div className="w-full lg:w-1/2 md:max-w-5xl mt-1 mb-20 md:min-h-[60vh]" data-aos="fade-down">
           {props.mainheading && (
             <a className="text-lg font-extrabold pl-2">{props.mainheading}</a>
           )}
@@ -97,7 +97,7 @@ const Md_card = (props) => {
         )}
       </div>
 
-      <div className="w-full md:w-full bg-orange-500 h-0.5 mt-12"></div>
+      <div className="w-full md:w-full bg-orange-500 h-0.5 mt-1"></div>
     </>
   );
 };
