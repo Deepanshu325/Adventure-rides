@@ -25,7 +25,7 @@ const Our_Fleet = () => {
   return (
      <>
 
-<div className=' w-full md:pl-20 md:pr-20 pt-8' data-aos="fade-down">
+<div className=' w-full md:pl-20 md:pr-20 pt-8 pl-8 pr-8 overflow-hidden' data-aos="fade-down">
        <a className=' text-gray-700 font-extrabold text-lg'>{t("advhead")}</a>
        <div className='font-thin text-gray-700  mt-3'>
        <p className='font-thin text-justify pb-5'>{t("adv1")}</p>
@@ -36,7 +36,7 @@ const Our_Fleet = () => {
           </div> 
           
 
-      <h1 className="text-center mt-12 mb-6 text-gray-500 text-2xl md:text-5xl md:mb-1" data-aos="fade-down">The KTM EXC-F 450 </h1>
+      <h1 className="text-center mt-1 mb-6 text-gray-500 text-2xl md:text-5xl md:mb-1" data-aos="fade-down">The KTM EXC-F 450 </h1>
       <div className='w-full md:flex md:mt-14'>
         <div className='md:w-1/2'>
         <img src={ktm} alt="" className='w-full h-96  ' data-aos="fade-right" />
@@ -45,9 +45,9 @@ const Our_Fleet = () => {
         <img src={ktm2} alt="" className='w-full h-96   md:pb-2 ' data-aos="fade-right" />
         </div>
       </div>
-     
-      <div className='p-6 text-justify md:pl-28 md:pr-28'>
-        <h1 className="font-thin text-center mt-12 mb-6 text-gray-500 text-2xl md:text-6xl "  data-aos="fade-in">{t("beasthead")}</h1>
+       
+      <div className='p-6 text-justify md:pl-28 md:pr-28  overflow-hidden '>
+        <h1 className="font-thin text-center mt-12 mb-6 text-gray-500 text-2xl md:text-6xl  "  data-aos="fade-in">{t("beasthead")}</h1>
         <p className='font-thin text-lg pb-6  md:text-xl' data-aos="fade-right">{t("beast1")}</p>
 
 <p className='font-thin text-lg pb-6  md:text-xl'  data-aos="fade-left">{t("beast2")}</p>
