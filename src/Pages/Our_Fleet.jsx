@@ -27,9 +27,9 @@ const Our_Fleet = () => {
 
 <div className=' w-full md:pl-20 md:pr-20 pt-8 pl-8 pr-8 overflow-hidden' data-aos="fade-down">
        <a className=' text-gray-700 font-extrabold text-lg'>{t("advhead")}</a>
-       <div className='font-thin text-gray-700  mt-3'>
-       <p className='font-thin text-justify pb-5'>{t("adv1")}</p>
-       <p className='font-thin text-justify '>{t("adv2")}</p>
+       <div className='font-semibold text-gray-700  mt-3'>
+       <p className='font-semibold text-justify pb-5'>{t("adv1")}</p>
+       <p className='font-semibold text-justify '>{t("adv2")}</p>
 
        <div className="w-full mb-16 bg-orange-500 h-0.5 mt-12"></div>
           </div>
