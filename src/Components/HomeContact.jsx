@@ -16,7 +16,7 @@ const HomeContact = () => {
       </button> </Link>
 
       {/* Adventure Rides Title */}
-      <h2 className="w-fit text-lg md:text-3xl font-semibold mb-4 text-gray-700">
+      <h2 className="w-fit text-md md:text-3xl font-semibold mb-4 text-gray-700">
         Adventure Rides
       </h2>
 
