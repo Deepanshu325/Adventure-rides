@@ -63,7 +63,7 @@ const Home = () => {
  <div className='lg:w-[180vh] mx-auto'>
  <h1 className=' w-full lg:w-auto text-sky-600 font-extrabold :800 md:text-4xl'>WHY SHOULD YOU CHOOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?</h1>
     
-     <div className=' mt-8  lg:grid lg:grid-cols-3 overflow-hidden'>
+     <div className=' mt-8 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 overflow-hidden'>
     <Lg_card img={image2} title="Your Safety First" des="Each Tour has a full time doctor int the backup vechile carring the full trauma and aid kit" />
     <Lg_card img={image1} title="Well-Maintained Motorbike" des="An experienced KTM mechanic service your bike on a daily basis" />
     <Lg_card img={image5} title="Genuine OFF-ROADS bikes" des="At Adventure Rides your ride real enduro KTM EXC-F off-road bikes" />

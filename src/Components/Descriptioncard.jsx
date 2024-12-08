@@ -53,7 +53,7 @@ const Descriptioncard = () => {
 
       {/* Right Section */}
       <div
-        className="relative md:w-1/2 pl-2  md:pl-8 md:pr-8 md:mb-1 space-y-6 "
+        className="relative lg:w-1/2 pl-2   md:pl-8 md:pr-8 md:mb-10 lg:mb-1 space-y-6 "
         data-aos="fade-left"
       >
         <h1 className="text-lg text-sky-500 font-extrabold lg:text-4xl">
