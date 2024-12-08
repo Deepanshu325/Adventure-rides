@@ -17,6 +17,7 @@ import image4 from "../Assets/Icons/High-end-lodging-70x70.png"
 import image5 from "../Assets/Icons/Genuine-OFF-ROADS-bikes-70x70.png"
 import image6 from "../Assets/Icons/Agile-and-Always-there-Team-70x70.png"
 import { Link } from 'react-router-dom'
+import HomeContact from '../Components/HomeContact'
 
 
 const Home = () => {
@@ -80,10 +81,14 @@ const Home = () => {
 <div className=''>
 <Testimonials/>
 </div>
- <div className='mt-16 lg:mt-0 md:mb-40' data-aos="fade-up">
+ <div className='mt-16 lg:mt-0 md:mb-5' data-aos="fade-up">
     <MagazineCarousel/>
 </div>
 </div>
+  </div>
+
+  <div>
+    <HomeContact/>
   </div>
  <div>
     <Footer/>
