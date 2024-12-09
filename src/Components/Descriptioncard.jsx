@@ -20,10 +20,10 @@ const Descriptioncard = () => {
   }, []);
 
   return (
-    <div className="w-full  lg:flex lg:max-h-[110vh] ">
+    <div className="w-full  lg:flex lg:max-h-[110vh]  ">
       {/* Left Section */}
       <div
-        className="md:w-1/2 max-h-[70vh] lg:max-h-fit flex flex-col items-center lg:items-end space-y-8 md:space-y-1"
+        className="md:w-1/2 max-h-[78vh]  lg:max-h-fit flex flex-col items-center lg:items-end space-y-8 md:space-y-1"
         data-aos="fade-right"
       >
         <div className="w-fit m-auto">
@@ -53,7 +53,7 @@ const Descriptioncard = () => {
 
       {/* Right Section */}
       <div
-        className="relative lg:w-1/2 pl-2   md:pl-8 md:pr-8 md:mb-10 lg:mb-1 space-y-6 "
+        className="relative lg:w-1/2 pl-2 mt-4 lg:mt-0  md:pl-8 md:pr-8 md:mb-10 lg:mb-1 space-y-6 "
         data-aos="fade-left"
       >
         <h1 className="text-lg text-sky-500 font-extrabold lg:text-4xl">

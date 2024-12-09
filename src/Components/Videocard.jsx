@@ -24,7 +24,7 @@ const Videocard = () => {
 
 
   return (
-    <div className="relative md:h-[85vh] h-[88vh] w-full ">
+    <div className="relative h-screen w-full bg-black">
       {/* Video Background */}
       <video
         src={video}

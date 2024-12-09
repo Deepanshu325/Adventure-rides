@@ -39,9 +39,9 @@ const Home = () => {
 
   return (
      <>
-     <div className='w-full overflow-hidden'>
+     <div className='w-full'>
      <div>
-        <div className="relative h-auto  overflow-hidden">
+        <div className="relative h-auto  bottom-24 overflow-hidden">
 
        
 
@@ -49,7 +49,7 @@ const Home = () => {
     <Videocard />
   </div>
 
-   <div className="w-full overflow-hidden mt-16 ">
+   <div className="w-full overflow-hidden ">
 
     <Descriptioncard />
   

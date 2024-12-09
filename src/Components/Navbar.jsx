@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       {/* Sticky Transparent Second Navbar */}
-      <nav className="bg-black bg-opacity-85 text-white px-4 py-3 z-50 sticky top-0">
+      <nav className="bg-black/65 bg-opacity-0 text-white px-4 py-3 z-50 sticky top-0">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="w-16 lg:w-24 lg:mb-1">

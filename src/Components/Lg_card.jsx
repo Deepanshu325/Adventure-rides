@@ -10,7 +10,7 @@ const Lg_card = (props) => {
         <img src={props.img} alt="" className='w-16 h-16 lg:h-16 lg:w-16' />
         <div className='w-80 pl-3 md:w-full text-justify'>
           <h1 className='font-semibold'>{props.title}</h1>
-           <p className='font-semibold' >{props.des} </p>
+           <p className='font-semibold w-56' >{props.des} </p>
 
         </div>
       </div>
