@@ -41,7 +41,7 @@ const Home = () => {
      <>
      <div className='w-full overflow-hidden'>
      <div>
-        <div className="relative h-auto  bottom-20 overflow-hidden border border-black">
+        <div className="relative h-auto  overflow-hidden border border-black">
 
        
 

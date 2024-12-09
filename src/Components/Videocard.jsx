@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../Assets/Videos/PPAR - WS2024 - Landing Page Movie (1) (1).mp4"
+import video from "../Assets/Videos/PPAR - WS2024 - Resized Landing Page Movie (1) (1).mp4"
 import { useLanguage } from "./Languagecontext";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
