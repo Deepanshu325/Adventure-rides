@@ -145,7 +145,7 @@ const Testimonials = () => {
         <img
           src={testiback}
           alt=""
-          className="md:pt-20 md:h-[41vh] lg:h-[115vh] lg:pb-16 w-[90vh] object-cover"
+          className="md:pt-20 md:h-[97vh] lg:h-[115vh] lg:pb-16 w-[90vh] object-cover"
         />
       </div>
     </div>

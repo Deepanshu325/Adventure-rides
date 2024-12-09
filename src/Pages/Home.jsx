@@ -49,7 +49,7 @@ const Home = () => {
     <Videocard />
   </div>
 
-   <div className="w-full overflow-hidden ">
+   <div className="w-full overflow-hidden mt-16 ">
 
     <Descriptioncard />
   
