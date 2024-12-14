@@ -1,58 +1,73 @@
-import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
-import InstagramEmbed from '../Components/Instagramembaded';
-import gallery from '../Assets/Home/Gallery.jpg'
-import Footer from '../Components/Footer';
-import { useLanguage } from '../Components/Languagecontext';
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+import React, { useState, useEffect } from "react";
 
 const Gallery = () => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Instagram User ID and Access Token
+  const instagramUserId = "YOUR_INSTAGRAM_USER_ID"; // Replace with your Instagram User ID
+  const accessToken = "YOUR_INSTAGRAM_ACCESS_TOKEN"; // Replace with your Instagram Access Token
+
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      offset: window,    // Offset (in px) from the original trigger point
-      easing: "ease-in-out", // Easing function for animations
-      once: true,     // Whether animation should happen only once
-    });
-  }, []);
-    
-    const {t} =useLanguage();
+    const fetchInstagramPosts = async () => {
+      try {
+        // Make the request to Instagram Graph API
+        const response = await fetch(
+          `https://graph.instagram.com/${instagramUserId}/media?fields=id,caption,media_type,media_url,thumbnail_url,timestamp&access_token=${accessToken}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch Instagram posts");
+        }
+
+        const data = await response.json();
+
+        // Format the posts into the expected structure
+        const fetchedPosts = data.data.map((post) => ({
+          id: post.id,
+          caption: post.caption || "No caption available",
+          mediaUrl: post.media_url,
+          mediaType: post.media_type,
+          timestamp: post.timestamp,
+        }));
+
+        setPosts(fetchedPosts);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchInstagramPosts();
+  }, [instagramUserId, accessToken]);
+
+  if (loading) return <div>Loading Instagram posts...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
-    <>
-     <div >
-     <p className="text-center mt-8 mb-10 text-xl font-extrabold text-orange-600 md:text-6xl" dat-aos="fade-in">
-        {t("gallery")}
-      </p>
+    <div>
+      <h2>Instagram Posts</h2>
+      {posts.map((post) => (
+        <div key={post.id} style={{ margin: "20px", padding: "10px", border: "1px solid #ddd" }}>
+          {post.mediaType === "IMAGE" || post.mediaType === "CAROUSEL_ALBUM" ? (
+            <img
+              src={post.mediaUrl}
+              alt={post.caption}
+              style={{ width: "100%", height: "auto" }}
+            />
+          ) : post.mediaType === "VIDEO" ? (
+            <video controls style={{ width: "100%", height: "auto" }}>
+              <source src={post.mediaUrl} type="video/mp4" />
+            </video>
+          ) : null}
+          <p><strong>Caption:</strong> {post.caption}</p>
+          <p><strong>Timestamp:</strong> {new Date(post.timestamp).toLocaleString()}</p>
+        </div>
+      ))}
     </div>
-     
-     <div className='w-full'>
-     <InstagramEmbed embedUrl="https://www.instagram.com/reel/DCcFthhSNyB/" />
-     <InstagramEmbed embedUrl="https://www.instagram.com/reel/C-rz_opyav0/" />
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C86FBfUSWka/" />
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C8WMlX2yOtY/" />
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C78o97ah_cd/"/>
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C7v4VEWhkeY/"/>
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C6RVxA0hmqA/"/>
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C6BTUQwSE-A/"/>
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C4f2WaCoFXe/"/>
-
- 
-
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C2utf4tS8qM/"/>
-<InstagramEmbed embedUrl="https://www.instagram.com/reel/C0io4ISL63a/"/>
-</div>
-
-
- <div className='pt-32'>
-  <Footer/>
- </div>
-
-</>
   );
-}
-
+};
 
 export default Gallery;

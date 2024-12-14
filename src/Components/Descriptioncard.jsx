@@ -28,17 +28,17 @@ const Descriptioncard = () => {
       >
         <div className="w-fit m-auto">
           <img
-            src={image1}
+            src={image3}
             alt="image1"
             className="w-72  h-30 rounded-2xl md:w-fit md:h-96 md:relative md:left-7 :"
           />
         </div>
 
-        <div className="relative left-32 bottom-20 lg:top-16 -translate-x-12 md:translate-x-60 lg:-translate-x-44 lg:-translate-y-36">
+        <div className="z-20 relative left-32 bottom-20 lg:top-16 -translate-x-12 md:translate-x-60 lg:-translate-x-44 lg:-translate-y-36">
           <img
-            src={image3}
+            src={image1}
             alt="image2"
-            className="w-44 md:w-80 rounded-lg lg:w-72 lg:h-[38vh]"
+            className=" w-44 md:w-80 rounded-lg lg:w-72 lg:h-[38vh]"
           />
         </div>
 

@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react'
 import map1 from '../Assets/Images/Himachal/Himachalmap10days.png'
 import map2 from '../Assets/Images/Himachal/Himachalmap4days.png'
-import map3 from "../Assets/Images/Rajasthan/RAJASTHAN IN INDIA.jpg"
+import map3 from "../Assets/Images/Rajasthan/RajasthanMap.jpeg"
 
 const Your_next_adventure = () => {
     
@@ -61,7 +61,7 @@ const Your_next_adventure = () => {
 
             </div>
             <div className="md:w-1/2">
-              <img src={ktmfleet2} alt="" />
+              <img src={ktmfleet2} alt="" data-aos="fade-left" />
             </div>
        </div>
        
@@ -93,11 +93,11 @@ link={"/himalaya4days"}/>
 </div>
 
 <div data-aos="fade-in">
-        <h1 className='mt-8 text-3xl font-extrabold text-center md:mt-28 '  >THE RAJASTHAN</h1>
+        <h1 className='mt-8 text-3xl font-extrabold text-center md:mt-28 '  >RAJASTHAN</h1>
 
         </div>  
 
-<Adventurecard image={Rajasthanvip} 
+<Adventurecard image={Rajasthan} 
 heading={t("himalayahead4")}  
 text1={t("himalaya5")}
 text2={t("himalaya6")}
@@ -106,7 +106,7 @@ link={"/rajasthan10daysvip"}
 />
 
 <div  id="rajasthan" >
-<Adventurecard image={Rajasthan} 
+<Adventurecard image={Rajasthanvip} 
 heading={t("himalayahead3")}
 text1={t("himalaya7")}
 text2={t("himalaya8")} 

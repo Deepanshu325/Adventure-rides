@@ -166,20 +166,6 @@ const Download = () => {
               </button>
             </div>
           </form>
-
-          <div className="mt-4">
-            <button
-              disabled={!isDownloadEnabled}
-              onClick={handleDownload}
-              className={`w-full py-2 px-4 rounded-lg ${
-                isDownloadEnabled
-                  ? "bg-green-500 text-white hover:bg-green-600"
-                  : "bg-gray-400 text-gray-200 cursor-not-allowed"
-              }`}
-            >
-              {t("download")}
-            </button>
-          </div>
         </div>
       </div>
 

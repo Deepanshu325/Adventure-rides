@@ -15,12 +15,12 @@ const MagazineCarousel = () => {
   const magazines = [
     {
       image: magazine1,
-      title: "The Worrior Trail",
+      title: "Enduro Magazine",
       link: articlePDF2, // PDF imported and used here
     },
     {
       image: magazine2,
-      title: "Moto",
+      title: "Moto Verte",
       link:  articlePDF1 ,
     },
     {

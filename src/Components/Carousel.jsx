@@ -20,10 +20,10 @@ const PortraitCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    { src: Himalaya, title: "HIMALAYA", id: "himalaya" },
-    { src: Rajasthan, title: "RAJASTHAN", id: "rajasthan" },
-    { src: SouthIndia, title: "SOUTH INDIA", id: "south-india" },
-    { src: Goa, title: "GOA", id: "goa" },
+    { src: Himalaya, title: "HIMALAYA", id: "himalaya" ,route:"/yournextadventure" },
+    { src: Rajasthan, title: "RAJASTHAN", id: "rajasthan", route:"/yournextadventure"  },
+    { src: SouthIndia, title: "SOUTH INDIA", id: "south-india", route:"/yournextadventure" },
+    { src: Goa, title: "SUGGEST US YOUR NEW DESTINATION", id: "goa",route:"/download" },
   ];
 
   const visibleSlides = window.innerWidth >= 768 ? 3 : 1; // 3 images on desktop, 1 on small screens
@@ -65,7 +65,7 @@ const PortraitCarousel = () => {
           >
             {/* Image */}
             <div className="relative rounded-lg overflow-hidden shadow-lg">
-              <HashLink smooth to={`/yournextadventure#${image.id}`}>
+              <HashLink smooth to={`${image.route}#${image.id}`}>
                 <img
                   src={image.src}
                   alt={image.title}

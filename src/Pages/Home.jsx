@@ -41,7 +41,7 @@ const Home = () => {
      <>
      <div className='w-full'>
      <div>
-        <div className="relative h-auto  bottom-24 overflow-hidden">
+        <div className="relative h-auto overflow-hidden">
 
        
 
@@ -87,9 +87,7 @@ const Home = () => {
 </div>
   </div>
 
-  <div>
-    <HomeContact/>
-  </div>
+  
  <div>
     <Footer/>
  </div> 

@@ -24,14 +24,14 @@ const Videocard = () => {
 
 
   return (
-    <div className="relative h-screen w-full bg-black">
+    <div className="relative h-screen w-full bg-black mb-10">
       {/* Video Background */}
       <video
         src={video}
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-fill"
       />
 
       {/* Text Content */}
@@ -41,18 +41,17 @@ const Videocard = () => {
       
         <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-tight">
           
-        {t("welcome")}<br></br>
-        {t("welcome3")} 
-        <a className="text-sky-500 text-2xl sm:text-3xl mt-4">
+        {t("welcome")} <br></br>
+        {t("welcome3")} <br></br>
         {t("welcome4")} 
-        </a>
+      
         </h1>
        
         <p className="font-thin text-white text-base sm:text-lg mt-6">
-        {t("welcome5")} 
+       
         </p>
-        <button className="w-20  mt-6   text-white text-sm font-medium rounded-md  hover:text-sky-500 transition" onClick={()=>window.open("https://www.youtube.com/watch?v=oCRZi1hSWuE","_blank")}>
-          <img src={ytlogo} alt="" className=" object-contain " />
+        <button className="w-20  mt-6   text-white text-sm font-medium rounded-md  hover:text-sky-500 transition" onClick={()=>window.open("https://www.youtube.com/watch?v=MjxTDuKfAqQ","_blank")}>
+         <img src={ytlogo} alt="" className=" object-contain  " /> 
         </button>
       
       </div>

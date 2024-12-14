@@ -16,7 +16,7 @@ const Md_card = (props) => {
     <>
       <div className="w-full lg:flex overflow-hidden">
         {/* Content Section */}
-        <div className="w-full lg:w-1/2 md:max-w-5xl mt-1 mb-20 md:min-h-[60vh]" data-aos="fade-down">
+        <div className="w-full lg:w-1/2 md:max-w-5xl mt-1 md:min-h-fit" data-aos="fade-down">
           {props.mainheading && (
             <a className="text-lg font-extrabold pl-2">{props.mainheading}</a>
           )}
@@ -32,10 +32,10 @@ const Md_card = (props) => {
               <div className="pl-5 pt-2 font-semibold text-lg ">
                 {props.point1 && (
                   <p className="font-semibold text-justify pr-5">{props.point1}</p>
-                )}
+                )}<br></br>
                 {props.point2 && (
                   <p className="font-semibold text-justify pr-5">{props.point2}</p>
-                )}
+                )}<br></br>
                 {props.point3 && (
                   <p className="font-semibold text-justify pr-5">{props.point3}</p>
                 )}
@@ -54,10 +54,10 @@ const Md_card = (props) => {
               <div className="pl-5 pt-2 font-semibold text-lg ">
                 {props.text1 && (
                   <p className="font-semibold text-justify pr-5">{props.text1}</p>
-                )}
+                )}<br></br>
                 {props.text2 && (
                   <p className="font-semibold text-justify pr-5">{props.text2}</p>
-                )}
+                )}<br></br>
                 {props.text3 && (
                   <p className="font-semibold text-justify pr-5">{props.text3}</p>
                 )}

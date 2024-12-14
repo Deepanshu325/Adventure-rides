@@ -11,6 +11,16 @@ import image9 from "../Assets/Home/5.a Team_8_11zon.jpg";
 import  image10 from "../Assets/Home/5.b Team_4_11zon.png"
 import image5 from "../Assets/Home/6b. Small Group Trail_5_11zon.jpg"
 import image8 from "../Assets/Home/15. RAJ 10 _5_11zon.jpeg"
+import image11 from "../Assets/Home/7.a Luxury hotels (1).jpg"
+import image12 from "../Assets/Home/7.b Luxury hotels (1).jpg"
+import image13 from "../Assets/Home/7.c Luxury hotels (1).jpg"
+import image14 from "../Assets/Home/7.d Luxury hotels (1).jpg"
+import image15 from "../Assets/Home/7.e Luxury hotels (1).jpg"
+import image16 from "../Assets/Home/7.f Luxury hotels (1).png"
+import image17 from "../Assets/Home/7.g Luxury hotels (1).jpg"
+import image18 from "../Assets/Home/7.i Luxury hotels (1).jpeg"
+import image19 from "../Assets/Home/7.j Luxury hotels (1).jpg"
+
 
 import image6 from "../Assets/Home/7.j Luxury hotels_15_11zon.jpg";
 import image7 from "../Assets/Home/13. RAJ VIP 10_1_11zon.jpg"
@@ -63,6 +73,7 @@ const Why_to_travelwithus = () => {
           mainheading={t("demandinghead")}
           point1={t("demanding1")}
           point3={t("demanding2")}
+          text1={t("demanding3")}
         />
 
         <Md_card
@@ -83,12 +94,43 @@ const Why_to_travelwithus = () => {
         />
 
         <Md_card
-          image={image6}
+      
           mainheading={t("highhead")}
           point1={t("high1")}
           point2={t("high2")}
           point3={t("high3")}
         />
+
+        <div className="grid grid-col-1 md:grid-cols-2   lg:grid-cols-3 lg:grid-rows-3  h-fit gap-2">
+         
+         <div>
+          <img src={image11} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image12} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image13} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image14} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image15} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image16} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image17} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image18} alt="" className="h-60 w-full" />
+         </div>
+         <div>
+          <img src={image19} alt="" className="h-60 w-full" />
+         </div>
+        </div>
       </div>
 
       {/* Footer Section */}

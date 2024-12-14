@@ -25,23 +25,26 @@ const Footer = () => {
 
           {/* Let's Connect */}
           <div>
-            <h3 className="text-lg font-bold mb-4">{t('letsconnect')}</h3>
+            <h3 className="text-lg font-bold mb-4"></h3>
+           
+          </div>
+
+          {/* Contact Details */}
+          <div>
+        <Link to="/download">    <h3 className="text-lg font-bold mb-4">{t('letsconnect')}</h3> </Link>
+            <ul className="font-thin text-sm text-gray-400 space-y-2">
+            
+              <li>Address: DE 153, Block DE, Tagore Garden, Tagore Garden Extension, New Delhi, 
+              Delhi, 110027</li>
+            </ul>
+
             <button
               onClick={() => window.location.href = "/download"}
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm"
             >
               {t('contact')}
             </button>
-          </div>
-
-          {/* Contact Details */}
-          <div>
-        <Link to="/download">    <h3 className="text-lg font-bold mb-4">{t('contact2')}</h3> </Link>
-            <ul className="font-thin text-sm text-gray-400 space-y-2">
             
-              <li>Address: DE 153, Block DE, Tagore Garden, Tagore Garden Extension, New Delhi, 
-              Delhi, 110027</li>
-            </ul>
           </div>
 
           {/* Follow Us */}
