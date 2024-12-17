@@ -60,18 +60,18 @@ const Home = () => {
 
           <div className=' pl-4 md:pl-14 lg:w-full lg:pl-8 mx-auto  md:mt-20' data-aos="fade-down">
             <Link to="/whytotravel">
-              <div className='lg:w-[180vh] mx-auto'>
-                <h1 className=' w-full lg:w-auto text-sky-600 font-extrabold :800 md:text-4xl'>WHY SHOULD YOU CHOOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?</h1>
+              <div className='lg:w-[95%] mx-auto'>
+                <h1 className=' w-full lg:w-auto text-sky-600 font-extrabold :800 md:text-4xl'>{t("why")}</h1>
 
                 <div className=' mt-8 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 overflow-hidden'>
-                  <Lg_card img={image2} title="Your Safety First" des="Each Tour has a full time doctor in the backup vechile carring the full trauma and aid kit" />
-                  <Lg_card img={image1} title="Well-Maintained Motorbike" des="An experienced KTM mechanic services your bike on a daily basis" />
-                  <Lg_card img={image5} title="Genuine OFF-ROADS bikes" des="At Adventure Rides your ride real enduro KTM EXC-F off-road bikes" />
+                  <Lg_card img={image2} title={t("whytitle1")} des={t("whydes1")} />
+                  <Lg_card img={image1} title={t("whytitle2")} des={t("whydes2")} />
+                  <Lg_card img={image5} title={t("whytitle3")} des={t("whydes3")}/>
 
 
-                  <Lg_card img={image3} title="True off Road Rides " des="Our journeys test your endurance level with a 90% off-road terrain" />
-                  <Lg_card img={image6} title="Agile and Always-there Team " des="Our small but tight-knit group of maximum 8 rides per tour, allow for group dynamics" />
-                  <Lg_card img={image4} title="High-end lodging" des="After a grueling day of adventures you can hardly wait to hit the clean sheets in exceptional lodgings" />
+                  <Lg_card img={image3} title={t("whytitle4")} des={t("whydes4")} />
+                  <Lg_card img={image6} title={t("whytitle5")} des={t("whydes5")} />
+                  <Lg_card img={image4} title={t("whytitle6")} des={t("whydes6")} />
 
 
                 </div>

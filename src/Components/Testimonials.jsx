@@ -80,7 +80,7 @@ const Testimonials = () => {
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-24 h-24 md:w-32 md:h-32 lg:w-64 lg:h-60 rounded-full mb-4"
+                  className="w-24 h-24 md:w-32 md:h-32 lg:w-64 lg:h-60 object-fill rounded-full mb-4"
                 />
                 <div className="flex justify-center mb-3">
                   {Array.from({ length: 5 }, (_, i) => (

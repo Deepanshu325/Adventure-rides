@@ -93,7 +93,7 @@ link={"/himalaya4days"}/>
 </div>
 
 <div data-aos="fade-in">
-        <h1 className='mt-8 text-3xl font-extrabold text-center md:mt-28 '  >RAJASTHAN</h1>
+        <h1 className='mt-8 text-3xl font-extrabold text-center md:mt-28 '  >{t("raj")}</h1>
 
         </div>  
 

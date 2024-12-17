@@ -68,22 +68,22 @@ const Md_card = (props) => {
 
         {/* Image Section */}
         {props.image && (
-          <div className="h-fit lg:w-1/2 w-full content-center" data-aos="fade-right">
+          <div className="h-fit lg:w-1/2 w-full content-center " data-aos="fade-right">
             <img
               src={props.image}
               alt={props.alt || ""}
-              className="md:rounded-2xl md:mt-16 object-cover h-64 md:h-fit lg:h-fit mx-auto"
+              className="md:rounded-2xl  object-cover h-64 md:h-fit lg:h-fit mx-auto"
             />
           </div>
         )}
 
         {(props.image1 || props.image2) && (
-          <div className="h-fit lg:w-1/2 w-full content-center" data-aos="fade-right">
+          <div className="h-fit lg:w-1/2 w-full content-center  " data-aos="fade-right">
             {props.image1 && (
               <img
                 src={props.image1}
                 alt={props.alt1 || ""}
-                className="pb-2 md:rounded-2xl md:mt-16 h-64 md:h-96 lg:h-3/2 lg:w-[80%] mx-auto"
+                className="pb-2 md:rounded-2xl  h-64 md:h-96 lg:h-3/2 lg:w-[80%] mx-auto"
               />
             )}
             {props.image2 && (
