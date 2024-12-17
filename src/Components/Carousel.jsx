@@ -6,8 +6,13 @@ import Goa from "../Assets/Home/Goa.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { HashLink } from "react-router-hash-link";
+import { useLanguage } from "./Languagecontext";
 
 const PortraitCarousel = () => {
+
+   const {t} = useLanguage()
+
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
@@ -22,8 +27,8 @@ const PortraitCarousel = () => {
   const images = [
     { src: Himalaya, title: "HIMALAYA", id: "himalaya" ,route:"/yournextadventure" },
     { src: Rajasthan, title: "RAJASTHAN", id: "rajasthan", route:"/yournextadventure"  },
-    { src: SouthIndia, title: "SOUTH INDIA", id: "south-india", route:"/yournextadventure" },
-    { src: Goa, title: "SUGGEST US YOUR NEW DESTINATION", id: "goa",route:"/download" },
+    { src: SouthIndia, title: t("south"), id: "south-india", route:"/yournextadventure" },
+    { src: Goa, title: t("suggest"), id: "goa",route:"/download" },
   ];
 
   const visibleSlides = window.innerWidth >= 768 ? 3 : 1; // 3 images on desktop, 1 on small screens
@@ -48,7 +53,7 @@ const PortraitCarousel = () => {
 
   return (
     <div
-      className="relative w-full max-w-7xl mx-auto overflow-hidden"
+      className="relative w-full max-w-full mx-auto overflow-hidden"
       data-aos="fade-up"
     >
       {/* Carousel Container */}

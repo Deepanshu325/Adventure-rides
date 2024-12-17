@@ -44,13 +44,14 @@ const Why_to_travelwithus = () => {
       {/* Content Section */}
       
       <div className="w-full px-4 md:px-16 mt-12 space-y-10">
-      <p className="text-center font-bold text-3xl">Not more of the same We do it differently</p>
+      <p className="text-center font-bold text-3xl">{t("diffrently")}</p>
         <Md_card
           image={image1}
           mainheading={t("safetyhead")}
           heading1={t("safety")}
           point1={t("safety1")}
           point2={t("safety2")}
+          point3={t("safety3")}
           heading2={t("security")}
           text1={t("security1")}
           text2={t("security2")}
@@ -72,7 +73,9 @@ const Why_to_travelwithus = () => {
          image2={image7}
           mainheading={t("demandinghead")}
           point1={t("demanding1")}
-          point3={t("demanding2")}
+
+          point2={t("demanding2")}
+          point3={t("demanding4")}
           text1={t("demanding3")}
         />
 

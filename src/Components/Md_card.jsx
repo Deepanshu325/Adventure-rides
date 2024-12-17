@@ -72,7 +72,7 @@ const Md_card = (props) => {
             <img
               src={props.image}
               alt={props.alt || ""}
-              className="md:rounded-2xl md:mt-16 object-cover h-64 md:h-96 lg:h-80 mx-auto"
+              className="md:rounded-2xl md:mt-16 object-cover h-64 md:h-fit lg:h-fit mx-auto"
             />
           </div>
         )}
@@ -83,14 +83,14 @@ const Md_card = (props) => {
               <img
                 src={props.image1}
                 alt={props.alt1 || ""}
-                className="pb-2 md:rounded-2xl md:mt-16 h-64 md:h-96 lg:h-60 lg:w-80 mx-auto"
+                className="pb-2 md:rounded-2xl md:mt-16 h-64 md:h-96 lg:h-3/2 lg:w-[80%] mx-auto"
               />
             )}
             {props.image2 && (
               <img
                 src={props.image2}
                 alt={props.alt2 || ""}
-                className=" pb-2 md:rounded-2xl md:mt-16 h-64 md:h-96 lg:h-60 lg:w-80 mx-auto"
+                className=" pb-2 md:rounded-2xl md:mt-16 h-64 md:h-96 lg:h-3/2 lg:w-[80%] mx-auto"
               />
             )}
           </div>

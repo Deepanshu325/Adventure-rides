@@ -38,7 +38,7 @@ const Descriptioncard = () => {
           <img
             src={image1}
             alt="image2"
-            className=" w-44 md:w-80 rounded-lg lg:w-72 lg:h-[38vh]"
+            className=" w-48 md:w-80 rounded-lg lg:w-80 lg:h-[38vh]"
           />
         </div>
 
@@ -46,7 +46,7 @@ const Descriptioncard = () => {
           <img
             src={image2}
             alt="image3"
-            className="w-44  lg:w-72 lg:h-[45vh] md:w-80 relative bottom-28 md:top-7 rounded-lg "
+            className="w-44  lg:w-80 lg:h-[45vh] md:w-80 relative bottom-28 md:top-7 rounded-lg "
           />
         </div>
       </div>
@@ -57,7 +57,7 @@ const Descriptioncard = () => {
         data-aos="fade-left"
       >
         <h1 className="text-lg text-sky-500 font-extrabold lg:text-4xl">
-          {t("welcome")}
+          {t("destitle")}
         </h1>
 
         <div className="mt-6">

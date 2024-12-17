@@ -120,7 +120,7 @@ const translations = {
             surname : "Surname",
             email : "Email",
             mob : "Mobile Number",
-            city : "City"
+            city : "Country"
             ,currentbike : "Current Bike"
             ,submit : "Submit",
             download : "Download"
@@ -134,22 +134,30 @@ const translations = {
              , gallery : "GALLERY"
              ,about2 : "ABOUT US"
              ,contact2 : "CONTACT US"
-      
-            
+             ,south :"SOUTH INDIA",
+             suggest :"SUGGEST US YOUR NEW DESTINATION"
+             ,diffrently : "Not more of the same We do it differently"
+             , media : "MEDIA ARTICLES",
+             safety3 : " "
+             ,demanding4 : " "
 
   },
   fr: {
-    welcome: "Une nouvelle dimension du",
+    demanding4 : "‣ En mode TRAIL, vous effectuez de 30 à 50% de tout terrain sur des pistes très accessibles et sur des petites routes de villages.",
+    safety3 : "‣ Nous avons aussi mis en place un plan d’urgence pour chaque tour afin de prévoir l’imprévisible y compris une éventuelle évacuation par héliportée sur certaines destinations. ",
+    media : "La presse nous dévoile",
+    diffrently : "Not more of the same ! Une nouvelle dimension du voyage d’aventure"
+   , welcome: "Une nouvelle dimension du",
     welcome3: "voyage",
     welcome4: "aventure",
     welcome5: "Faites l’expérience d’une excellence de livraison de classe mondiale",
     destitle: "Bienvenue chez Adventure Rides",
     des1: "Adventure Rides est la seule organisation en Inde à vous proposer des circuits tout-terrains sur de véritables motos d'enduro des KTM EXC-F 450. Vous pouvez également vivre les mêmes émotions dans ces paysages époustouflants, sur des pistes plus faciles et des petites routes avec une moto de trail moins exigeante, la KTM Adventure"
-    , des2: "‣ Partez à l'aventure sur des parcours tout-terrain excepConnels, allant des déserts du Rajasthan aux confins des plus hauts sommets himalayens."
+    , des2: "‣ Partez à l'aventure sur des parcours tout-terrain exceptionnels, allant des déserts du Rajasthan aux confins des plus hauts sommets himalayens."
     , des3: "‣ Faites confiance à une équipe cumulant de plus de 35 ans expérience d'off-road sur 3 continents"
     , des4: "‣ Partez en toute sécurité avec une équipe comptant pas moins de 18 années d’expérience dans l’encadrement de voyages aventures y compris un staff médical et technique "
-    , des5: "‣  Améliorez vos apCtudes en tout-terrain encadrés par nos formateurs professionnels"
-    , des6: "‣ Après une journée éreintante sur la moto, reposez-vous dans une hôtellerie haute gamme dans des cadres excepConnels"
+    , des5: "‣  Améliorez vos aptitudes en tout-terrain encadrés par nos formateurs professionnels"
+    , des6: "‣ Après une journée éreintante sur la moto, reposez-vous dans une hôtellerie haute gamme dans des cadres exceptionnels"
     , choose: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?"
     , custitle: "Ce que nos riders vous témoignent…"
     , testimonials1: "Philippe nous emmène dans des paysages à couper le souffle. On passe dans des endroits où aucune moto n’y a mis ses roues. Ce voyage est éblouissant"
@@ -159,10 +167,10 @@ const translations = {
     , magazine: "La presse nous dévoile:"
     , about: "À propos"
     , aboutdes: "Adventure Rides est la seule agence proposant des circuits tout-terrain sur de véritables motos d'enduro, la marque la plus fiable et la plus appréciée du marché, la KTM EXC-F 450."
-    , letsconnect: "Connectons-nous"
+    , letsconnect: "Contact"
     , contact: "Contactez-nous"
     , contactdetail: "Contactez-nous"
-    , follow: "Suivez-nous"
+    , follow: "Suivez-nous sur"
     , nextadventure: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?"
     , safetyhead: "1. Votre sécurité, notre priorité"
     , safety: "Votre sécurité grâce à l’équipe",
@@ -171,7 +179,7 @@ const translations = {
     safety3: "→ Nous avons aussi mis en place un plan d’urgence pour chaque tour afin de prévoir l’imprévisible y compris une éventuelle évacuation par héliportée sur certaines destinations."
     
     ,security: "Votre sécurité grâce à l’entretien de votre moto",
-    security1: "→ Votre sécurité grâce à l’entretien de votre moto"
+    security1: " Dans ce véhicule d’assistance, un mécanicien KTM vous suit pendant out le trajet afin de vous assurer une moto parfaitement entretenue"
     , security2:"→ Il emporte toutes les pièces détachées et les kits de réparation pour garantir une moto au top, garantie de votre sécurité. ",
     security3: "→ Nous transportons non seulement vos bagages mais également une moto de rechange par groupe si le temps de réparation s’avère trop long."
     
@@ -179,7 +187,7 @@ const translations = {
     , genuine1: "→ Avec Adventure Rides, vous roulez sur de vraies enduros, des KTM EXC-F 450 ou de vrais trails, la KTM Adventure (ou équivalent)"
     , genuine2: "→ Vous vivez une aventure au cœur de la nature"
     , genuine3: "→ Nos motos vous amène là où aucun voyageur n’a posé ses roues"
-      ,genuine4: "→ Notre agence de tourisme propose des balades organisées et des visites à travers les paysages les plus époustouflants de l'Inde."
+      ,genuine4: " "
     , demandinghead: "3. Un parcours tout-terrain pour les plus endurant"
     , demanding1: "→ En mode ENDURO, plus de 85% de tout-terrain défieront tous les jours votre endurance. ",
     demanding2: "→ Le parcours comprend des lits de rivières, des pierriers, beaucoup de sable au Rajasthan et même en montagne. La beauté brute des paysages vous fait oublier tout effort.",
@@ -258,27 +266,29 @@ const translations = {
          
             
            contacthead : "Téléchargez votre programme détaillé",
-            contactus : "Contactez-nous",
-            name1 : "Nom",
-            surname : "Nom de famille",
+            contactus : "Contact",
+            name1 : "Prenom",
+            surname : "Nom",
             email : "E-mail",
-            mob : "Numéro de portable",
-            city : "Ville"
-            ,currentbike : "Current Bike"
-            ,submit : "Vélo actuel",
+            mob : "Nr. de portable",
+            city : "Pays"
+            ,currentbike : "Moto(S) actuelle(s) "
+            ,submit : "Soumettre",
             download : "Télécharger"
 
 
             ,newsletter :  "ABONNEZ-VOUS À NOTRE NEWSLETTER",
              home : "MAISON"
-             ,why :"Pourquoi partir à l’aventure avec nous?"
+             ,why :"POURQUOI PARTIR À L'AVENTURE AVEC NOUS ?"
 
              ,nextadv :" VOTRE PROCHAINE AVENTURE "
-             , ourfleet : "NOTRE MOTOS"
+             , ourfleet : "NOS MOTOS"
              , blog : "BLOG"
              , gallery : "GALERIE"
              ,about2 : "À PROPOS"
              ,contact2 : "CONTACT"
+             ,south : "INDE DU SUD",
+             suggest :"VOTRE PROCHAINE ADVENTURE"
 
   },
 

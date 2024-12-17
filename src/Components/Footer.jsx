@@ -37,7 +37,7 @@ const Footer = () => {
               <li>Address: DE 153, Block DE, Tagore Garden, Tagore Garden Extension, New Delhi, 
               Delhi, 110027</li>
             </ul>
-
+              <br />
             <button
               onClick={() => window.location.href = "/download"}
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm"

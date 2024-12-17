@@ -121,7 +121,7 @@ const Download = () => {
       >
         <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
-            {t("contactus")}
+            {t("contact")}
           </h2>
           {successMessage && (
             <p className="text-green-600 text-center mb-4">{successMessage}</p>
@@ -132,7 +132,7 @@ const Download = () => {
               { label: t("surname"), name: "surname", required: true },
               { label: t("email"), name: "email", type: "email", required: true },
               { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
-              { label: t("country"), name: "city", required: true },
+              { label: t("city"), name: "city", required: true },
               { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
             ].map((field) => (
               <div key={field.name}>

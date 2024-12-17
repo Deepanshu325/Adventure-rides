@@ -4,10 +4,9 @@ import testi1 from "../Assets/Images/Testimonials/TESTI1_11zon.png";
 import testi2 from "../Assets/Images/Testimonials/TESTI2.png";
 import testi3 from "../Assets/Images/Testimonials/TESTI3.png";
 import testi4 from "../Assets/Images/Testimonials/TESTI4.jpeg";
-import testi5 from "../Assets/Images/Testimonials/TESTI4 - LAURENT.JPG"
+import testi5 from "../Assets/Images/Testimonials/TESTI4 - LAURENT.JPG";
 import testi6 from "../Assets/Images/Testimonials/TESTI9_11zon.jpeg";
-
-import testiback from "../Assets/Images/Testimonials/4_11zon.jpg";
+import testiback from "../Assets/Images/Himachal/HIMPIC71.JPG";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,36 +23,10 @@ const Testimonials = () => {
   const { t } = useLanguage();
 
   const testimonials = [
-    {
-      image: testi1,
-      name: "Michael",
-      address: "New York, USA",
-      text: t("testimonials1"),
-      rating: 5,
-    },
-    {
-      image: testi2,
-      name: "Eva",
-      address: "Berlin, Germany",
-      text: t("testimonials2"),
-      rating: 4,
-    },
-    {
-      image: testi3,
-      name: "John",
-      address: "Sydney, Australia",
-      text: t("testimonials3"),
-      rating: 5,
-    },
-    {
-      image: testi4,
-      name: "Nigel",
-      address: "London, UK",
-      text: t("testimonials4"),
-      rating: 4,
-    },
-   
-  
+    { image: testi1, name: "Michael", address: "New York, USA", text: t("testimonials1"), rating: 5 },
+    { image: testi2, name: "Eva", address: "Berlin, Germany", text: t("testimonials2"), rating: 4 },
+    { image: testi3, name: "John", address: "Sydney, Australia", text: t("testimonials3"), rating: 5 },
+    { image: testi4, name: "Nigel", address: "London, UK", text: t("testimonials4"), rating: 4 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -88,14 +61,13 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="relative w-full mx-auto p-4 md:w-[120vh]" data-aos="fade-right">
-        <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mb-6">
-          {t("custitle")}
-        </h2>
-        <div className="relative lg:right-4 lg:w-[107vh] overflow-hidden mx-auto">
+    <div className="flex flex-col md:flex-row w-full max-h-[110vh] ">
+      <div className="relative w-full mx-auto p-4 md:w-[100%] lg:w-[50%]" data-aos="fade-right">
+        <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mb-6">{t("custitle")}</h2>
+        
+        <div className="relative overflow-hidden mx-auto">
           <div
-            className="flex transition-transform duration-500 lg:space-x-8 lg:w-[110vh] lg:relative lg:left-1"
+            className="flex transition-transform duration-500 gap-4"
             style={{
               transform: `translateX(-${currentIndex * (100 / visibleSlides)}%)`,
             }}
@@ -103,12 +75,12 @@ const Testimonials = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-full sm:w-1/2 p-4 bg-orange-500 rounded-lg shadow-md flex flex-col items-center text-center lg:w-[50vh]"
+                className="flex-shrink-0 w-full sm:w-1/2 p-4 bg-orange-500 rounded-lg shadow-md flex flex-col items-center text-center lg:w-[49%]"
               >
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-24 h-24 md:w-32 md:h-32 lg:w-64 lg:h-64 rounded-full mb-4"
+                  className="w-24 h-24 md:w-32 md:h-32 lg:w-64 lg:h-60 rounded-full mb-4"
                 />
                 <div className="flex justify-center mb-3">
                   {Array.from({ length: 5 }, (_, i) => (
@@ -118,9 +90,7 @@ const Testimonials = () => {
                   ))}
                 </div>
                 <h3 className="text-lg text-gray-800 font-thin">{testimonial.name}</h3>
-                <p className="text-sm text-gray-700 mb-3 font-thin">
-                  {testimonial.address}
-                </p>
+                <p className="text-sm text-gray-700 mb-3 font-thin">{testimonial.address}</p>
                 <p className="text-sm text-white font-thin">{testimonial.text}</p>
               </div>
             ))}
@@ -129,23 +99,21 @@ const Testimonials = () => {
 
         {/* Navigation Dots */}
         <div className="flex justify-center mt-4">
-          {Array.from({ length: window.innerWidth < 768 ? testimonials.length : Math.ceil(testimonials.length / 2) }, (_, index) => (
+          {Array.from({ length: Math.ceil(testimonials.length / visibleSlides) }, (_, index) => (
             <button
               key={index}
               onClick={() => handleIndicatorClick(index)}
-              className={`h-3 w-3 rounded-full mx-2 ${
-                currentIndex === index ? "bg-sky-500" : "bg-gray-300"
-              }`}
+              className={`h-3 w-3 rounded-full mx-2 ${currentIndex === index ? "bg-sky-500" : "bg-gray-300"}`}
             />
           ))}
         </div>
       </div>
 
-      <div className="hidden md:block" data-aos="fade-left">
+      <div className="hidden lg:block md:w-full lg:w-[50%]" data-aos="fade-left">
         <img
           src={testiback}
-          alt=""
-          className="md:pt-20 md:h-[97vh] lg:h-[115vh] lg:pb-16 w-[90vh] object-cover"
+          alt="Background"
+          className="md:pt-20 md:h-[70%] lg:h-[90%] max-h-[120vh] w-[100%] object-fill"
         />
       </div>
     </div>

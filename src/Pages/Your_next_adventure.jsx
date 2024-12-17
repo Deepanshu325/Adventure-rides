@@ -2,12 +2,12 @@ import React from 'react'
 import ktmfleet from '../Assets/Home/8.a Enduro_16_11zon.jpg'
 import ktmfleet2 from "../Assets/Home/8b Trail_17_11zon.jpg"
 import Footer from '../Components/Footer'
-import Himalaya from '../Assets/Images/Himachal/9.HIM 10_18_11zon.jpg'
-import him4 from "../Assets/Images/Himachal/11. HIM 4D (1)_11zon.jpeg"
+import Himalaya from '../Assets/Images/Himachal/9.HIM 10 (1).JPG'
+import him4 from "../Assets/Images/Himachal/11. HIM 4D (2).jpeg"
 import Adventurecard from '../Components/Adventurecard'
 import Goa from '../Assets/Home/Goa.webp'
 import Rajasthan from '../Assets/Home/13. RAJ VIP 10_1_11zon.jpg'
-import Rajasthanvip from '../Assets/Home/15. RAJ 10 _5_11zon.jpeg'
+import Rajasthanvip from '../Assets/Images/Rajasthan/15. RAJ 10  (1).jpeg'
 import { useLanguage } from '../Components/Languagecontext'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
