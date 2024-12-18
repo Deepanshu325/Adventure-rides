@@ -34,12 +34,9 @@ const About = () => {
       </div>
 
        <div className='mx-auto text-justify w-72 mt-8 lg:w-[150vh]'>
-         <p className='pb-8' data-aos="fade-right">{t("about1")}</p>
+       
 
-         <p className='pb-8' data-aos="fade-right">{t("about9")}</p>
-
-         <p className='pb-8' data-aos="fade-right">{t("about10")}</p>
-         <p className='pb-8' data-aos="fade-right">{t("about11")}</p>
+      
          <p className='pb-8' data-aos="fade-right">{t("about12")}</p>
          <p className='pb-8' data-aos="fade-right">{t("about13")}</p>
         
@@ -50,6 +47,8 @@ const About = () => {
 
         <div className=' text-justify mx-auto w-72 lg:w-[150vh]'>
            <h1 className='font-thin text-3xl mb-8 text-gray-500' data-aos="fade-in">{t("abouthead")}</h1>
+
+           
            <p className='pb-8' data-aos="fade-right">{t("about5")}</p>
 <p className='pb-8'data-aos="fade-right">{t("about6")}</p>
 

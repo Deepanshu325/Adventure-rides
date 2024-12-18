@@ -23,10 +23,10 @@ const Descriptioncard = () => {
     <div className="w-full  lg:flex lg:max-h-[110vh]  ">
       {/* Left Section */}
       <div
-        className="sm:w-1/2 max-h-[78vh]  lg:max-h-fit flex flex-col items-center lg:items-end space-y-8 sm:space-y-1"
+        className="sm:w-1/2 max-h-[68vh]  lg:max-h-fit flex flex-col items-center lg:items-end space-y-8 sm:space-y-1"
         data-aos="fade-right"
       >
-        <div className="w-fit m-auto">
+        <div className="w-fit m-auto ">
           <img
             src={image3}
             alt="image1"

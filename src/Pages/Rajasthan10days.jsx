@@ -124,9 +124,7 @@ const Rajasthan10days = () => {
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
             {t("contactus")}
           </h2>
-          {successMessage && (
-            <p className="text-green-600 text-center mb-4">{successMessage}</p>
-          )}
+         
           <form onSubmit={handleSubmit} className="space-y-4">
             {[
               { label: t("name1"), name: "name", required: true },
@@ -181,6 +179,11 @@ const Rajasthan10days = () => {
               {t("download")}
             </button>
           </div>
+
+          {successMessage && (
+            <p className="text-green-600 text-center mt-4">{successMessage}</p>
+          )}
+
         </div>
       </div>
 

@@ -58,10 +58,10 @@ const Home = () => {
             <PortraitCarousel />
           </div>
 
-          <div className=' pl-4 md:pl-14 lg:w-full lg:pl-8 mx-auto  md:mt-20' data-aos="fade-down">
+          <div className=' pl-4 md:pl-14 lg:w-full  mx-auto  md:mt-20' data-aos="fade-down">
             <Link to="/whytotravel">
               <div className='lg:w-[95%] mx-auto'>
-                <h1 className=' w-full lg:w-auto text-sky-600 font-extrabold :800 md:text-4xl'>{t("why")}</h1>
+                <h1 className=' w-full lg:w-auto text-sky-600 font-extrabold :800 md:text-4xl'>{t("why1")}</h1>
 
                 <div className=' mt-8 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 overflow-hidden'>
                   <Lg_card img={image2} title={t("whytitle1")} des={t("whydes1")} />
@@ -81,7 +81,7 @@ const Home = () => {
           <div className=''>
             <Testimonials />
           </div>
-          <div className=' lg:mt-0 md:mb-5' data-aos="fade-up">
+          <div className=' lg:mt-10 md:mb-5' data-aos="fade-up">
             <MagazineCarousel />
           </div>
         </div>

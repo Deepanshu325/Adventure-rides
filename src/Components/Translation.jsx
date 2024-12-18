@@ -12,7 +12,7 @@ const translations = {
     , des5: "‣ Increase your dirt-ride abilities with professional trainers and off-road riding courses"
     , des6: "‣ Experience being pampered in gold standard lodging located in ultimate scenic areas"
     , choose: "WHY SHOULD YOU CHOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?"
-    , custitle: "What Our Customers Say..."
+    , custitle: "What Adventure riders have to say..."
     , testimonials1: "Philippe takes us through stunning landscapes. We ride through places where no motorcycle has ever been. It's a dazzling journey!"
     , testimonials2: "The route is intense and extremely varied. At times we ride on wide highmountain tracks, then small hiking trails, dry river beds, through alpine and lunar landscapes. Truly a breathtaking ride"
     , testimonials3: "The first thing I remember about this trip is the incredible palette of colours. High-altitude lakes ranging from deep blue to emerald green. The deep-blue sky contrasts with the infinite browns, beiges and greys of the mountains. Then there's the thrill of riding the world's summits. Free-flying still exists. It's out there!"
@@ -27,8 +27,8 @@ const translations = {
     , nextadventure: "WHY TO TRAVEL WITH US"
     , safetyhead: "1. Safety and security First"
     , safety: "Safety for you"
-    , safety1: "→ For your ultimate safety, our tours include a dedicated support vehicle with a trained mechanic and medical assistance on board. "
-    , safety2: "→ We have secured an audited medical emergency plan: global rescue including ambulance and helicopter evacuation if needed to the appropriate hospital",
+    , safety1: "→ Every tour is accompanied by appropriate equipment and trained personnel, and we never travel without a support vehicle."
+    , safety2: "→ You are attended by first-aid trained and certified team",
     safety3: "→ We have secured an audited medical emergency plan: global rescue including ambulance and helicopter evacuation if needed to the appropriate hospital"
     , security: "Security for your Bike",
     security1: "→ On each tour, your bike is daily maintained by and experienced KTM mechanic"
@@ -45,9 +45,9 @@ const translations = {
     demanding3: "→ Your trail journey consists of 50 to 60% easy off-road and small roads",
     uniquehead: "4. Unique environment",
     unique1: "→ The reward of long and hard riding days is the discovery of hidden topographical gems or cultural breaks in remote monasteries and temples"
-    , unique2: "→ Join an intimate group of up to 8 riders and enjoy a tailored experience. Our expert tour leader will adjust the pace, riding time, and difficulty level to suit the group's needs, ensuring everyone has an unforgettable adventure."
+    , unique2: "→ agile and always there team : by limiting the participants to max. 8 riders, the guide can easily adapt the pace and the difficulties of the track to the expectations of the group"
     , experiencehead: "5. Experienced Team",
-    experience1: "→ Led by a team with 35+ years of combined expertise in off-road adventures, rest assured you're in skilled hands."
+    experience1: "→ over 18 years experience in inbound tourism with western excellence standards."
     , experience2: "→ beside the Adventure Rides team, a local support team in each and every area crossed for permits, crossing natural sanctuaries, private lands improvise alternate routes in case of sudden natural topographic changes"
     , highhead: "6. High-end lodging",
     high1: "→ after a long-lasting and demanding day, you get a recovery treatment in exceptional accommodation",
@@ -91,8 +91,8 @@ const translations = {
     , about10: "Get ready to rev up your adrenaline and explore the uncharted on our genuine enduro and trail bikes. "
     , about11: "For your ultimate safety, our tours include a dedicated support vehicle with a trained mechanic and medical assistance on board. "
 
-    , about12: "After a grueling day of adventures, our riders enjoy the exceptional accommodations. Only 4 and 5 stars hotels! "
-    , about13: "Embark on memorable odysseys from Himalayan’s high-altitude passes, visiting fascinating centuries old gompas (Tibetan monasteries), to the majestic landscapes of Rajasthan, the land of Maharaja’s. Discover unspoiled nature, incredible wildlife, and encounter rare species while traversing the picturesque Natural Reserves."
+    , about12: " Adventure Rides offers astonishing off-road rides and training in India on a fleet of 10 KTM EXC-F 450 motorbikes."
+    , about13: "The team with a cumulative 35+ years experience in motorcycle tours is the backbone for one-of-a-kind guided enduro tours (min.85% off-road) in India’s natural gems in Rajasthan, in the Himalaya mountains and soon in South India."
 
 
 
@@ -105,9 +105,9 @@ const translations = {
 
 
 
-    about5: "After two decades as a corporate consultant, Philippe traded his suit for a helmet and gloves, and embarked on a new journey of discovery in India. ",
-    about6: "With a passion for off-road adventures and a knack for finding the most impressive trails,Philippe sourced a fleet of KTM motorbikes to share his love of adventure with fellow thrillseekers.",
-    about7: "As seasoned competitor, he also organizes enduro clinics. In 2021, KTM India appointed as Master Trainer to support and develop its Adventure rider’s community program. "
+    about5: "After 20+ years in management consulting, specialised in strategic business development and implementation of corporate processes, Philippe decided to swap his predictable life for adventure. After relocating to India, he bought a fleet of KTM Enduro Rally motorbikes and started to curate unbeaten off-road trails. Adventure Rides was born.",
+    about6: "He organises enduro tours and off-road clinics all over India for motorcycle manufacturers, corporate events and also private training sessions. In 2019, Philippe was appointed by KTM India as Master trainer to support the Adventure activation events.",
+    about7: "Philippe is a seasoned enduro and hard enduro rider. He participated 15 years at the Belgian (FMB), Dutch (KNMV) and French enduro championships (FFM). His best result was 8th in the Belgian championship and hi is a finisher of world's hardest enduro rally, The Redbull Romanians "
 
     , about8: "He rode various solo adventure trips in 25+ countries like in Italy, Spain, Greece, Tunisia, Morocco, South Africa, Russia, India, Mongolia, Uzbekistan, Kazakhstan, Kirgizstan, Belarus, Ukraine, Georgia, Romania, Poland, Bangladesh, …). His bike clocked 0.5 million kilometres in India in 8 years",
 
@@ -138,10 +138,9 @@ const translations = {
     suggest: "SUGGEST US YOUR NEW DESTINATION"
     , diffrently: "Not more of the same We do it differently"
     , media: "MEDIA ARTICLES",
-    safety3: " "
-    , demanding4: " "
+   demanding4: " "
     , raj: "RAJASTHAN"
-    , why: "WHY SHOULD YOU CHOOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?"
+    , why1: "WHY SHOULD YOU CHOOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?"
     , whytitle1: "Your Safety First",
     whytitle2: "Well-Maintained Motorbike",
     whytitle3: "Genuine OFF-ROADS bikes ",
@@ -154,9 +153,11 @@ const translations = {
     whydes4: "Our journeys test your endurance level with a 90% off-road terrain ",
     whydes5: "Our small but tight-knit group of maximum 8 rides per tour, allow for group dynamics ",
     whydes6: "After a grueling day of adventures you can hardly wait to hit the clean sheets in exceptional lodgings ",
+    michael : "Michael",
+    nigel : "Nigel"
   },
   fr: {
-    why: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?",
+    why1: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?",
     whytitle1: "Votre sécurité, notre priorité !",
     whytitle2: "Des motos parfaitement entretenues",
     whytitle3: "De vraies motos tout-terrain ",
@@ -273,16 +274,16 @@ const translations = {
     , about10: "Afin de vous assurer des conditions optimales de sécurité, on prend soin de vous et de votre moto. Une aide médicale ainsi qu’un mécano t’accompagne dans le véhicule d’assistance."
     , about11: "Après une longue journée d’aventure, nos riders reprennent des forces dans des logements d’exception. Uniquement des 4 et 5 étoiles ! Votre voyage est une découverte, pas une compétition. Le guide adapte les difficultés du parcours aux envies du groupe."
 
-    , about12: " "
-    , about13: " "
+    , about12: "Adventure Rides vous emmène découvrir les coins les plus reculés de l’Inde au guidon de KTM EXC-F 450 ou de KTM 390 Adventure. "
+    , about13: "Notre équipe cumulant près de 35 ans d'expérience, est la colonne vertébrale de nos tours exceptionnels avec plus de 85% d’off-road sur les plus belles pistes du Rajasthan aux sommets de l’Himalaya. "
 
 
 
 
 
-    , about3: " ",
+    , about3: "Afin de vous assurer des conditions optimales de sécurité, on prend soin de vous et de votre moto. Une aide médicale ainsi qu’un mécano t’accompagne dans le véhicule d’assistance. ",
 
-    about4: "  "
+    about4: " Après une longue journée d’aventure, nos riders reprennent des forces dans des logements d’exception. Uniquement des 4 et 5 étoiles ! Votre voyage est une découverte, pas une compétition. Le guide adapte les difficultés du parcours aux envies du groupe.  "
     , abouthead: "Qui est Philippe ?",
 
 
@@ -316,7 +317,10 @@ const translations = {
     , about2: "À PROPOS"
     , contact2: "CONTACT"
     , south: "INDE DU SUD",
-    suggest: "VOTRE PROCHAINE ADVENTURE"
+    suggest: "Suggérez-nous une nouvelle destination",
+
+    michel : "Jean-Jacque",
+    nigel : "Nathan",
 
   },
 

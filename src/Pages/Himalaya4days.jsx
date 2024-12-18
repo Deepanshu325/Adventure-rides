@@ -112,7 +112,7 @@ const Himalaya4days = () => {
         className="w-96 md:w-72 m-auto h-0.5 bg-sky-500 mb-12"
         data-aos="fade-right"
       ></div>
-      <div className="w-80 md:w-lg:w-[100vh] mx-auto">
+      <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
         <img src={him10} alt="Himalaya 4 Days" />
       </div>
       <div
@@ -123,9 +123,7 @@ const Himalaya4days = () => {
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
             {t("contactus")}
           </h2>
-          {successMessage && (
-            <p className="text-green-600 text-center mb-4">{successMessage}</p>
-          )}
+         
           <form onSubmit={handleSubmit} className="space-y-4">
             {[
               { label: t("name1"), name: "name", required: true },
@@ -180,6 +178,12 @@ const Himalaya4days = () => {
               {t("download")}
             </button>
           </div>
+
+          {successMessage && (
+            <p className="text-green-600 text-center mt-4">{successMessage}</p>
+          )}
+
+
         </div>
       </div>
 

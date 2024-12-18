@@ -1,121 +1,111 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 import { useLanguage } from "./Languagecontext";
-import testi1 from "../Assets/Images/Testimonials/TESTI1_11zon.png";
-import testi2 from "../Assets/Images/Testimonials/TESTI2.png";
-import testi3 from "../Assets/Images/Testimonials/TESTI3.png";
-import testi4 from "../Assets/Images/Testimonials/TESTI4.jpeg";
-import testi5 from "../Assets/Images/Testimonials/TESTI4 - LAURENT.JPG";
-import testi6 from "../Assets/Images/Testimonials/TESTI9_11zon.jpeg";
-import testiback from "../Assets/Images/Himachal/HIMPIC71.JPG";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import testi1 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 10.17.23 AM.jpeg";
+import testi2 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 9.59.30 AM.jpeg";
+import testi3 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 10.19.55 AM.jpeg";
+import testi4 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 10.26.22 AM.jpeg";
+import testiback from "../Assets/Images/Testimonials/TESTIMONIALS.JPG";
+
+
 
 const Testimonials = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      offset: window,    // Offset (in px) from the original trigger point
-      easing: 'ease-in-out', // Easing function for animations
-      once: true      // Whether animation should happen only once
-    });
-  }, []);
 
-  const { t } = useLanguage();
+  const { t } = useLanguage();    
 
-  const testimonials = [
-    { image: testi1, name: "Michael", address: "New York, USA", text: t("testimonials1"), rating: 5 },
-    { image: testi2, name: "Eva", address: "Berlin, Germany", text: t("testimonials2"), rating: 4 },
-    { image: testi3, name: "John", address: "Sydney, Australia", text: t("testimonials3"), rating: 5 },
-    { image: testi4, name: "Nigel", address: "London, UK", text: t("testimonials4"), rating: 4 },
+
+  const cards = [
+    {
+      img: testi1,
+      name: t("michel"),
+      country: "New York, USA",
+      comment: t("testimonials1"),
+    },
+    {
+      img: testi2,
+      name: "Eva",
+      country: "Berlin, Germany",
+      comment: t("testimonials2"),
+    },
+    {
+      img : testi3,
+      name: "John",
+      country: "Sydney, Australia",
+      comment: t("testimonials3"),
+    },
+    {
+      img: testi4,
+      name: t("nigel"),
+      country: "London, UK",
+      comment: t("testimonials4"),
+    },
+  
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleSlides, setVisibleSlides] = useState(1);
-
-  // Handle screen resizing to adjust visible slides
-  const updateVisibleSlides = () => {
-    if (window.innerWidth < 768) {
-      setVisibleSlides(1); // Mobile: Show 1 slide at a time
-    } else {
-      setVisibleSlides(2); // Desktop: Show 2 slides at a time
-    }
-  };
-
-  useEffect(() => {
-    updateVisibleSlides();
-    window.addEventListener("resize", updateVisibleSlides);
-    return () => window.removeEventListener("resize", updateVisibleSlides);
-  }, []);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % Math.ceil(testimonials.length / visibleSlides));
-  };
-
-  const handleIndicatorClick = (index) => {
-    setCurrentIndex(index);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(handleNext, 5000); // Auto-scroll every 5 seconds
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="flex flex-col md:flex-row w-full max-h-[110vh] ">
-      <div className="relative w-full mx-auto p-4 md:w-[100%] lg:w-[50%]" data-aos="fade-right">
-        <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mb-6">{t("custitle")}</h2>
-        
-        <div className="relative overflow-hidden mx-auto">
-          <div
-            className="flex transition-transform duration-500 gap-4"
-            style={{
-              transform: `translateX(-${currentIndex * (100 / visibleSlides)}%)`,
-            }}
-          >
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-full sm:w-1/2 p-4 bg-orange-500 rounded-lg shadow-md flex flex-col items-center text-center lg:w-[49%]"
-              >
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-24 h-24 md:w-32 md:h-32 lg:w-64 lg:h-60 object-fill rounded-full mb-4"
-                />
-                <div className="flex justify-center mb-3">
-                  {Array.from({ length: 5 }, (_, i) => (
-                    <span key={i} className="text-yellow-400 text-lg">
-                      {i < testimonial.rating ? "★" : "☆"}
-                    </span>
-                  ))}
-                </div>
-                <h3 className="text-lg text-gray-800 font-thin">{testimonial.name}</h3>
-                <p className="text-sm text-gray-700 mb-3 font-thin">{testimonial.address}</p>
-                <p className="text-sm text-white font-thin">{testimonial.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Navigation Dots */}
-        <div className="flex justify-center mt-4">
-          {Array.from({ length: Math.ceil(testimonials.length / visibleSlides) }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => handleIndicatorClick(index)}
-              className={`h-3 w-3 rounded-full mx-2 ${currentIndex === index ? "bg-sky-500" : "bg-gray-300"}`}
-            />
-          ))}
-        </div>
-      </div>
+       <div className="mt-16">
 
-      <div className="hidden lg:block md:w-full lg:w-[50%]" data-aos="fade-left">
+         {/* Title */}
+      <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mb-6 ">
+        {t("custitle")}
+      </h2>
+
+      {/* Background Image */}
+      <div className="lg:block md:w-full" data-aos="fade-left">
         <img
           src={testiback}
           alt="Background"
-          className="md:pt-20 md:h-[70%] lg:h-[90%] max-h-[120vh] w-[100%] object-fill"
+          className="md:pt-1 w-full  pl-[2%] pr-[2%] object-contain "
         />
       </div>
+    <div className="container mx-auto mt-10">
+
+   
+
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 1 }, // Mobile
+          768: { slidesPerView: 2 }, // Tablet
+          1024: { slidesPerView: 4 }, // Desktop
+        }}
+        autoplay={{
+          delay: 3000, // 3 seconds
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        className="w-full"
+      >
+        {cards.map((card, index) => (
+          <SwiperSlide key={index}>
+            <div className="bg-orange-500 rounded-lg shadow-lg p-4 h-fit  flex flex-col justify-between">
+              <img
+                src={card.img}
+                alt={card.name}
+                className="rounded-full  w-full object-cover "
+              />
+              <div className="text-center py-4">
+                <div className="text-yellow-400 text-lg">★★★★★</div>
+                <h3 className="text-lg font-bold text-white">{card.name}</h3>
+                <p className="text-sm text-white">
+                   {card.country}
+                </p>
+                <p className="text-white text-sm mt-2 overflow-hidden">
+                  {card.comment}
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
     </div>
   );
 };
