@@ -1,75 +1,54 @@
+//Descriptioncard.js
 import React from "react";
-import image1 from "../Assets/Home/3. ADV BIKE_1_11zon.jpg";
-import image2 from "../Assets/Home/2. KTM390 ADV ADV PIC_2_11zon.jpg";
-import image3 from "../Assets/Home/2.b Enduro_3_11zon.jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { useLanguage } from "./Languagecontext";
+import singleImage from "../Assets/Home/WhatsApp Image 2024-12-18 at 3.35.28 PM.jpeg"; // Place your single image in the same folder
 
 const Descriptioncard = () => {
-  const { t } = useLanguage();
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      offset: window,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
-
   return (
-    <div className="w-full  lg:flex lg:max-h-[110vh]  ">
-      {/* Left Section */}
-      <div
-        className="sm:w-1/2 max-h-[68vh]  lg:max-h-fit flex flex-col items-center lg:items-end space-y-8 sm:space-y-1"
-        data-aos="fade-right"
-      >
-        <div className="w-fit m-auto ">
-          <img
-            src={image3}
-            alt="image1"
-            className="w-72  h-30 rounded-2xl sm:w-fit sm:h-96 sm:relative sm:left-7 :"
-          />
-        </div>
-
-        <div className="z-20 relative left-32 bottom-20 lg:top-16 -translate-x-12 sm:translate-x-60 lg:-translate-x-44 lg:-translate-y-36">
-          <img
-            src={image1}
-            alt="image2"
-            className=" w-48 sm:w-80 rounded-lg lg:w-80 lg:h-[38vh]"
-          />
-        </div>
-
-        <div className="relative bottom-28 right-20 lg:right-0 sm:bottom-80  lg:-translate-x-80">
-          <img
-            src={image2}
-            alt="image3"
-            className="w-44  lg:w-80 lg:h-[45vh] sm:w-80 relative bottom-28 sm:top-7 rounded-lg "
-          />
-        </div>
+    <div className="flex flex-col md:flex-row p-6 ">
+      {/* Image Section */}
+      <div className="w-full md:w-1/2 h-fit ">
+        <img
+          src={singleImage}
+          alt="Adventure Rides"
+          className=" w-full object-contain h-96  md:h-[90vh] align-top "
+        />
       </div>
 
-      {/* Right Section */}
-      <div
-        className="relative lg:w-1/2 pl-2 mt-4 lg:mt-0  sm:pl-8 sm:pr-8 sm:mb-10 lg:mb-1 space-y-6 "
-        data-aos="fade-left"
-      >
-        <h1 className="text-lg text-sky-500 font-extrabold lg:text-4xl">
-          {t("destitle")}
+      {/* Content Section */}
+      <div className="w-full md:w-1/2 text-gray-700 ">
+        <h1 className="text-3xl md:text-4xl font-bold text-blue-700 mb-8">
+          Welcome to Adventure Rides
         </h1>
-
-        <div className="mt-6">
-          <a className="text-orange-500 text-xl font-extrabold">{t("des1")}</a>
-          <div className="font-semibold  mt-6 text-sm space-y-4">
-            <p>{t("des2")}</p>
-            <p>{t("des3")}</p>
-            <p>{t("des4")}</p>
-            <p>{t("des5")}</p>
-            <p>{t("des6")}</p>
-          </div>
-        </div>
+        <p className="text-lg text-orange-500 mb-8 leading-relaxed w-[90%] text-justify ">
+          <strong className="text-xl">Adventure Rides is the only agency offering off-road
+          tours on genuine enduro motorcycles, the most trusted and valued brand
+          on the market, the KTM EXC-F 450. You can also
+          experience the same thrill in astonishing environments on easy trails
+          and small roads on a less demanding motorbike, the{" "}
+          KTM Adventure 390</strong>.
+        </p>
+        <ul className=" text-lg list-disc list-inside space-y-4 text-gray-600 w-[90%] text-justify">
+          <li>
+            Ride unbeaten off-road tracks in breathtaking nature from desert
+            dunes to highest mountain peaks.
+          </li>
+          <li>
+            Rely on 35+ years of experience in enduro riding and rallying across
+            3 continents.
+          </li>
+          <li>
+            Enjoy your unique adventure safely backed by a team with 18 years of
+            on-the-ground support.
+          </li>
+          <li>
+            Increase your dirt-ride abilities with professional trainers and
+            off-road riding courses.
+          </li>
+          <li>
+            Experience being pampered in gold standard lodging located in
+            ultimate scenic areas.
+          </li>
+        </ul>
       </div>
     </div>
   );

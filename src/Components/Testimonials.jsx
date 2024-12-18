@@ -48,7 +48,7 @@ const Testimonials = () => {
 
   return (
 
-       <div className="mt-16">
+       <div className="mt-6 mb-4 md:mt-10">
 
          {/* Title */}
       <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mb-6 ">

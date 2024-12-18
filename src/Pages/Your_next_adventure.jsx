@@ -17,12 +17,6 @@ import map2 from '../Assets/Images/Himachal/Himachalmap4days.png'
 import map3 from "../Assets/Images/Rajasthan/RajasthanMap.jpeg"
 
 const Your_next_adventure = () => {
-    
-  
-
-
-
-
 
   useEffect(() => {
     AOS.init({
