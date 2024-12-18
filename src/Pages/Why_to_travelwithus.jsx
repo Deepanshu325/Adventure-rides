@@ -20,6 +20,7 @@ import image16 from "../Assets/Home/7.f Luxury hotels (1).png"
 import image17 from "../Assets/Home/7.g Luxury hotels (1).jpg"
 import image18 from "../Assets/Home/7.i Luxury hotels (1).jpeg"
 import image19 from "../Assets/Home/7.j Luxury hotels (1).jpg"
+import img from "../Assets/Home/WhatsApp Image 2024-12-18 at 6.22.22 PM.jpeg"
 
 
 import image6 from "../Assets/Home/7.j Luxury hotels_15_11zon.jpg";
@@ -45,6 +46,10 @@ const Why_to_travelwithus = () => {
       
       <div className="w-full px-4 md:px-16 mt-12 space-y-10">
       <p className="text-center font-bold text-3xl">{t("diffrently")}</p>
+
+
+
+      <img src={img} alt="" />
         <Md_card
           image={image1}
           mainheading={t("safetyhead")}

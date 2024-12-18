@@ -9,7 +9,7 @@ import testi1 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 1
 import testi2 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 9.59.30 AM.jpeg";
 import testi3 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 10.19.55 AM.jpeg";
 import testi4 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 10.26.22 AM.jpeg";
-import testiback from "../Assets/Images/Testimonials/TESTIMONIALS.JPG";
+import testiback from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 3.48.22 PM.jpeg";
 
 
 
@@ -21,7 +21,7 @@ const Testimonials = () => {
   const cards = [
     {
       img: testi1,
-      name: t("michel"),
+      name: t("michael"),
       country: "New York, USA",
       comment: t("testimonials1"),
     },
@@ -85,19 +85,19 @@ const Testimonials = () => {
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-orange-500 rounded-lg shadow-lg p-4 h-fit  flex flex-col justify-between">
+            <div className="bg-orange-500 rounded-lg shadow-lg p-14 h-[85vh] lg:h-[92vh] flex flex-col ">
               <img
                 src={card.img}
                 alt={card.name}
                 className="rounded-full  w-full object-cover "
               />
-              <div className="text-center py-4">
+              <div className="text-center pt-4 font-">
                 <div className="text-yellow-400 text-lg">★★★★★</div>
                 <h3 className="text-lg font-bold text-white">{card.name}</h3>
                 <p className="text-sm text-white">
                    {card.country}
                 </p>
-                <p className="text-white text-sm mt-2 overflow-hidden">
+                <p className="text-white text-sm mt-2 overflow-hidden text-justify">
                   {card.comment}
                 </p>
               </div>

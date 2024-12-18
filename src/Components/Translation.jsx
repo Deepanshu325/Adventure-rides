@@ -13,7 +13,7 @@ const translations = {
     , des6: "‣ Experience being pampered in gold standard lodging located in ultimate scenic areas"
     , choose: "WHY SHOULD YOU CHOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?"
     , custitle: "What Adventure riders have to say..."
-    , testimonials1: "Philippe takes us through stunning landscapes. We ride through places where no motorcycle has ever been. It's a dazzling journey!"
+    , testimonials1: "Philippe takes us through stunning landscapes. We ride through places where no motorcycle has ever been. It's a dazzling journey!             "
     , testimonials2: "The route is intense and extremely varied. At times we ride on wide highmountain tracks, then small hiking trails, dry river beds, through alpine and lunar landscapes. Truly a breathtaking ride"
     , testimonials3: "The first thing I remember about this trip is the incredible palette of colours. High-altitude lakes ranging from deep blue to emerald green. The deep-blue sky contrasts with the infinite browns, beiges and greys of the mountains. Then there's the thrill of riding the world's summits. Free-flying still exists. It's out there!"
     , testimonials4: "I was a little apprehensive before we set off because of the altitude but our guide adapted the pace and difficulty of the ride to the capabilities and fatigue of the participants throughout the trip. It's really reassuring to set off with an organization that knows these remote places inside out."
@@ -319,7 +319,7 @@ const translations = {
     , south: "INDE DU SUD",
     suggest: "Suggérez-nous une nouvelle destination",
 
-    michel : "Jean-Jacque",
+    michael : "Jean-Jacque",
     nigel : "Nathan",
 
   },
