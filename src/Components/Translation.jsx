@@ -264,7 +264,7 @@ const translations = {
 
     beast3: "L’autre, la KTM Adventure vous emmène dans les mêmes cadres exceptionnels sur une moto très polyvalente. A l’aise sur des pistes roulantes, du tout-terrain moyennement exigeant et des petites routes, elle convient à la majorité des aventuriers qui ne sont pas à la recherche du côté sportif de nos voyages."
 
-    , aboutus: "ABOUT",
+    , aboutus: "À PROPOS",
 
 
 

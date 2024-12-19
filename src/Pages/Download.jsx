@@ -112,7 +112,7 @@ const Download = () => {
       ></div>
 
       <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
-        <img src={contact} alt="Contact Us" />
+        <img src={contact} alt="Contact Us" className="rounded-2xl" />
       </div>
 
       <div

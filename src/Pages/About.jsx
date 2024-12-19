@@ -30,7 +30,7 @@ const About = () => {
       <div className=' mt-10 w-28 md:w-60 m-auto h-0.5 bg-sky-500 mb-1' data-aos="fade-left"></div>
       <div className=' w-40 md:w-96 m-auto h-0.5 bg-sky-500 mb-12' data-aos="fade-right"></div>
       <div className='w-full '>
-      <img src={ktm} alt="" className='mx-auto h-72 lg:h-[90vh]lg:w-[150vh]' data-aos="fade-right"/>
+      <img src={ktm} alt="" className='mx-auto h-72 lg:h-[90vh]lg:w-[150vh] rounded-2xl' data-aos="fade-right"/>
       </div>
 
        <div className='mx-auto text-justify w-72 mt-8 lg:w-[150vh]'>
