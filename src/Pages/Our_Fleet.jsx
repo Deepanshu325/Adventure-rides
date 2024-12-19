@@ -36,7 +36,7 @@ const Our_Fleet = () => {
           </div> 
           
 
-      <h1 className="text-center mt-1 mb-6 text-gray-500 text-2xl md:text-5xl md:mb-1" data-aos="fade-down">The KTM EXC-F 450 </h1>
+      <h1 className="text-center mt-1 mb-6 text-gray-500 text-2xl md:text-5xl md:mb-1" data-aos="fade-down">{t("ktm450")} </h1>
       <div className='w-full md:flex md:mt-14'>
         <div className='md:w-1/2'>
         <img src={ktm} alt="" className='w-full h-96  object-contain ' data-aos="fade-right" />

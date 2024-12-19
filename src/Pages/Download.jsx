@@ -111,7 +111,7 @@ const Download = () => {
         data-aos="fade-right"
       ></div>
 
-      <div className="w-80 md:w- lg:w-[100vh] mx-auto">
+      <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
         <img src={contact} alt="Contact Us" />
       </div>
 

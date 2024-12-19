@@ -52,7 +52,7 @@ const Adventurecard = (props) => {
 
         {/* Button Section */}
         <div className="p-4 text-center">
-      <Link to={props.link} target="_blank">   <button className="px-6 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition duration-200">
+      <Link to={props.link} >   <button className="px-6 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition duration-200">
             {t("moreinfo")}
           </button> </Link> 
         </div>

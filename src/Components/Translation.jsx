@@ -154,7 +154,8 @@ const translations = {
     whydes5: "Our small but tight-knit group of maximum 8 rides per tour, allow for group dynamics ",
     whydes6: "After a grueling day of adventures you can hardly wait to hit the clean sheets in exceptional lodgings ",
     michael : "Michael",
-    nigel : "Nigel"
+    nigel : "Nigel",
+    ktm450 : "The KTM EXC-F 450 or the KTM 390 Adventure"
   },
   fr: {
     why1: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?",
@@ -190,9 +191,9 @@ const translations = {
     , choose: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?"
     , custitle: "Ce que nos riders vous témoignent…"
     , testimonials1: "Philippe nous emmène dans des paysages à couper le souffle. On passe dans des endroits où aucune moto n’y a mis ses roues. Ce voyage est éblouissant"
-    , testimonials2: "Le parcours intense, est extrêmement varié. On roule parfois sur de larges pistes en haute montagne, puis de peCts chemins de randonnée, des lits rivières asséchées, à travers de paysages alpin et d’autres lunaire. Vraiment une virée à couper le souffle."
-    , testimonials3: "En premier, je reCens de ce voyage une paleqe de couleurs inouïes. Des lacsen haute alCtude passant du bleu foncé au vert émeraude. Le ciel, bleu profond contrastant avec une infinie de couleur brune, beige et grise des montagnes. Ensuite, rouler sur les sommets du monde, c’est parCculièrement jouissif. Le free-ride existe encore. C’est là-bas, en Inde !"
-    , testimonials4: "“Un peu crainCf avant le départ à cause de l’alCtude, notre guide a tout au long du voyage adapté le rythme et la difficulté du raid au niveau et à la faCgue des parCcipants. C’est vraiment sécurisant de parCr avec une organisaCon qui connaît bien ces endroits reculés."
+    , testimonials2: "Le parcours intense, est extrêmement varié. On roule parfois sur de larges pistes en haute montagne, puis de petits chemins de randonnée, des lits rivières asséchées, à travers de paysages alpin et d’autres lunaire. Vraiment une virée à couper le souffle."
+    , testimonials3: "En premier, je retiens de ce voyage une paleqe de couleurs inouïes. Des lacs en haute altitude passant du bleu foncé au vert émeraude. Le ciel, bleu profond contrastant avec une infinie de couleur brune, beige et grise des montagnes. Ensuite, rouler sur les sommets du monde, c’est particulièrement jouissif. Le free-ride existe encore. C’est là-bas, en Inde !"
+    , testimonials4: "“Un peu crainCf avant le départ à cause de l’altitude, notre guide a tout au long du voyage adapté le rythme et la difficulté du raid au niveau et à la fatigue des participants. C’est vraiment sécurisant de partir avec une organisation qui connaît bien ces endroits reculés."
     , magazine: "La presse nous dévoile:"
     , about: "À propos"
     , aboutdes: "Adventure Rides est la seule agence proposant des circuits tout-terrain sur de véritables motos d'enduro, la marque la plus fiable et la plus appréciée du marché, la KTM EXC-F 450."
@@ -206,9 +207,9 @@ const translations = {
     safety1: "→  Sur chaque tour, une aide médicale vous accompagne dans le véhicule d’assistance avec tout le kit médical d’urgence. "
     , safety2: "→ Cet ange gardien est habilité à intervenir dans toutes les situations de médecine d’urgence et spécifiquement pour les risques liés à la pratique moto. ",
     safety3: "→ Nous avons aussi mis en place un plan d’urgence pour chaque tour afin de prévoir l’imprévisible y compris une éventuelle évacuation par héliportée sur certaines destinations."
-
+     
     , security: "Votre sécurité grâce à l’entretien de votre moto",
-    security1: " Dans ce véhicule d’assistance, un mécanicien KTM vous suit pendant out le trajet afin de vous assurer une moto parfaitement entretenue"
+    security1: " Dans ce véhicule d’assistance, un mécanicien KTM vous suit pendant tout le trajet afin de vous assurer une moto parfaitement entretenue"
     , security2: "→ Il emporte toutes les pièces détachées et les kits de réparation pour garantir une moto au top, garantie de votre sécurité. ",
     security3: "→ Nous transportons non seulement vos bagages mais également une moto de rechange par groupe si le temps de réparation s’avère trop long."
 
@@ -313,7 +314,7 @@ const translations = {
     , nextadv: " VOTRE PROCHAINE AVENTURE "
     , ourfleet: "NOS MOTOS"
     , blog: "BLOG"
-    , gallery: "GALERIE"
+    , gallery: "GALLERIE"
     , about2: "À PROPOS"
     , contact2: "CONTACT"
     , south: "INDE DU SUD",
@@ -321,6 +322,7 @@ const translations = {
 
     michael : "Jean-Jacque",
     nigel : "Nathan",
+    ktm450 : "La KTM EXC-F 450 ou la KTM 390 Adventure"
 
   },
 
