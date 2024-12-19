@@ -7,7 +7,7 @@ const Card = (props) => {
       <div className="w-full bg-gray-100 p-4 md:col-span-2">
         <h2 className="text-xl font-bold mb-2">{props.mainheading}</h2>
         
-        <div className="mt-4 text-black font-semibold pl-4 space-y-4">
+        <div className="mt-4 text-black  text-lg font-semibold pl-4 space-y-4">
           <p>{props.point1}</p>
           <p>{props.point2}</p>
           <p>

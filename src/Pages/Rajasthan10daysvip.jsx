@@ -3,7 +3,7 @@ import Footer from "../Components/Footer.jsx";
 import { useLanguage } from "../Components/Languagecontext.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import raj10 from "../Assets/Images/Rajasthan/16. RAJ 10D DownL Page (1)_11zon.jpeg";
+import raj10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 2.01.25 PM (1).jpeg";
 
 const Rajasthan10daysvip = () => {
   useEffect(() => {

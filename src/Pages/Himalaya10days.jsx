@@ -3,7 +3,7 @@ import Footer from "../Components/Footer.jsx";
 import { useLanguage } from "../Components/Languagecontext.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import him10 from "../Assets/Images/Himachal/10. HIM 10d DownL Page_19_11zon.jpeg";
+import him10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 1.58.38 PM.jpeg";
 
 const Himalaya10days = () => {
   useEffect(() => {

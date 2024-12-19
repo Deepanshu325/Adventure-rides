@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../Components/Footer.jsx";
-import contact from "../Assets/Home/19. Contact US (1)_11zon.jpg";
+import contact from "../Assets/Home/WhatsApp Image 2024-12-19 at 1.47.42 PM (1).jpeg";
 import { useLanguage } from "../Components/Languagecontext.js";
 import AOS from "aos";
 import "aos/dist/aos.css";

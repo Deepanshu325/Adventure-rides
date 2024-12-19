@@ -112,31 +112,31 @@ const Why_to_travelwithus = () => {
         <div className="grid grid-col-1 md:grid-cols-2   lg:grid-cols-3 lg:grid-rows-3  h-fit gap-2">
          
          <div>
-          <img src={image11} alt="" className="h-60 w-full" />
+          <img src={image11} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image12} alt="" className="h-60 w-full" />
+          <img src={image12} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image13} alt="" className="h-60 w-full" />
+          <img src={image13} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image14} alt="" className="h-60 w-full" />
+          <img src={image14} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image15} alt="" className="h-60 w-full" />
+          <img src={image15} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image16} alt="" className="h-60 w-full" />
+          <img src={image16} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image17} alt="" className="h-60 w-full" />
+          <img src={image17} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image18} alt="" className="h-60 w-full" />
+          <img src={image18} alt="" className="h-60 w-full rounded-xl" />
          </div>
          <div>
-          <img src={image19} alt="" className="h-60 w-full" />
+          <img src={image19} alt="" className="h-60 w-full rounded-xl" />
          </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import Himalaya from '../Assets/Images/Himachal/9.HIM 10 (1).JPG'
 import him4 from "../Assets/Images/Himachal/11. HIM 4D (2).jpeg"
 import Adventurecard from '../Components/Adventurecard'
 import Goa from '../Assets/Home/Goa.webp'
-import Rajasthan from '../Assets/Home/13. RAJ VIP 10_1_11zon.jpg'
+import Rajasthan from '../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (1).jpeg'
 import Rajasthanvip from '../Assets/Images/Rajasthan/15. RAJ 10  (1).jpeg'
 import { useLanguage } from '../Components/Languagecontext'
 import AOS from 'aos';
@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react'
 import map1 from '../Assets/Images/Himachal/Himachalmap10days.png'
 import map2 from '../Assets/Images/Himachal/Himachalmap4days.png'
-import map3 from "../Assets/Images/Rajasthan/RajasthanMap.jpeg"
+import map3 from "../Assets/Images/Rajasthan/rajmap.png"
 
 const Your_next_adventure = () => {
 
@@ -41,13 +41,13 @@ const Your_next_adventure = () => {
         <div className=' w-full md:pl-20 md:pr-20' data-aos="fade-down">
        <a className='  font-extrabold text-lg'>{t("advhead")}</a>
        <div className='font-thin   mt-3'>
-       <p className='font-thin text-justify pb-5'>{t("adv1")}</p>
-       <p className='font-thin text-justify '>{t("adv2")}</p>
+       <p className='font-semibold text-justify pb-5'>{t("adv1")}</p>
+       <p className='font-semibold text-justify '>{t("adv2")}</p>
 
        <div className="w-full mb-16 bg-orange-500 h-0.5 mt-12"></div>
 
 
-       <h1 className='font-thin text-justify  text-lg md:pb-16'>{t("advhead2")}</h1>
+       <h1 className='font-semibold text-justify  text-lg md:pb-16'>{t("advhead2")}</h1>
        <div className="w-full md:flex ">
             <div className="md:w-1/2"
         >
@@ -59,7 +59,7 @@ const Your_next_adventure = () => {
             </div>
        </div>
        
-       <p className='font-thin pt-16 text-justify   text-lg' data-aos="fade-down">{t("advdes")}
+       <p className='font-semibold pt-16 text-justify   text-lg' data-aos="fade-down">{t("advdes")}
 </p>
        </div>
        <div data-aos="fade-in">

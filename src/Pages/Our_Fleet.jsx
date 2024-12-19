@@ -6,8 +6,8 @@ import { useLanguage } from '../Components/Languagecontext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
-import ktm from "../Assets/Home/8.a Enduro_16_11zon.jpg"
-import ktm2 from "../Assets/Home/8b Trail_17_11zon.jpg"
+import ktm from "../Assets/Home/WhatsApp Image 2024-12-19 at 1.41.37 PM.jpeg"
+import ktm2 from "../Assets/Home/WhatsApp Image 2024-12-19 at 1.41.56 PM.jpeg"
 
 const Our_Fleet = () => {
   useEffect(() => {
@@ -39,10 +39,10 @@ const Our_Fleet = () => {
       <h1 className="text-center mt-1 mb-6 text-gray-500 text-2xl md:text-5xl md:mb-1" data-aos="fade-down">The KTM EXC-F 450 </h1>
       <div className='w-full md:flex md:mt-14'>
         <div className='md:w-1/2'>
-        <img src={ktm} alt="" className='w-full h-96  ' data-aos="fade-right" />
+        <img src={ktm} alt="" className='w-full h-96  object-contain ' data-aos="fade-right" />
         </div>
         <div className='md:w-1/2'>
-        <img src={ktm2} alt="" className='w-full h-96   md:pb-2 ' data-aos="fade-right" />
+        <img src={ktm2} alt="" className='w-full h-96   md:pb-2 object-contain ' data-aos="fade-left" />
         </div>
       </div>
        

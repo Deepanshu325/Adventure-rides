@@ -1,5 +1,5 @@
 import React from 'react'
-import ktm from '../Assets/Home/17.About Us_3_11zon.jpeg'
+import ktm from '../Assets/Home/WhatsApp Image 2024-12-19 at 1.47.42 PM.jpeg'
 import Footer from '../Components/Footer'
 import { useLanguage } from '../Components/Languagecontext'
 import img from "../Assets/Home/about.png"
