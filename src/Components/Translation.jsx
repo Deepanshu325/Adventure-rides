@@ -197,7 +197,7 @@ const translations = {
     , magazine: "La presse nous dévoile:"
     , about: "À propos"
     , aboutdes: "Adventure Rides est la seule agence proposant des circuits tout-terrain sur de véritables motos d'enduro, la marque la plus fiable et la plus appréciée du marché, la KTM EXC-F 450."
-    , letsconnect: "Contact"
+    , letsconnect: "Contactez-nous"
     , contact: "Contactez-nous"
     , contactdetail: "Contactez-nous"
     , follow: "Suivez-nous sur"
@@ -296,7 +296,7 @@ const translations = {
 
 
     contacthead: "Téléchargez votre programme détaillé",
-    contactus: "Contact",
+    contactus: "Contactez-nous",
     name1: "Prenom",
     surname: "Nom",
     email: "E-mail",
