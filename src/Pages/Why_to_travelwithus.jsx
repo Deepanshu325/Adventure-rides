@@ -3,13 +3,13 @@ import Testimonials from "../Components/Testimonials";
 import Md_card from "../Components/Md_card";
 import Footer from "../Components/Footer";
 import { useLanguage } from "../Components/Languagecontext";
-import image1 from "../Assets/Images/Himachal/PICHIM25_11zon_11zon.jpeg";
-import image2 from "../Assets/Home/3. ADV BIKE_1_11zon.jpg";
-import image3 from "../Assets/Images/Himachal/PICHIM11.jpg";
-import image4 from "../Assets/Home/4. KTM EXC_7_11zon.jpg";
-import image9 from "../Assets/Home/5.a Team_8_11zon.jpg";
-import  image10 from "../Assets/Home/5.b Team_4_11zon.png"
-import image5 from "../Assets/Home/6b. Small Group Trail_5_11zon.jpg"
+import image1 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.45.31 AM.jpeg";
+import image2 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.24 AM.jpeg";
+import image3 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM.jpeg";
+import image4 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.11 AM.jpeg";
+import image9 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (4).jpeg";
+import  image10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (3).jpeg"
+import image5 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (2).jpeg"
 import image8 from "../Assets/Home/15. RAJ 10 _5_11zon.jpeg"
 import image11 from "../Assets/Home/7.a Luxury hotels (1).jpg"
 import image12 from "../Assets/Home/7.b Luxury hotels (1).jpg"
@@ -20,11 +20,9 @@ import image16 from "../Assets/Home/7.f Luxury hotels (1).png"
 import image17 from "../Assets/Home/7.g Luxury hotels (1).jpg"
 import image18 from "../Assets/Home/7.i Luxury hotels (1).jpeg"
 import image19 from "../Assets/Home/7.j Luxury hotels (1).jpg"
-import img from "../Assets/Home/WhatsApp Image 2024-12-18 at 6.22.22 PM.jpeg"
+import Card from "../Components/Card";
 
-
-import image6 from "../Assets/Home/7.j Luxury hotels_15_11zon.jpg";
-import image7 from "../Assets/Home/13. RAJ VIP 10_1_11zon.jpg"
+import image7 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (1).jpeg"
 
 const Why_to_travelwithus = () => {
   const { t } = useLanguage();
@@ -49,7 +47,9 @@ const Why_to_travelwithus = () => {
 
 
 
-      <img src={img} alt="" />
+
+    
+
         <Md_card
           image={image1}
           mainheading={t("safetyhead")}
@@ -63,9 +63,9 @@ const Why_to_travelwithus = () => {
           text3={t("security3")}
         />
 
-        <Md_card
-          image1 = {image2}
-          image2={image4}
+        <Card
+          img1 = {image2}
+          img2={image4}
           mainheading={t("genuinehead")}
           point1={t("genuine1")}
           point2={t("genuine2")}
@@ -73,9 +73,9 @@ const Why_to_travelwithus = () => {
           text1 ={t("genuine4")}
         />
 
-        <Md_card
-         image1={image3}
-         image2={image7}
+        <Card
+         img1={image3}
+         img2={image7}
           mainheading={t("demandinghead")}
           point1={t("demanding1")}
 
@@ -84,24 +84,24 @@ const Why_to_travelwithus = () => {
           text1={t("demanding3")}
         />
 
-        <Md_card
-          image1={image5}
-          image2={image10}
+        <Card
+          img1={image5}
+          img2={image10}
           mainheading={t("uniquehead")}
           point1={t("unique1")}
           point2={t("unique2")}
           
         />
 
-        <Md_card
-          image1={image9}
-          image2={image10}
+        <Card
+          img1={image9}
+          img2={image10}
           mainheading={t("experiencehead")}
           point1={t("experience1")}
           point2={t("experience2")}
         />
 
-        <Md_card
+        <Card
       
           mainheading={t("highhead")}
           point1={t("high1")}

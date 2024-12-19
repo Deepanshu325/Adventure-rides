@@ -14,16 +14,16 @@ const Md_card = (props) => {
 
   return (
     <>
-      <div className="w-full lg:flex overflow-hidden">
+      <div className="w-full overflow-hidden lg:flex">
         {/* Content Section */}
-        <div className="w-full lg:w-1/2 md:max-w-5xl mt-1 md:min-h-fit" data-aos="fade-down">
+        <div className="w-full lg:w-1/2 md:max-w-5xl mt-1 md:min-h-fit " data-aos="fade-down">
           {props.mainheading && (
             <a className="text-lg font-extrabold pl-2">{props.mainheading}</a>
           )}
 
           {/* Section 1 */}
           {(props.heading1 || props.point1 || props.point2 || props.point3) && (
-            <div className="w-auto pl-14 mt-7">
+            <div className="w-auto pl-6 mt-7">
               {props.heading1 && (
                 <h2 className="font-extrabold text-lg text-sky-600">
                   {props.heading1}
@@ -45,7 +45,7 @@ const Md_card = (props) => {
 
           {/* Section 2 */}
           {(props.heading2 || props.text1 || props.text2 || props.text3) && (
-            <div className="w-auto pl-14 mt-7">
+            <div className="w-auto pl-6 mt-7">
               {props.heading2 && (
                 <h2 className="font-extrabold text-lg text-sky-600">
                   {props.heading2}
@@ -68,34 +68,44 @@ const Md_card = (props) => {
 
         {/* Image Section */}
         {props.image && (
-          <div className="h-fit lg:w-1/2 w-full content-center " data-aos="fade-right">
+          <div className="h-fit lg:w-1/2 w-full content-center mt-4  " data-aos="fade-right">
+
             <img
               src={props.image}
               alt={props.alt || ""}
-              className="md:rounded-2xl  object-cover h-64 md:h-fit lg:h-fit mx-auto"
+              className="rounded-2xl   object-contain mx-auto"
             />
           </div>
         )}
+      </div>
 
-        {(props.image1 || props.image2) && (
-          <div className="h-fit lg:w-1/2 w-full content-center  " data-aos="fade-right">
+      {(props.image1 || props.image2) && (
+        <div className="h-fit lg:w-full w-full content-center lg:flex lg:flex-wrap border border-black " data-aos="fade-right">
+          <div className="lg:w-1/2">
             {props.image1 && (
+
               <img
                 src={props.image1}
                 alt={props.alt1 || ""}
-                className="pb-2 md:rounded-2xl  h-64 md:h-96 lg:h-3/2 lg:w-[80%] mx-auto"
+                className="pb-2 md:rounded-2xl  h-64 md:h-96 lg:h-[70vh] lg:w-[100%] object-contain mx-auto"
               />
+
             )}
+          </div>
+
+          <div className="lg:w-1/2">
             {props.image2 && (
+
               <img
                 src={props.image2}
                 alt={props.alt2 || ""}
-                className=" pb-2 md:rounded-2xl md:mt-16 h-64 md:h-96 lg:h-3/2 lg:w-[80%] mx-auto"
+                className=" pb-2 md:rounded-2xl  h-64 md:h-96 lg:h-[70vh] lg:w-[100%] object-contain mx-auto"
               />
+
             )}
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       <div className="w-full md:w-full bg-orange-500 h-0.5 mt-1"></div>
     </>
