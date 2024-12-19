@@ -24,7 +24,7 @@ const About = () => {
 
     <>
     <div className='w-full overflow-hidden'>
-     <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl">
+     <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl uppercase">
         {t("aboutus")}
       </p>
       <div className=' mt-10 w-28 md:w-60 m-auto h-0.5 bg-sky-500 mb-1' data-aos="fade-left"></div>

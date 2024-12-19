@@ -55,7 +55,7 @@ const Our_Fleet = () => {
 <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{t("beast3")}</p>
       </div>
       <div className='w-full' data-aos="fade-up">
-        <img src={fleetposter} alt="" className='mx-auto md:h-96' />
+        <img src={fleetposter} alt="" className='mx-auto md:h-96 rounded-2xl' />
       </div>
       <div className='mt-32'>
         <Footer/>

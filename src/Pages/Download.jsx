@@ -99,7 +99,7 @@ const Download = () => {
 
   return (
     <>
-      <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl">
+      <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl uppercase">
         {t("contactus")}
       </p>
       <div
