@@ -290,9 +290,9 @@ const translations = {
 
     about5: "Après 20 ans de conseils en entreprise, Philippe décida de troquer sa vie professionnelle prévisible pour l’aventure. Il déménagea en Inde, importa des KTM EXC-F Enduro et se mit à découvrir des parcours de tout-terrain à couper le souffle. ",
     about6: "Adventure Rides est né !",
-    about7: "l organise des tours enduros et des formations en tout-terrain. En 2021, il est nommé Master trainer pour développer le programme de KTM Inde sur les modèles “Adventure“"
+    about7: "ll organise des tours enduros et des formations en tout-terrain. En 2021, il est nommé Master trainer pour développer le programme de KTM Inde sur les modèles “Adventure“"
 
-    , about8: "a réalisé plusieurs voyages d'aventure en solitaire dans plus de 25 pays (Italie, Espagne,mGrèce, Tunisie, Maroc, Afrique du Sud, Russie, Inde, Mongolie, Ouzbékistan, Kazakhstan, Kirgizstan, Biélorussie, Ukraine, Géorgie, Roumanie, Pologne, Bangladesh, ...). A moto, il a déjà cumulé plus de 0,5 million de kilomètres en Inde en 8 ans».",
+    , about8: "ll a réalisé plusieurs voyages d'aventure en solitaire dans plus de 25 pays (Italie, Espagne, Grèce, Tunisie, Maroc, Afrique du Sud, Russie, Inde, Mongolie, Ouzbékistan, Kazakhstan, Kirgizstan, Biélorussie, Ukraine, Géorgie, Roumanie, Pologne, Bangladesh, ...). A moto, il a déjà cumulé plus de 0,5 million de kilomètres en Inde en 8 ans».",
 
 
     contacthead: "Téléchargez votre programme détaillé",

@@ -29,8 +29,8 @@ const About = () => {
       </p>
       <div className=' mt-10 w-28 md:w-60 m-auto h-0.5 bg-sky-500 mb-1' data-aos="fade-left"></div>
       <div className=' w-40 md:w-96 m-auto h-0.5 bg-sky-500 mb-12' data-aos="fade-right"></div>
-      <div className='w-full '>
-      <img src={ktm} alt="" className='mx-auto h-72 lg:h-[90vh]lg:w-[150vh] rounded-2xl' data-aos="fade-right"/>
+      <div className=' w-80 md:w-[35%] lg:w-[40%]  mx-auto '>
+      <img src={ktm} alt="" className='mx-auto  rounded-2xl' data-aos="fade-right"/>
       </div>
 
        <div className='mx-auto text-justify w-72 mt-8 lg:w-[150vh]'>
@@ -52,7 +52,7 @@ const About = () => {
            <p className='pb-8' data-aos="fade-right">{t("about5")}</p>
 <p className='pb-8'data-aos="fade-right">{t("about6")}</p>
 
-<p className='pb-8' data-aos="fade-right">{t("about7")} <a href="https://www.redbullromaniacs.com">https://www.redbullromaniacs.com</a></p>
+<p className='pb-8' data-aos="fade-right">{t("about7")} </p>
 
 <p className='pb-8' data-aos="fade-right">{t("about8")}</p>
           </div> 
