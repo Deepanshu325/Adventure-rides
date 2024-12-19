@@ -112,7 +112,7 @@ const Rajasthan10days = () => {
         className="w-96 md:w-72 m-auto h-0.5 bg-sky-500 mb-12"
         data-aos="fade-right"
       ></div>
-      <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
+      <div className="w-80 md:w-[35%] lg:w-[30%] mx-auto">
         <img src={raj10} alt="Rajasthan 10 Days" className="rounded-2xl" />
       </div>
 
