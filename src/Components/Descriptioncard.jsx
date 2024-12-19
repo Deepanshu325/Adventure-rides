@@ -6,13 +6,13 @@ import { useLanguage } from "./Languagecontext";
 const Descriptioncard = () => {
  const {t} = useLanguage();
   return (
-    <div className="flex flex-col md:flex-row p-6 ">
+    <div className="flex flex-col md:flex-row p-6  ">
       {/* Image Section */}
-      <div className="w-full md:w-1/2 h-fit ">
+      <div className="w-full md:w-1/2 h-full ">
         <img
           src={singleImage}
           alt="Adventure Rides"
-          className=" w-full object-contain h-96  md:h-[90vh] align-top "
+          className=" w-full object-contain h-full  align-top "
         />
       </div>
 

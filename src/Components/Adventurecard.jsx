@@ -20,12 +20,12 @@ const Adventurecard = (props) => {
   return (
     <div className="max-w-5xl mx-auto p-4 mt-10">
       {/* Card Container */}
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden " data-aos="fade-up">
+      <div className="bg-white rounded-2xl shadow-lg overflow-hidden " data-aos="fade-up">
         {/* Image at the top */}
         <img
           src={props.image} 
           alt="Himalayan Adventure"
-          className="w-full h-60  md:h-[90vh] md:w-full object-cover border"
+          className="w-full h-60  md:h-[120vh] md:w-full object-fill border"
         />
 
         {/* Content Section */}

@@ -10,7 +10,7 @@ import image4 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.11 AM.jpeg
 import image9 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (4).jpeg";
 import  image10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (3).jpeg"
 import image5 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (2).jpeg"
-import image8 from "../Assets/Home/15. RAJ 10 _5_11zon.jpeg"
+import image8 from "../Assets/Home/WhatsApp Image 2024-12-19 at 2.51.20 PM (1).jpeg"
 import image11 from "../Assets/Home/7.a Luxury hotels (1).jpg"
 import image12 from "../Assets/Home/7.b Luxury hotels (1).jpg"
 import image13 from "../Assets/Home/7.c Luxury hotels (1).jpg"
@@ -86,7 +86,7 @@ const Why_to_travelwithus = () => {
 
         <Card
           img1={image5}
-          img2={image10}
+          img2={image8}
           mainheading={t("uniquehead")}
           point1={t("unique1")}
           point2={t("unique2")}

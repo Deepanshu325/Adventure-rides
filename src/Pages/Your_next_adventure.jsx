@@ -1,13 +1,14 @@
 import React from 'react'
-import ktmfleet from '../Assets/Home/8.a Enduro_16_11zon.jpg'
-import ktmfleet2 from "../Assets/Home/8b Trail_17_11zon.jpg"
+import ktmfleet from "../Assets/Home/WhatsApp Image 2024-12-19 at 1.41.37 PM.jpeg"
+import ktmfleet2 from "../Assets/Home/WhatsApp Image 2024-12-19 at 1.41.56 PM.jpeg"
+
 import Footer from '../Components/Footer'
-import Himalaya from '../Assets/Images/Himachal/9.HIM 10 (1).JPG'
-import him4 from "../Assets/Images/Himachal/11. HIM 4D (2).jpeg"
+import Himalaya from '../Assets/Images/Himachal/WhatsApp Image 2024-12-19 at 2.46.05 PM (1).jpeg'
+import him4 from "../Assets/Images/Himachal/WhatsApp Image 2024-12-19 at 2.46.05 PM.jpeg"
 import Adventurecard from '../Components/Adventurecard'
 import Goa from '../Assets/Home/Goa.webp'
 import Rajasthan from '../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (1).jpeg'
-import Rajasthanvip from '../Assets/Images/Rajasthan/15. RAJ 10  (1).jpeg'
+import Rajasthanvip from '../Assets/Images/Rajasthan/A4.png'
 import { useLanguage } from '../Components/Languagecontext'
 import AOS from 'aos';
 import 'aos/dist/aos.css';

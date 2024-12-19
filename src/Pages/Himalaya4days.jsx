@@ -112,8 +112,8 @@ const Himalaya4days = () => {
         className="w-96 md:w-72 m-auto h-0.5 bg-sky-500 mb-12"
         data-aos="fade-right"
       ></div>
-      <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
-        <img src={him10} alt="Himalaya 4 Days" />
+      <div className="w-80 md:w-[35%] lg:w-[40%] rounded-2xl mx-auto">
+        <img src={him10} alt="Himalaya 4 Days" className="rounded-2xl" />
       </div>
       <div
         className="bg-grey-500 flex items-center justify-center min-h-screen"
