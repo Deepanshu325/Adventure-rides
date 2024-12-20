@@ -54,7 +54,7 @@ const Rajasthan10daysvip = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch("https://adventurerides-backend.onrender.com/send-download-email", {
+      fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const Rajasthan10daysvip = () => {
   };
 
   const handleDownload = () => {
-    fetch("https://adventurerides-backend.onrender.com/send-download-email", {
+    fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

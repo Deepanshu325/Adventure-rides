@@ -54,7 +54,7 @@ const Himalaya4days = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch("https://adventurerides-backend.onrender.com/send-download-email", {
+      fetch("https://adventurerides-backend.onrender.com/send-download-email-him4days", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const Himalaya4days = () => {
   };
 
   const handleDownload = () => {
-    fetch("https://adventurerides-backend.onrender.com/send-download-email", {
+    fetch("https://adventurerides-backend.onrender.com/send-download-email-him4days", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
