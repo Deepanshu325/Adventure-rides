@@ -14,22 +14,22 @@ const Md_card = (props) => {
 
   return (
     <>
-      <div className="w-full overflow-hidden lg:flex">
+      <div className="w-full overflow-hidden lg:flex " >
         {/* Content Section */}
-        <div className="w-full lg:w-1/2 md:max-w-5xl mt-1 md:min-h-fit " data-aos="fade-down">
+        <div className="w-full lg:w-1/2 justify-between" data-aos="fade-down">
           {props.mainheading && (
-            <a className="text-lg font-extrabold pl-2">{props.mainheading}</a>
+            <a className="text-lg font-extrabold pl-2 ">{props.mainheading}</a>
           )}
 
           {/* Section 1 */}
           {(props.heading1 || props.point1 || props.point2 || props.point3) && (
             <div className="w-auto pl-6 mt-7">
               {props.heading1 && (
-                <h2 className="font-extrabold text-lg text-sky-600">
+                <h2 className="font-extrabold text-lg last: text-sky-600 ">
                   {props.heading1}
                 </h2>
               )}
-              <div className="pl-5 pt-2 font-semibold text-lg ">
+              <div className="pl-5 pt-2 font-semibold text-lg  ">
                 {props.point1 && (
                   <p className="font-semibold text-justify pr-5">{props.point1}</p>
                 )}<br></br>
@@ -47,7 +47,7 @@ const Md_card = (props) => {
           {(props.heading2 || props.text1 || props.text2 || props.text3) && (
             <div className="w-auto pl-6 mt-7">
               {props.heading2 && (
-                <h2 className="font-extrabold text-lg text-sky-600">
+                <h2 className="font-extrabold text-lg text-sky-600 ">
                   {props.heading2}
                 </h2>
               )}
@@ -68,12 +68,12 @@ const Md_card = (props) => {
 
         {/* Image Section */}
         {props.image && (
-          <div className="h-fit lg:w-1/2 w-full content-center mt-4  " data-aos="fade-right">
+          <div className=" lg:w-1/2 w-full content-center mt-4  rounded-2xl" data-aos="fade-right">
 
             <img
               src={props.image}
               alt={props.alt || ""}
-              className="rounded-2xl   object-contain mx-auto"
+              className="rounded-2xl   mx-auto object-fill"
             />
           </div>
         )}
