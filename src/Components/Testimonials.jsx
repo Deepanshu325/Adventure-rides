@@ -56,11 +56,11 @@ const Testimonials = () => {
       </h2>
 
       {/* Background Image */}
-      <div className="lg:block md:w-full" data-aos="fade-left">
+      <div className="lg:block md:w-full rounded-2xl  pl-[2%] pr-[2%]" data-aos="fade-left">
         <img
           src={testiback}
           alt="Background"
-          className="md:pt-1 w-full  pl-[2%] pr-[2%] object-contain "
+          className="md:pt-1 w-full rounded-2xl  object-contain "
         />
       </div>
     <div className="container mx-auto mt-10">
