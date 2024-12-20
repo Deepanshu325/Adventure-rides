@@ -8,24 +8,24 @@ const Descriptioncard = () => {
   return (
     <div className="flex flex-col md:flex-row p-6  ">
       {/* Image Section */}
-      <div className="w-full md:w-[60%]   pl-6">
+      <div className="w-full md:w-[60%]   pl-2">
         <img
           src={singleImage}
           alt="Adventure Rides"
-          className=" w-full  lg:h-[105vh] lg:min-h-full lg:max-height-[105vh] align-top object-fill "
+          className=" w-full lg:h-[120vh] align-top object-fill "
         />
       </div>
 
       {/* Content Section */}
       <div className="w-full md:w-1/2 text-gray-700  pl-2  ">
       <div className="">
-        <h1 className="text-2xl md:text-4xl font-bold text-blue-700 mb-[4%] lg:tracking-wider">
+        <h1 className="text-2xl 2xl:text-9xl md:text-4xl font-bold text-blue-700 mb-[4%] md:tracking-wider">
          {t("destitle")}
         </h1>
-        <p className="text-lg text-orange-500 mb-[4%] leading-relaxed w-[90%]  lg:tracking-widest ">
-          <strong className="text-xl">{t("des1")}</strong>.
+        <p className="text-lg text-orange-500 mb-[4%] 2xl:text-7xl    ">
+          <strong className="text-xl lg:text-3xl">{t("des1")}</strong>.
         </p>
-        <ul className=" text-lg  space-y-[1%] text-gray-600 w-[90%] text-justify lg:tracking-tighter">
+        <ul className=" text-lg  space-y-[1%] text-gray-600 md:w-[90%]  md:tracking-tighter">
           <li>
            {t("des2")}
           </li>
