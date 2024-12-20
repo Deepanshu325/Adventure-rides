@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 import raj10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 2.01.25 PM (1).jpeg";
 
 const Rajasthan10daysvip = () => {
+
+  const langauge = localStorage.getItem("language")
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -54,6 +57,8 @@ const Rajasthan10daysvip = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
+
+      if(langauge === "en"){
       fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
         method: "POST",
         headers: {
@@ -61,6 +66,15 @@ const Rajasthan10daysvip = () => {
         },
         body: JSON.stringify(formData),
       })
+    }
+    fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+
         .then((response) => {
           if (response.ok) {
             setSuccessMessage(t("emailSentSuccess"));
@@ -77,6 +91,7 @@ const Rajasthan10daysvip = () => {
   };
 
   const handleDownload = () => {
+    if(langauge === "en"){
     fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
       method: "POST",
       headers: {
@@ -84,6 +99,14 @@ const Rajasthan10daysvip = () => {
       },
       body: JSON.stringify({ email: formData.email, name: formData.name }),
     })
+  }
+  fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email: formData.email, name: formData.name }),
+  })
       .then((response) => {
         if (response.ok) {
           setSuccessMessage(t("Detail has been sent to your email"));

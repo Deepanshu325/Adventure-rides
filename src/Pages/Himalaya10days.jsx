@@ -6,6 +6,12 @@ import "aos/dist/aos.css";
 import him10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 1.58.38 PM.jpeg";
 
 const Himalaya10days = () => {
+
+
+
+
+ const langauge = localStorage.getItem("language")
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -51,9 +57,17 @@ const Himalaya10days = () => {
     return Object.keys(tempErrors).length === 0;
   };
 
+
+
+
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
+
+
+      if(langauge === "en"){
       fetch("https://adventurerides-backend.onrender.com/send-download-email-him10days", {
         method: "POST",
         headers: {
@@ -61,6 +75,17 @@ const Himalaya10days = () => {
         },
         body: JSON.stringify(formData),
       })
+    } fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      
+
+
+
         .then((response) => {
           if (response.ok) {
             setSuccessMessage(t("emailSentSuccess"));
@@ -77,6 +102,8 @@ const Himalaya10days = () => {
   };
 
   const handleDownload = () => {
+
+    if(langauge === "en"){
     fetch("https://adventurerides-backend.onrender.com/send-download-email-him10days", {
       method: "POST",
       headers: {
@@ -84,6 +111,16 @@ const Himalaya10days = () => {
       },
       body: JSON.stringify({ email: formData.email, name: formData.name }),
     })
+
+  }
+  fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email: formData.email, name: formData.name }),
+  })
+
       .then((response) => {
         if (response.ok) {
           setSuccessMessage(t("Detail has been sent to your email"));
