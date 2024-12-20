@@ -12,20 +12,20 @@ const Descriptioncard = () => {
         <img
           src={singleImage}
           alt="Adventure Rides"
-          className=" w-full  h-[105vh] min-h-full max-height-[105vh] align-top object-fill "
+          className=" w-full  lg:h-[105vh] lg:min-h-full lg:max-height-[105vh] align-top object-fill "
         />
       </div>
 
       {/* Content Section */}
       <div className="w-full md:w-1/2 text-gray-700  pl-2  ">
-      <div className=" justify-between ">
-        <h1 className="text-2xl md:text-4xl font-bold text-blue-700 mb-[4%] tracking-wider">
+      <div className="">
+        <h1 className="text-2xl md:text-4xl font-bold text-blue-700 mb-[4%] lg:tracking-wider">
          {t("destitle")}
         </h1>
-        <p className="text-lg text-orange-500 mb-[4%] leading-relaxed w-[90%] text-justify  tracking-widest ">
+        <p className="text-lg text-orange-500 mb-[4%] leading-relaxed w-[90%]  lg:tracking-widest ">
           <strong className="text-xl">{t("des1")}</strong>.
         </p>
-        <ul className=" text-lg  space-y-[1%] text-gray-600 w-[90%] text-justify tracking-tighter">
+        <ul className=" text-lg  space-y-[1%] text-gray-600 w-[90%] text-justify lg:tracking-tighter">
           <li>
            {t("des2")}
           </li>
