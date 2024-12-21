@@ -35,11 +35,11 @@ const Adventurecard = (props) => {
             <h2 className="text-xl font-bold text-gray-800 mb-4">
               {props.heading}
             </h2>
-            <p className="font-semibold text-justify">
+            <p className="font-semibold ">
               
               {props.text1}
             </p>
-            <p className="font-semibold text-justify mt-4">
+            <p className="font-semibold  mt-4">
               {props.text2}
             </p>
           </div>

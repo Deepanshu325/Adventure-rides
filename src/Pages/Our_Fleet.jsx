@@ -46,7 +46,7 @@ const Our_Fleet = () => {
         </div>
       </div>
        
-      <div className='p-6 text-justify md:pl-28 md:pr-28  overflow-hidden '>
+      <div className='p-6  md:pl-28 md:pr-28  overflow-hidden '>
         <h1 className="font-semibold text-center mt-12 mb-6  text-2xl md:text-6xl  "  data-aos="fade-in">{t("beasthead")}</h1>
         <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{t("beast1")}</p>
 
