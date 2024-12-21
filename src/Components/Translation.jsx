@@ -156,8 +156,10 @@ const translations = {
     michael : "Michael",
     nigel : "Nigel",
     ktm450 : "The KTM EXC-F 450 or the KTM 390 Adventure"
+    ,optional: "optional"
   },
   fr: {
+    optional : "optionnel",
     why1: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?",
     whytitle1: "Votre sécurité, notre priorité !",
     whytitle2: "Des motos parfaitement entretenues",
@@ -297,7 +299,7 @@ const translations = {
 
     contacthead: "Téléchargez votre programme détaillé",
     contactus: "Contactez-nous",
-    name1: "Prenom",
+    name1: "Prénom",
     surname: "Nom",
     email: "E-mail",
     mob: "Nr. de portable",

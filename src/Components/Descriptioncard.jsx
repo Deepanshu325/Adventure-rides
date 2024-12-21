@@ -25,7 +25,7 @@ const Descriptioncard = () => {
         <p className="text-lg text-orange-500 mb-[4%] 2xl:text-7xl    ">
           <strong className="text-xl lg:text-3xl">{t("des1")}</strong>.
         </p>
-        <ul className=" text-lg  space-y-[1%] text-gray-600 md:w-[90%]  md:tracking-tighter">
+        <ul className=" text-base  space-y-[1%] text-gray-600 md:w-[90%]  md:tracking-tighter">
           <li>
            {t("des2")}
           </li>
