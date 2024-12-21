@@ -89,7 +89,7 @@ const Navbar = () => {
             onChange={(e) => {
               const selectedLanguage = e.target.value;
               setLanguage(selectedLanguage);
-              localStorage.setItem("language", selectedLanguage); // Store the value in local storage
+              sessionStorage.setItem("language", selectedLanguage); // Store the value in local storage
             }}
             className="bg-black rounded-lg text-white font-semibold px-2 border-0.5 border-sky-500"
           >

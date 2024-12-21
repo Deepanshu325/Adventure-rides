@@ -7,11 +7,9 @@ import raj10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 2.02.06 PM.jpeg";
 
 const Rajasthan10daysvip = () => {
 
-  const langauge = localStorage.getItem("language")
+  const langauge = sessionStorage.getItem("language")
+  
 
-  window.onload = () => {
-    localStorage.removeItem("language"); // Replace "keyName" with the actual key you want to remove
-  };
 
   useEffect(() => {
     AOS.init({

@@ -15,10 +15,18 @@ import Rajasthan10days from './Pages/Rajasthan10days';
 import Rajasthan10daysvip from './Pages/Rajasthan10daysvip';
 import Himalaya4days from './Pages/Himalaya4days';
 import Himalaya10days from './Pages/Himalaya10days';
-
+import { useEffect } from 'react';
 
 
 function App() {
+
+
+  useEffect(() => {
+    // Clear sessionStorage when the page reloads
+    sessionStorage.clear();
+  }, []);
+
+
   return (
     <>
     
