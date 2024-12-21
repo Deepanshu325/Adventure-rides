@@ -85,7 +85,7 @@ const Testimonials = () => {
       >
         {cards.map((card, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-orange-500 rounded-lg shadow-lg p-14 pb-4 min-h-[85vh]  flex flex-col ">
+            <div className="bg-orange-500 rounded-lg shadow-lg p-14 pb-4 min-h-[85vh] flex flex-col ml-3 mr-3 md:ml-0 md:mr-0   ">
               <img
                 src={card.img}
                 alt={card.name}
