@@ -91,7 +91,7 @@ const Rajasthan10daysvip = () => {
   };
 
   const handleDownload = () => {
-    if(langauge === "fr"){
+    if(langauge == "fr"){
       fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
         method: "POST",
         headers: {

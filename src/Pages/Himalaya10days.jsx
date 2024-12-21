@@ -103,7 +103,7 @@ const Himalaya10days = () => {
 
   const handleDownload = () => {
 
-    if(langauge === "fr"){
+    if(langauge == "fr"){
       fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
         method: "POST",
         headers: {
