@@ -10,7 +10,7 @@ const Himalaya10days = () => {
 
 
 
- const langauge = localStorage.getItem("language")
+ const langauge = sessionStorage.getItem("language")
 
   useEffect(() => {
     AOS.init({
@@ -115,7 +115,9 @@ const Himalaya10days = () => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
       });
-    }else
+    }else{
+
+    
     fetch("https://adventurerides-backend.onrender.com/send-download-email-him10days", {
       method: "POST",
       headers: {
@@ -136,6 +138,7 @@ const Himalaya10days = () => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
       });
+      }
   };
 
   return (
