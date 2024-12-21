@@ -54,7 +54,7 @@ const Rajasthan10days = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10days", {
+      fetch("https://adventurerides-backend.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

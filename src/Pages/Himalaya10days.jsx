@@ -67,21 +67,15 @@ const Himalaya10days = () => {
     if (validate()) {
 
 
-      if(langauge === "en"){
-      fetch("https://adventurerides-backend.onrender.com/send-download-email-him10days", {
+    
+      fetch("https://adventurerides-backend.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       })
-    } fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
+    
       
 
 
