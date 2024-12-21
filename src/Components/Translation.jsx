@@ -136,7 +136,8 @@ const translations = {
     , contact2: "CONTACT US"
     , south: "SOUTH INDIA",
     suggest: "SUGGEST US YOUR NEW DESTINATION"
-    , diffrently: "Not more of the same We do it differently"
+    , diffrently: "« Not more of the same !",
+    diffrently2: "We do it differently »"
     , media: "MEDIA ARTICLES",
    demanding4: " "
     , raj: "RAJASTHAN"
@@ -178,7 +179,9 @@ const translations = {
     demanding4: "→ En mode TRAIL, vous effectuez de 30 à 50% de tout terrain sur des pistes très accessibles et sur des petites routes de villages.",
     safety3: "→ Nous avons aussi mis en place un plan d’urgence pour chaque tour afin de prévoir l’imprévisible y compris une éventuelle évacuation par héliportée sur certaines destinations. ",
     media: "La presse nous dévoile",
-    diffrently: "Not more of the same ! Une nouvelle dimension du voyage d’aventure"
+    diffrently: "« Not more of the same ! ",
+    diffrently2: "Une nouvelle dimension du voyage d’aventure »"
+
     , welcome: "Une nouvelle dimension du",
     welcome3: "voyage",
     welcome4: "aventure",
