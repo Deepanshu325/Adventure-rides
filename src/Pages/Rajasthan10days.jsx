@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Footer from "../Components/Footer.jsx";
 import { useLanguage } from "../Components/Languagecontext.js";
 import AOS from "aos";
-import "aos/dist/aos.css";
-import raj10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 2.02.06 PM.jpeg";
+import "aos/dist/aos.css";                 
+import raj10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 2.01.25 PM (1).jpeg";
 
 const Rajasthan10days = () => {
   useEffect(() => {
