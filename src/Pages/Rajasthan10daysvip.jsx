@@ -100,7 +100,7 @@ const Rajasthan10daysvip = () => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
       });
-      
+
         }else
    
     fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
@@ -156,7 +156,7 @@ const Rajasthan10daysvip = () => {
               { label: t("surname"), name: "surname", required: true },
               { label: t("email"), name: "email", type: "email", required: true },
               { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
-              { label: t("country"), name: "city", required: true },
+              { label: t("city"), name: "city", required: true },
               { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
             ].map((field) => (
               <div key={field.name}>

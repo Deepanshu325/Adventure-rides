@@ -44,8 +44,8 @@ const Why_to_travelwithus = () => {
       
       <div className="w-full px-4 md:px-16 mt-12 space-y-10">
       <div>
-      <p className="text-right font-semibold text-3xl  w-full"><i>{t("diffrently")}</i></p>
-      <p className=" text-right  font-semibold text-3xl  w-full "><i>{t("diffrently2")}</i></p>
+      <p className="text-right font-semibold md:text-3xl text-sm w-full"><i>{t("diffrently")}</i></p>
+      <p className=" text-right  font-semibold md:text-3xl text-sm w-full "><i>{t("diffrently2")}</i></p>
       </div>
 
 
