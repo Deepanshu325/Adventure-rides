@@ -99,7 +99,7 @@ const Download = () => {
 
   return (
     <>
-      <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl uppercase">
+      <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl uppercase ">
         {t("contactus")}
       </p>
       <div
@@ -119,7 +119,7 @@ const Download = () => {
         className="bg-grey-500 flex items-center justify-center min-h-screen"
         data-aos="fade-up"
       >
-        <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-[40%]">
+        <div className="bg-white p-6 rounded-lg shadow-xl w-full md:max-w-[40%]">
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
             {t("contact")}
           </h2>

@@ -91,7 +91,16 @@ const Rajasthan10daysvip = () => {
   };
 
   const handleDownload = () => {
-    if(langauge === "en"){
+    if(langauge === "fr"){
+      fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: formData.email, name: formData.name }),
+      })
+    }else
+   
     fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
       method: "POST",
       headers: {
@@ -99,14 +108,6 @@ const Rajasthan10daysvip = () => {
       },
       body: JSON.stringify({ email: formData.email, name: formData.name }),
     })
-  }
-  fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email: formData.email, name: formData.name }),
-  })
       .then((response) => {
         if (response.ok) {
           setSuccessMessage(t("Detail has been sent to your email"));
