@@ -9,6 +9,10 @@ const Rajasthan10daysvip = () => {
 
   const langauge = localStorage.getItem("language")
 
+  window.onload = () => {
+    localStorage.removeItem("language"); // Replace "keyName" with the actual key you want to remove
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
