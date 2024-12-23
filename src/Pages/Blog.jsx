@@ -1,34 +1,101 @@
-import React from 'react'
-import Footer from "../Components/Footer"
+import React from 'react';
+import Footer from '../Components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect  , useState} from 'react';
+import axios from 'axios';
+
 const Blog = () => {
-  return (
-    <div>
-<div className=' md:w-[40%] w-[98%] mx-auto overflow-hidden '>
-<div className=' mx-auto my-12 space-y-12 '>
-<iframe
-  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D552144004355838%26id%3D100064155602022%26substory_index%3D552144004355838&show_text=true&width=500"
-  width="500"
-  height="478"
-  style={{ border: 'none', overflow: 'hidden' }}
-  scrolling="no"
-  frameBorder="0"
-  allowFullScreen={true}
-  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-/>
 
-<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100064155602022%2Fvideos%2F953440956831975%2F&show_text=true&width=560&t=0" width="100%" height="429" style={{border:"none",overflow:"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      offset: window,    // Offset (in px) from the original trigger point
+      easing: 'ease-in-out', // Easing function for animations
+      once: true      // Whether animation should happen only once
+    });
+  }, []);
+    const [posts, setPosts] = useState([]);
+    const profileId = '10162163582497560'; // Replace with the Profile/Page ID
+    const accessToken ='EAAMiiPjRbGwBO3TsFeMJhC0OGJgjmUIOrJKFJF3cZCZBS4siXZBQb6I9Cm9WYlnnZCDOhRSmHl3C8Fc2I31fl7ZCL0Qd17B5JAArqWCIoaTexliHl4CVwDoALgj1pVdrJF7pS5Jw7gZABGM0YPm5hrUqC1j1nTv2oXeZAZACZCMKJLBxSoRtzaZCmZAN0zko1S1pO9P5nIByuUcl6cD1eyTMvyz90tspZC3PIj58AZClZAlnsm'; // Replace with your Access Token
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid025GjMpSFYtFdTuvnC494bj2Qe4C6y5jEo3VffxoyvTyhmHcx9Hodh9hWiuUn1S5pZl%26id%3D100064155602022&show_text=true&width=500" width="100%" height="551" style={{border:"none",overflow:"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    useEffect(() => {
+        const fetchPosts = async () => {
+            const url = `https://graph.facebook.com/v21.0/me/posts?fields=id,created_time,name,message,full_picture&access_token=EAAMiiPjRbGwBO4tgZCaGbQAwg81inhUC8FTg82pqNyQx0zNlBNTZBOVZAftHlXzFBucrMgaBrZB3rQJlncZCopvIWZBYBUKZCdt8eGk5p3084IqZAXnnWy4D6IKTcWsunLthaCuO1pGqSZADAi8WQoRCZB4sWxlsURcQalCq4jXRNn54Nl5BTXubPksbTVnWfgfgZCxu4yEvgZDZD`;
+            try {
+                const response = await axios.get(url);
+                console.log(response.data.data)
+                setPosts(response.data.data || []); // Update with fetched posts
+            } catch (error) {
+                console.error('Error fetching posts:', error);
+            }
+        };
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ZkKJ1NNJDGmYKedJmybSJBJv59ze2ng3xiZg7C1XTgoVMquhgzFNNTfu5bWPF5nFl%26id%3D100064155602022&show_text=true&width=500" width="100%" height="660" style={{border:"none",overflow:"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        fetchPosts();
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1371366180226464%26id%3D100064155602022%26substory_index%3D1371366180226464&show_text=true&width=500" width="100%" height="437" style={{border:"none",overflow:"hidden"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        // Polling for updates every 5 minutes (optional)
+        const interval = setInterval(fetchPosts, 300000);
 
+        return () => clearInterval(interval);
+    }, [profileId, accessToken]);
+
+    return (
+      <>
+        <div>
+        <h1 className="text-center mt-12 mb-6  text-xl font-bold text-blue-500 md:text-3xl  "  data-aos="fade-in">Blog</h1>
+        <div className=' mt-10 w-28 md:w-60 m-auto h-0.5 bg-sky-500 mb-1' data-aos="fade-left"></div>
+      <div className=' w-40 md:w-96 m-auto h-0.5 bg-sky-500 mb-12' data-aos="fade-right"></div>
+          <div style={{  justifyContent: 'center' }} className='w-full'>
+  {posts.length > 0 ? (
+    posts.map(post => (
+      <div
+        key={post.id}
+        className='mx-auto mb-14  '
+        style={{
+          maxWidth: '900px',
+          width: '96%',
+          borderRadius: '10px',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          overflow: 'hidden',
+          backgroundColor: '#fff',
+          transition: 'transform 0.3s ease',
+        }}
+        onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.05)')}
+        onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+      >
+        {post.full_picture && (
+          <img
+            src={post.full_picture}
+            alt="Post Visual"
+            style={{
+              width: '100%',
+              height: 'auto',
+              display: 'block',
+              objectFit: 'cover',
+            }}
+          />
+        )}
+        <div style={{ padding: '15px' }}>
+          <p style={{ margin: '10px 0', fontSize: '16px', fontWeight: 'bold', color: '#333' }}>
+            {post.message || 'No message available'}
+          </p>
+          <small style={{ fontSize: '12px', color: '#777' }}>
+            {new Date(post.created_time).toLocaleString()}
+          </small>
+        </div>
+      </div>
+    ))
+  ) : (
+    <p style={{ fontSize: '18px', color: '#777' }}>No posts found.</p>
+  )}
 </div>
 </div>
-      <Footer/>
-    </div>
-  )
-}
 
-export default Blog
+<div className="mt-28">
+<Footer />
+</div>
+</>
+    );
+};
+
+export default Blog;
