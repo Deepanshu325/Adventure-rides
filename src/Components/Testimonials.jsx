@@ -56,7 +56,7 @@ const Testimonials = () => {
       </h2>
 
 
-      <div className="flex flex-row-reverse ">
+      <div className="flex flex-col-reverse md:flex-row ">
 
 
 
