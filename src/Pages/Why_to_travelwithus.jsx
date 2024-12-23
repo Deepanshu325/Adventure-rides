@@ -4,7 +4,7 @@ import Md_card from "../Components/Md_card";
 import Footer from "../Components/Footer";
 import { useLanguage } from "../Components/Languagecontext";
 import image1 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.45.31 AM.jpeg";
-import image2 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.24 AM.jpeg";
+import image2 from "../Assets/Images/Rajasthan/WhatsApp Image 2024-12-23 at 12.06.40 PM.jpeg";
 import image3 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM.jpeg";
 import image4 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.11 AM.jpeg";
 import image9 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (4).jpeg";
@@ -20,6 +20,17 @@ import image16 from "../Assets/Home/7.f Luxury hotels (1).png"
 import image17 from "../Assets/Home/7.g Luxury hotels (1).jpg"
 import image18 from "../Assets/Home/7.i Luxury hotels (1).jpeg"
 import image19 from "../Assets/Home/7.j Luxury hotels (1).jpg"
+import image20 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.28 PM.jpeg"
+import image21 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.28 PM (1).jpeg"
+import image22 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.28 PM (2).jpeg"
+import image23 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.29 PM (3).jpeg"
+import image24 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.29 PM (1).jpeg"
+import image25 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.29 PM (2).jpeg"
+import image26 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.30 PM.jpeg"
+import image27 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.30 PM (1).jpeg"
+import image28 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.30 PM (2).jpeg"
+
+
 import Card from "../Components/Card";
 
 import image7 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (1).jpeg"
@@ -32,7 +43,7 @@ const Why_to_travelwithus = () => {
       {/* Title Section */}
       
       <div className="text-center py-12 ">
-        <p className="text-xl font-extrabold text-orange-500 md:text-6xl">
+        <p className="text-xl font-bold text-blue-500 md:text-3xl">
           {t("nextadventure")}
         </p>
         
@@ -140,6 +151,35 @@ const Why_to_travelwithus = () => {
          </div>
          <div>
           <img src={image19} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+
+         <div>
+          <img src={image20} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+
+         <div>
+          <img src={image21} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+         <div>
+          <img src={image22} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+         <div>
+          <img src={image23} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+         <div>
+          <img src={image24} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+         <div>
+          <img src={image25} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+         <div>
+          <img src={image26} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+         <div>
+          <img src={image27} alt="" className="h-60 w-full rounded-xl" />
+         </div>
+         <div>
+          <img src={image28} alt="" className="h-60 w-full rounded-xl" />
          </div>
         </div>
       </div>

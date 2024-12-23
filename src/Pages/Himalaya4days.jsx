@@ -54,7 +54,7 @@ const Himalaya4days = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch("https://adventurerides-backend.onrender.com/send-email", {
+      fetch("https://adventurerides-backend.onrender.com/send-download-email-him4days", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const Himalaya4days = () => {
       })
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("emailSentSuccess"));
+            setSuccessMessage(t("Detail"));
             setIsDownloadEnabled(true);
           } else {
             setSuccessMessage(t("emailSentFailure"));
@@ -100,7 +100,7 @@ const Himalaya4days = () => {
   return (
     <>
       <div className="p-5 max-w-screen-lg mx-auto">
-        <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl">
+        <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl">
           {t("contacthead")} for 4 days
         </p>
       </div>
@@ -165,19 +165,7 @@ const Himalaya4days = () => {
             </div>
           </form>
 
-          <div className="mt-4">
-            <button
-              disabled={!isDownloadEnabled}
-              onClick={handleDownload}
-              className={`w-full py-2 px-4 rounded-lg ${
-                isDownloadEnabled
-                  ? "bg-green-500 text-white hover:bg-green-600"
-                  : "bg-gray-400 text-gray-200 cursor-not-allowed"
-              }`}
-            >
-              {t("download")}
-            </button>
-          </div>
+         
 
           {successMessage && (
             <p className="text-green-600 text-center mt-4">{successMessage}</p>

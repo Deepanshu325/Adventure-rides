@@ -36,7 +36,7 @@ const Our_Fleet = () => {
           </div> 
           
 
-      <h1 className="text-center mt-1 mb-6 text-gray-500 text-2xl md:text-5xl md:mb-1" data-aos="fade-down">{t("ktm450")} </h1>
+      <h1 className="text-center mt-1 mb-6 text-xl font-bold text-blue-500 md:text-3xl md:mb-1" data-aos="fade-down">{t("ktm450")} </h1>
       <div className='w-full md:flex md:mt-14'>
         <div className='md:w-1/2'>
         <img src={ktm} alt="" className='w-full h-96  object-contain ' data-aos="fade-right" />
@@ -47,7 +47,7 @@ const Our_Fleet = () => {
       </div>
         
       <div className='p-6 text-justify break-words  md:pl-28 md:pr-28  overflow-hidden '>
-        <h1 className="font-semibold text-center mt-12 mb-6  text-2xl md:text-6xl  "  data-aos="fade-in">{t("beasthead")}</h1>
+        <h1 className="text-center mt-12 mb-6  text-xl font-bold text-blue-500 md:text-3xl  "  data-aos="fade-in">{t("beasthead")}</h1>
         <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{t("beast1")}</p>
 
 <p className='font-semibold text-lg pb-6  md:text-lg'  data-aos="fade-left">{t("beast2")}</p>

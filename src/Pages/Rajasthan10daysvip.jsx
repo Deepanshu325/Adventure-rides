@@ -59,7 +59,7 @@ const Rajasthan10daysvip = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch("https://adventurerides-backend.onrender.com/send-email", {
+      fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const Rajasthan10daysvip = () => {
 
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("emailSentSuccess"));
+            setSuccessMessage(t("Detail"));
             setIsDownloadEnabled(true);
           } else {
             setSuccessMessage(t("emailSentFailure"));
@@ -128,7 +128,7 @@ const Rajasthan10daysvip = () => {
   return (
     <>
       <div className="p-5 max-w-screen-lg mx-auto">
-        <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl">
+        <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl">
           {t("contacthead")} for 10 days [vip]
         </p>
       </div>
@@ -152,7 +152,7 @@ const Rajasthan10daysvip = () => {
             {t("contactus")}
           </h2>
          
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleDownload} className="space-y-4">
             {[
               { label: t("name1"), name: "name", required: true },
               { label: t("surname"), name: "surname", required: true },
@@ -191,19 +191,7 @@ const Rajasthan10daysvip = () => {
               </button>
             </div>
           </form>
-          <div className="mt-4">
-            <button
-              disabled={!isDownloadEnabled}
-              onClick={handleDownload}
-              className={`w-full py-2 px-4 rounded-lg ${
-                isDownloadEnabled
-                  ? "bg-green-500 text-white hover:bg-green-600"
-                  : "bg-gray-400 text-gray-200 cursor-not-allowed"
-              }`}
-            >
-              {t("download")}
-            </button>
-          </div>
+          
 
           {successMessage && (
             <p className="text-green-600 text-center mb-4">{successMessage}</p>

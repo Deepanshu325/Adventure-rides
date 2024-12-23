@@ -68,7 +68,7 @@ const Himalaya10days = () => {
 
 
     
-      fetch("https://adventurerides-backend.onrender.com/send-email", {
+      fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -82,7 +82,7 @@ const Himalaya10days = () => {
 
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("emailSentSuccess"));
+            setSuccessMessage(t("Detail"));
             setIsDownloadEnabled(true);
           } else {
             setSuccessMessage(t("emailSentFailure"));
@@ -96,6 +96,8 @@ const Himalaya10days = () => {
   };
 
   const handleDownload = () => {
+     
+  
 
     if(langauge == "fr"){
       fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
@@ -105,8 +107,10 @@ const Himalaya10days = () => {
         },
         body: JSON.stringify({ email: formData.email, name: formData.name }),
       }).then((response) => {
+      
+
         if (response.ok) {
-          setSuccessMessage(t("Detail has been sent to your email"));
+          setSuccessMessage(t("EmailsentSucess"));
         } else {
           alert(t("downloadEmailFailure"));
         }
@@ -129,7 +133,7 @@ const Himalaya10days = () => {
 
       .then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("Detail has been sent to your email"));
+          setSuccessMessage(t("Detail"));
         } else {
           alert(t("downloadEmailFailure"));
         }
@@ -144,7 +148,7 @@ const Himalaya10days = () => {
   return (
     <>
       <div className="p-5 max-w-screen-lg mx-auto overflow-hidden">
-        <p className="text-center mt-8 text-xl font-extrabold text-orange-600 md:text-6xl">
+        <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl">
           {t("contacthead")} for 10 days
         </p>
       </div>
@@ -169,7 +173,7 @@ const Himalaya10days = () => {
             {t("contactus")}
           </h2>
          
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleDownload} className="space-y-4">
             {[
               { label: t("name1"), name: "name", required: true },
               { label: t("surname"), name: "surname", required: true },
@@ -210,19 +214,7 @@ const Himalaya10days = () => {
             </div>
           </form>
 
-          <div className="mt-4">
-            <button
-              disabled={!isDownloadEnabled}
-              onClick={handleDownload}
-              className={`w-full py-2 px-4 rounded-lg ${
-                isDownloadEnabled
-                  ? "bg-green-500 text-white hover:bg-green-600"
-                  : "bg-gray-400 text-gray-200 cursor-not-allowed"
-              }`}
-            >
-              {t("download")}
-            </button>
-          </div>
+         
 
           {successMessage && (
             <p className="text-green-600 text-center mt-4">{successMessage}</p>

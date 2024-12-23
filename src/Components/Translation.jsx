@@ -5,7 +5,7 @@ const translations = {
     welcome4: "EXCELLENCE",
 
     destitle: "Welcome to Adventure Rides",
-    des1: "Adventure Rides is the only agency offering off-road tours on genuine enduro motorcycles, the most trusted and valued brand on the market, the KTM EXC-F 450. You can also experience the same thrill in astonishing environments on easy trails and small roads on a less demanding motorbike, the KTM Adventure 390."
+    des1: "Adventure Rides is the only agency in India offering off-road tours on genuine enduro motorcycles, the most trusted and valued brand on the market, the KTM EXC-F 450. You can also experience the same thrill in astonishing environments on easy trails and small roads on a less demanding motorbike, the KTM Adventure 390."
     , des2: "‣ Ride unbeaten off-road tracks in breathtaking nature from desert dunes to highest mountain peaks."
     , des3: "‣ Rely on 35+ year of experience of enduro riding and rallying across 3 continents"
     , des4: "‣ Enjoy your unique adventure safely backed by a team having 18 years on-the-ground support including mechs and docs "
@@ -45,12 +45,12 @@ const translations = {
     demanding3: "→ Your trail journey consists of 50 to 60% easy off-road and small roads",
     uniquehead: "4. Unique environment",
     unique1: "→ The reward of long and hard riding days is the discovery of hidden topographical gems or cultural breaks in remote monasteries and temples"
-    , unique2: "→ agile and always there team : by limiting the participants to max. 8 riders, the guide can easily adapt the pace and the difficulties of the track to the expectations of the group"
+    , unique2: "→ Agile and always there team : by limiting the participants to max. 8 riders, the guide can easily adapt the pace and the difficulties of the track to the expectations of the group"
     , experiencehead: "5. Experienced Team",
-    experience1: "→ over 18 years experience in inbound tourism with western excellence standards."
-    , experience2: "→ beside the Adventure Rides team, a local support team in each and every area crossed for permits, crossing natural sanctuaries, private lands improvise alternate routes in case of sudden natural topographic changes"
+    experience1: "→ Over 18 years experience in inbound tourism with western excellence standards."
+    , experience2: "→ Beside the Adventure Rides team, a local support team in each and every area crossed for permits, crossing natural sanctuaries, private lands improvise alternate routes in case of sudden natural topographic changes"
     , highhead: "6. High-end lodging",
-    high1: "→ after a long-lasting and demanding day, you get a recovery treatment in exceptional accommodation",
+    high1: "→ After a long-lasting and demanding day, you get a recovery treatment in exceptional accommodation",
     high2: "→ Unique cultural Heritage resorts",
     high3: "→ 4 or 5 stars accommodation along all the trip with western facilities"
 
@@ -138,17 +138,17 @@ const translations = {
     suggest: "SUGGEST US YOUR NEW DESTINATION"
     , diffrently: "« Not more of the same !",
     diffrently2: "We do it differently »"
-    , media: "MEDIA ARTICLES",
+    , media: "Media Shout-out",
    demanding4: " "
     , raj: "RAJASTHAN"
     , why1: "WHY SHOULD YOU CHOOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?"
     , whytitle1: "Your Safety First",
     whytitle2: "Well-Maintained Motorbike",
-    whytitle3: "Genuine OFF-ROADS bikes ",
+    whytitle3: "Genuine OFF-ROAD bikes ",
     whytitle4: "True off Road Rides ",
     whytitle5: "Agile and Always-there Team ",
     whytitle6: " High-end lodging",
-    whydes1: "Each Tour has a full time doctor in the backup vechile carring the full trauma and aid kit",
+    whydes1: "Each Tour has a full time doctor in the backup vehicle carrying the full trauma and aid kit",
     whydes2: "An experienced KTM mechanic services your bike on a daily basis ",
     whydes3: "At Adventure Rides your ride real enduro KTM EXC-F off-road bikes",
     whydes4: "Our journeys test your endurance level with a 90% off-road terrain ",
@@ -158,8 +158,14 @@ const translations = {
     nigel : "Nigel",
     ktm450 : "The KTM EXC-F 450 or the KTM 390 Adventure"
     ,optional: "optional"
+
+    ,Detail : "We are sending you the detailed program by mail",
+     Our : "Our",
+
   },
   fr: {
+    Our : "Nos",
+    Detail : "Nous vous envoyons le programme détaillé par mail",
     optional : "optionnel",
     why1: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?",
     whytitle1: "Votre sécurité, notre priorité !",
@@ -186,7 +192,7 @@ const translations = {
     welcome3: "voyage",
     welcome4: "aventure",
     welcome5: "Faites l’expérience d’une excellence de livraison de classe mondiale",
-    destitle: "Bienvenue chez Adventure Rides",
+    destitle: "Bienvenu chez Adventure Rides",
     des1: "Adventure Rides est la seule organisation en Inde à vous proposer des circuits tout-terrains sur de véritables motos d'enduro des KTM EXC-F 450. Vous pouvez également vivre les mêmes émotions dans ces paysages époustouflants, sur des pistes plus faciles et des petites routes avec une moto de trail moins exigeante, la KTM Adventure"
     , des2: "‣ Partez à l'aventure sur des parcours tout-terrain exceptionnels, allant des déserts du Rajasthan aux confins des plus hauts sommets himalayens."
     , des3: "‣ Faites confiance à une équipe cumulant de plus de 35 ans expérience d'off-road sur 3 continents"
@@ -197,8 +203,8 @@ const translations = {
     , custitle: "Ce que nos riders vous témoignent…"
     , testimonials1: "Philippe nous emmène dans des paysages à couper le souffle. On passe dans des endroits où aucune moto n’y a mis ses roues. Ce voyage est éblouissant"
     , testimonials2: "Le parcours intense, est extrêmement varié. On roule parfois sur de larges pistes en haute montagne, puis de petits chemins de randonnée, des lits rivières asséchées, à travers de paysages alpin et d’autres lunaire. Vraiment une virée à couper le souffle."
-    , testimonials3: "En premier, je retiens de ce voyage une paleqe de couleurs inouïes. Des lacs en haute altitude passant du bleu foncé au vert émeraude. Le ciel, bleu profond contrastant avec une infinie de couleur brune, beige et grise des montagnes. Ensuite, rouler sur les sommets du monde, c’est particulièrement jouissif. Le free-ride existe encore. C’est là-bas, en Inde !"
-    , testimonials4: "“Un peu crainCf avant le départ à cause de l’altitude, notre guide a tout au long du voyage adapté le rythme et la difficulté du raid au niveau et à la fatigue des participants. C’est vraiment sécurisant de partir avec une organisation qui connaît bien ces endroits reculés."
+    , testimonials3: "En premier, je retiens de ce voyage une palette de couleurs inouïes. Des lacs en haute altitude passant du bleu foncé au vert émeraude. Le ciel, bleu profond contrastant avec une infinie de couleur brune, beige et grise des montagnes. Ensuite, rouler sur les sommets du monde, c’est particulièrement jouissif. Le free-ride existe encore. C’est là-bas, en Inde !"
+    , testimonials4: "“Un peu craintif avant le départ à cause de l’altitude, notre guide a tout au long du voyage adapté le rythme et la difficulté du raid au niveau et à la fatigue des participants. C’est vraiment sécurisant de partir avec une organisation qui connaît bien ces endroits reculés."
     , magazine: "La presse nous dévoile:"
     , about: "À propos"
     , aboutdes: "Adventure Rides est la seule agence proposant des circuits tout-terrain sur de véritables motos d'enduro, la marque la plus fiable et la plus appréciée du marché, la KTM EXC-F 450."

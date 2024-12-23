@@ -12,14 +12,14 @@ const Descriptioncard = () => {
         <img
           src={singleImage}
           alt="Adventure Rides"
-          className=" w-full lg:h-[120vh] align-top object-fill "
+          className=" w-full md:h-[48em] lg:[45em] align-top object-fill "
         />
       </div>
 
       {/* Content Section */}
       <div className="w-full md:w-1/2 text-gray-700  pl-2  ">
       <div className="">
-        <h1 className="text-2xl 2xl:text-9xl md:text-4xl font-bold text-blue-700 mb-[4%] md:tracking-wider">
+        <h1 className="uppercase text-2xl 2xl:text-7xl md:text-3xl font-bold text-blue-500 mb-[4%] ">
          {t("destitle")}
         </h1>
         <p className="text-lg text-orange-500 mb-[4%] 2xl:text-7xl    ">
