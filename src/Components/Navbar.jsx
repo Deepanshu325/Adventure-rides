@@ -7,10 +7,7 @@ import france from "../Assets/Icons/27099.jpg"
 
 const Navbar = () => {
 
-  useEffect(
-    ()=>
-    sessionStorage.clear()
-  )
+ 
   const { t, setLanguage } = useLanguage();
 
   const langauge = sessionStorage.getItem("language")
@@ -146,25 +143,21 @@ const Navbar = () => {
             onChange={(e) => {
               const selectedLanguage = e.target.value;
               setLanguage(selectedLanguage);
-              localStorage.setItem("language", selectedLanguage); // Store the value in local storage
+              sessionStorage.setItem("language", selectedLanguage); // Store the value in local storage
             }}
             className="bg-black rounded-lg text-white font-semibold px-2 border-0.5 border-sky-500"
           >
             <option value="en">EN</option>
-            <option value="fr">FN</option>
+            <option value="fr">FR</option>
           </select>
           </div>
           {
 
 (sessionStorage.getItem("language") == "fr" )?
-
-<div>
 <img src={france} alt="" className="h-5" />
-</div>
  :
- <div>
 <img src={india} alt="" className="h-5" />
-</div>
+
 }
 </div>
   
