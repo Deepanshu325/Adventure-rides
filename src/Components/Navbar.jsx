@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/Images/AR - BL -  logo.png";
 import { useLanguage } from "./Languagecontext";
+import india from "../Assets/Icons/ind.png"
 
 const Navbar = () => {
   const { t, setLanguage } = useLanguage();
@@ -93,7 +94,10 @@ const Navbar = () => {
             }}
             className="bg-black rounded-lg text-white font-semibold px-2 border-0.5 border-sky-500"
           >
-            <option value="en">English</option>
+            <option value="en">EN
+
+            
+            </option>
             <option value="fr">French</option>
           </select>
         </ul>

@@ -1,18 +1,18 @@
 //Descriptioncard.js
 import React from "react";
-import singleImage from "../Assets/Home/WhatsApp Image 2024-12-18 at 3.35.28 PM.jpeg"; // Place your single image in the same folder
+import singleImage from "../Assets/Home/WhatsApp Image 2024-12-24 at 11.15.15 AM.jpeg"; // Place your single image in the same folder
 import { useLanguage } from "./Languagecontext";
 
 const Descriptioncard = () => {
  const {t} = useLanguage();
   return (
-    <div className="flex flex-col md:flex-row p-6  ">
+    <div className="flex flex-col md:flex-row  ">
       {/* Image Section */}
       <div className="w-full md:w-[60%]   pl-2">
         <img
           src={singleImage}
           alt="Adventure Rides"
-          className=" w-full md:h-[48em] lg:[45em] align-top object-fill "
+          className=" w-full  object-contain "
         />
       </div>
 

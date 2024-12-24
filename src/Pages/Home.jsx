@@ -54,7 +54,7 @@ const Home = () => {
             <Descriptioncard />
 
           </div>
-          <div className="w-full mt-16 md:mt-1 mb-20 lg:mb-4" >
+          <div className="w-full mt-16 md:mt-3 mb-20 lg:mb-4" >
             <PortraitCarousel />
           </div>
 

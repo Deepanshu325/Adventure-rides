@@ -16,8 +16,8 @@ const Blog = () => {
     });
   }, []);
     const [posts, setPosts] = useState([]);
-    const profileId = '10162163582497560'; // Replace with the Profile/Page ID
-    const accessToken ='EAAMiiPjRbGwBO3TsFeMJhC0OGJgjmUIOrJKFJF3cZCZBS4siXZBQb6I9Cm9WYlnnZCDOhRSmHl3C8Fc2I31fl7ZCL0Qd17B5JAArqWCIoaTexliHl4CVwDoALgj1pVdrJF7pS5Jw7gZABGM0YPm5hrUqC1j1nTv2oXeZAZACZCMKJLBxSoRtzaZCmZAN0zko1S1pO9P5nIByuUcl6cD1eyTMvyz90tspZC3PIj58AZClZAlnsm'; // Replace with your Access Token
+    const profileId = '10162162096432560'; // Replace with the Profile/Page ID
+    const accessToken ='EAAMiiPjRbGwBO4tgZCaGbQAwg81inhUC8FTg82pqNyQx0zNlBNTZBOVZAftHlXzFBucrMgaBrZB3rQJlncZCopvIWZBYBUKZCdt8eGk5p3084IqZAXnnWy4D6IKTcWsunLthaCuO1pGqSZADAi8WQoRCZB4sWxlsURcQalCq4jXRNn54Nl5BTXubPksbTVnWfgfgZCxu4yEvgZDZD'; // Replace with your Access Token
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -86,7 +86,7 @@ const Blog = () => {
       </div>
     ))
   ) : (
-    <p style={{ fontSize: '18px', color: '#777' }}>No posts found.</p>
+    <p style={{ fontSize: '18px', color: '#777' , height : "100vh"  }}>Please wait ...</p>
   )}
 </div>
 </div>

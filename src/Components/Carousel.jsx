@@ -71,7 +71,7 @@ const PortraitCarousel = () => {
 
   return (
     <>
-      <h1 className=" text-2xl 2xl:text-7xl md:text-3xl  text-blue-500 font-bold mb-[4%] md:tracking-wider text-center uppercase">
+      <h1 className=" text-2xl 2xl:text-7xl md:text-3xl  text-blue-500 font-bold mb-[4%] md:tracking-wider text-center uppercase mt-4">
         {t("Our")} Destinations
       </h1>
 
