@@ -35,6 +35,7 @@ const Himalaya10days = () => {
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
   const [isDownloadEnabled, setIsDownloadEnabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Add state to control spinner
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -65,7 +66,7 @@ const Himalaya10days = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-
+    
 
     
       fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
@@ -75,14 +76,9 @@ const Himalaya10days = () => {
         },
         body: JSON.stringify(formData),
       })
-    
-      
-
-
-
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("Detail"));
+            setSuccessMessage(t("EmailsentSucess"));
             setIsDownloadEnabled(true);
           } else {
             setSuccessMessage(t("emailSentFailure"));
@@ -95,11 +91,12 @@ const Himalaya10days = () => {
     }
   };
 
-  const handleDownload = () => {
+  const handleDownload = (e) => {
      
-  
-
+ 
+    e.preventDefault();
     if(langauge == "fr"){
+      setIsLoading(true); 
       fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
         method: "POST",
         headers: {
@@ -118,9 +115,12 @@ const Himalaya10days = () => {
       .catch((error) => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
+      }) .finally(() => {
+        setIsLoading(false); // Hide spinner once request is done
       });
     }else{
-
+     
+      setIsLoading(true); 
     
     fetch("https://adventurerides-backend.onrender.com/send-download-email-him10days", {
       method: "POST",
@@ -133,7 +133,7 @@ const Himalaya10days = () => {
 
       .then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("Detail"));
+          setSuccessMessage(t("EmailsentSucess"));
         } else {
           alert(t("downloadEmailFailure"));
         }
@@ -141,6 +141,8 @@ const Himalaya10days = () => {
       .catch((error) => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
+      }) .finally(() => {
+        setIsLoading(false); // Hide spinner once request is done
       });
       }
   };
@@ -214,7 +216,24 @@ const Himalaya10days = () => {
             </div>
           </form>
 
-         
+          {/* Spinner - Positioned in the center of the form */}
+          {isLoading && (
+            
+            <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
+                <h1 className="font-bold text-blue-500">{t("Detail")}</h1>
+              
+              <div className="spinner-dot-circle">
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+              </div>
+            </div>
+          )}
 
           {successMessage && (
             <p className="text-green-600 text-center mt-4">{successMessage}</p>

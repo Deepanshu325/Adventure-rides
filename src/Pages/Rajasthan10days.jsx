@@ -29,6 +29,7 @@ const Rajasthan10days = () => {
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
   const [isDownloadEnabled, setIsDownloadEnabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Add state to control spinner
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,7 +54,11 @@ const Rajasthan10days = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (validate()) {
+
+      setIsLoading(true); // Show spinner when form is being processed
+
       fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10days", {
         method: "POST",
         headers: {
@@ -63,7 +68,7 @@ const Rajasthan10days = () => {
       })
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("Detail"));
+            setSuccessMessage(t("EmailsentSucess"));
             setIsDownloadEnabled(true);
           } else {
             setSuccessMessage(t("emailSentFailure"));
@@ -72,6 +77,8 @@ const Rajasthan10days = () => {
         .catch((error) => {
           console.error("Error:", error);
           setSuccessMessage(t("emailSentFailure"));
+        }) .finally(() => {
+          setIsLoading(false); // Hide spinner once request is done
         });
     }
   };
@@ -166,7 +173,26 @@ const Rajasthan10days = () => {
             </div>
           </form>
 
-         
+         {/* Spinner - Positioned in the center of the form */}
+         {isLoading && (
+            
+            <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
+                <h1 className="font-bold text-blue-500">{t("Detail")}</h1>
+              
+              <div className="spinner-dot-circle">
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+              </div>
+            </div>
+          )}
+
+
           {successMessage && (
             <p className="text-green-600 text-center mt-4">{successMessage}</p>
           )}

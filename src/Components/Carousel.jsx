@@ -48,7 +48,7 @@ const PortraitCarousel = () => {
   }, []);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 3) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrev = () => {
@@ -83,7 +83,7 @@ const PortraitCarousel = () => {
             transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`,
           }}
         >
-          {images.map((image, index) => (
+          {[...images, ...images].map((image, index) => (
             <div
             className={`flex-shrink-0 ${
               visibleCards === 1

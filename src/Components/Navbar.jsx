@@ -2,10 +2,19 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/Images/AR - BL -  logo.png";
 import { useLanguage } from "./Languagecontext";
-import india from "../Assets/Icons/ind.png"
+import india from "../Assets/Icons/27130.jpg"
+import france from "../Assets/Icons/27099.jpg"
 
 const Navbar = () => {
+
+  useEffect(
+    ()=>
+    sessionStorage.clear()
+  )
   const { t, setLanguage } = useLanguage();
+
+  const langauge = sessionStorage.getItem("language")
+
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -52,6 +61,7 @@ const Navbar = () => {
     { name: t("contact2"), path: "/download" },
   ];
 
+
   return (
     <nav
       className={`bg-black/65 bg-opacity-0 text-white px-4 py-3 z-50 sticky top-0 transition-transform duration-300 ${
@@ -94,12 +104,20 @@ const Navbar = () => {
             }}
             className="bg-black rounded-lg text-white font-semibold px-2 border-0.5 border-sky-500"
           >
-            <option value="en">EN
-
-            
+            <option value="en" >EN
             </option>
-            <option value="fr">French</option>
+            <option value="fr" >FR </option>
           </select>
+          
+          {
+
+          
+          (sessionStorage.getItem("language") == "fr" )?
+
+          <img src={france} alt="" className="h-5" />
+           :          
+          <img src={india} alt="" className="h-5" />
+}
         </ul>
       </div>
 
@@ -122,6 +140,8 @@ const Navbar = () => {
             </li>
           ))}
 
+          <div className="flex space-x-2">
+        <div>
           <select
             onChange={(e) => {
               const selectedLanguage = e.target.value;
@@ -130,11 +150,28 @@ const Navbar = () => {
             }}
             className="bg-black rounded-lg text-white font-semibold px-2 border-0.5 border-sky-500"
           >
-            <option value="en">English</option>
-            <option value="fr">French</option>
+            <option value="en">EN</option>
+            <option value="fr">FN</option>
           </select>
+          </div>
+          {
+
+(sessionStorage.getItem("language") == "fr" )?
+
+<div>
+<img src={france} alt="" className="h-5" />
+</div>
+ :
+ <div>
+<img src={india} alt="" className="h-5" />
+</div>
+}
+</div>
+  
         </ul>
       </div>
+
+      
     </nav>
   );
 };

@@ -34,7 +34,7 @@ const Rajasthan10daysvip = () => {
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
   const [isDownloadEnabled, setIsDownloadEnabled] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(false); // Add state to control spinner
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -85,6 +85,7 @@ const Rajasthan10daysvip = () => {
 
   const handleDownload = () => {
     if(langauge == "fr"){
+      setIsLoading(true); 
       fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
         method: "POST",
         headers: {
@@ -93,7 +94,7 @@ const Rajasthan10daysvip = () => {
         body: JSON.stringify({ email: formData.email, name: formData.name }),
       }).then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("Detail has been sent to your email"));
+          setSuccessMessage(t("EmailsentSuccess"));
         } else {
           alert(t("downloadEmailFailure"));
         }
@@ -101,10 +102,13 @@ const Rajasthan10daysvip = () => {
       .catch((error) => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
+      }) .finally(() => {
+        setIsLoading(false); // Hide spinner once request is done
       });
 
         }else
-   
+     
+        setIsLoading(true); 
     fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
       method: "POST",
       headers: {
@@ -114,7 +118,7 @@ const Rajasthan10daysvip = () => {
     })
       .then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("Detail has been sent to your email"));
+          setSuccessMessage(t("EmailsentSuccess"));
         } else {
           alert(t("downloadEmailFailure"));
         }
@@ -122,6 +126,8 @@ const Rajasthan10daysvip = () => {
       .catch((error) => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
+      }) .finally(() => {
+        setIsLoading(false); // Hide spinner once request is done
       });
   };
 
@@ -192,6 +198,24 @@ const Rajasthan10daysvip = () => {
             </div>
           </form>
           
+           {/* Spinner - Positioned in the center of the form */}
+         {isLoading && (
+            
+            <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
+                <h1 className="font-bold text-blue-500">{t("Detail")}</h1>
+              
+              <div className="spinner-dot-circle">
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+              </div>
+            </div>
+          )}
 
           {successMessage && (
             <p className="text-green-600 text-center mb-4">{successMessage}</p>

@@ -36,6 +36,7 @@ const MagazineCarousel = () => {
     },
   ];
 
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(3); // Default to 3 cards for desktop
 

@@ -29,6 +29,7 @@ const Himalaya4days = () => {
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
   const [isDownloadEnabled, setIsDownloadEnabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Add state to control spinner
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,8 +53,12 @@ const Himalaya4days = () => {
   };
 
   const handleSubmit = (e) => {
+
     e.preventDefault();
+
     if (validate()) {
+      setIsLoading(true); // Show spinner when form is being processed
+
       fetch("https://adventurerides-backend.onrender.com/send-download-email-him4days", {
         method: "POST",
         headers: {
@@ -63,7 +68,7 @@ const Himalaya4days = () => {
       })
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("Detail"));
+            setSuccessMessage(t("EmailsentSucess"));
             setIsDownloadEnabled(true);
           } else {
             setSuccessMessage(t("emailSentFailure"));
@@ -72,6 +77,9 @@ const Himalaya4days = () => {
         .catch((error) => {
           console.error("Error:", error);
           setSuccessMessage(t("emailSentFailure"));
+        })
+        .finally(() => {
+          setIsLoading(false); // Hide spinner once request is done
         });
     }
   };
@@ -119,19 +127,19 @@ const Himalaya4days = () => {
         className="bg-grey-500 flex items-center justify-center min-h-screen"
         data-aos="fade-up"
       >
-        <div className="bg-white p-6 rounded-lg shadow-xl w-full md:max-w-[40%]">
+        <div className="bg-white p-6 rounded-lg shadow-xl w-full md:max-w-[40%] relative">
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
             {t("contactus")}
           </h2>
-         
+
           <form onSubmit={handleSubmit} className="space-y-4">
-            {[
-              { label: t("name1"), name: "name", required: true },
-              { label: t("surname"), name: "surname", required: true },
-              { label: t("email"), name: "email", type: "email", required: true },
-              { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
-              { label: t("city"), name: "city", required: true },
-              { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
+            {[ 
+              { label: t("name1"), name: "name", required: true }, 
+              { label: t("surname"), name: "surname", required: true }, 
+              { label: t("email"), name: "email", type: "email", required: true }, 
+              { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false }, 
+              { label: t("city"), name: "city", required: true }, 
+              { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false } 
             ].map((field) => (
               <div key={field.name}>
                 <label
@@ -165,13 +173,28 @@ const Himalaya4days = () => {
             </div>
           </form>
 
-         
-
-          {successMessage && (
-            <p className="text-green-600 text-center mt-4">{successMessage}</p>
+          {/* Spinner - Positioned in the center of the form */}
+          {isLoading && (
+            
+            <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
+                <h1 className="font-bold text-blue-500">{t("Detail")}</h1>
+              
+              <div className="spinner-dot-circle">
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+                <div className="spinner-dot"></div>
+              </div>
+            </div>
           )}
 
-
+          {successMessage && (
+            <p className="text-blue-500 text-center mt-8">{successMessage}</p>
+          )}
         </div>
       </div>
 
