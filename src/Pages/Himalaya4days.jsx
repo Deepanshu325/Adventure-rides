@@ -166,7 +166,7 @@ const Himalaya4days = () => {
             <div>
               <button
                 type="submit"
-                className="w-[80%] bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 {t("submit")}
               </button>
@@ -176,7 +176,7 @@ const Himalaya4days = () => {
           {/* Spinner - Positioned in the center of the form */}
           {isLoading && (
             
-            <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
+            <div className="w-[80%] absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
                 <h1 className="font-bold text-blue-500">{t("Detail")}</h1>
               
               <div className="spinner-dot-circle">
