@@ -6,9 +6,10 @@ import { useLanguage } from "./Languagecontext";
 const Descriptioncard = () => {
  const {t} = useLanguage();
   return (
-    <div className="flex flex-col md:flex-row  ">
+    <div className="w-full">
+    <div className="flex flex-col lg:flex-row  lg:w-[1400px] mx-auto ">
       {/* Image Section */}
-      <div className="w-full md:w-[60%]   pl-2">
+      <div className="w-full lg:max-w-[700px]  mx-auto pl-2  ">
         <img
           src={singleImage}
           alt="Adventure Rides"
@@ -17,7 +18,7 @@ const Descriptioncard = () => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full md:w-[40%]  text-gray-700  pl-2  ">
+      <div className="w-full lg:w-[700px]  text-gray-700  pl-2   ">
       <div className="">
         <h1 className="uppercase text-2xl md:text-[30px] font-bold text-blue-500 mb-[12px] h-[1em] ">
          {t("destitle")}
@@ -45,6 +46,7 @@ const Descriptioncard = () => {
         </ul>
       </div>
       </div>
+    </div>
     </div>
   );
 };
