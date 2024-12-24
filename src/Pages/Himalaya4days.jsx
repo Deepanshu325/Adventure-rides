@@ -176,7 +176,7 @@ const Himalaya4days = () => {
           {/* Spinner - Positioned in the center of the form */}
           {isLoading && (
             
-            <div className="w-[80%] absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
+            <div className="w-full absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
                 <h1 className="font-bold text-blue-500">{t("Detail")}</h1>
               
               <div className="spinner-dot-circle">

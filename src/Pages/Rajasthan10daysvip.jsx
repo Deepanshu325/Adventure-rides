@@ -83,7 +83,10 @@ const Rajasthan10daysvip = () => {
     }
   };
 
-  const handleDownload = () => {
+  const handleDownload = (e) => {
+    e.preventDefault()
+
+
     if(langauge == "fr"){
       setIsLoading(true); 
       fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
@@ -106,7 +109,9 @@ const Rajasthan10daysvip = () => {
         setIsLoading(false); // Hide spinner once request is done
       });
 
-        }else
+        }else{
+
+        
      
         setIsLoading(true); 
     fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvip", {
@@ -130,6 +135,7 @@ const Rajasthan10daysvip = () => {
         setIsLoading(false); // Hide spinner once request is done
       });
   };
+}
 
   return (
     <>
