@@ -42,9 +42,9 @@ const Blog = () => {
     return (
       <>
         <div>
-        <h1 className="text-center mt-12 mb-6  text-xl font-bold text-blue-500 md:text-3xl  "  data-aos="fade-in">Blog</h1>
-        <div className=' mt-10 w-28 md:w-60 m-auto h-0.5 bg-sky-500 mb-1' data-aos="fade-left"></div>
-      <div className=' w-40 md:w-96 m-auto h-0.5 bg-sky-500 mb-12' data-aos="fade-right"></div>
+        <h1 className="text-center mt-12 mb-12  text-xl font-bold text-blue-500 md:text-3xl  "  data-aos="fade-in">Blog</h1>
+     
+     
           <div style={{  justifyContent: 'center' }} className='w-full'>
   {posts.length > 0 ? (
     posts.map(post => (

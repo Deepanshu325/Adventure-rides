@@ -14,7 +14,7 @@ const Md_card = (props) => {
 
   return (
     <>
-      <div className="w-full overflow-hidden lg:flex " >
+      <div className="w-full overflow-hidden lg:flex max-w-7xl mx-auto" >
         {/* Content Section */}
         <div className="w-full lg:w-1/2 justify-between" data-aos="fade-down">
           {props.mainheading && (
@@ -107,7 +107,7 @@ const Md_card = (props) => {
         </div>
       )}
 
-      <div className="w-full md:w-full bg-orange-500 h-0.5 mt-1"></div>
+      <div className="w-full md:w-full bg-orange-500 h-0.5 mt-1 max-w-7xl mx-auto"></div>
     </>
   );
 };

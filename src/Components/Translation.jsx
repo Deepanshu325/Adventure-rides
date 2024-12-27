@@ -161,9 +161,11 @@ const translations = {
 
     ,Detail : "We are sending you the detailed program by mail",
      Our : "Our",
+     EmailsentSucess : "EmailsentSucess"
 
   },
   fr: {
+    EmailsentSucess : "MailEnvoiSucess",
     Our : "Nos",
     Detail : "Nous vous envoyons le programme détaillé par mail",
     optional : "optionnel",

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = (props) => {
   return (
-    <div className="w-full ">
+    <div className="w-full max-w-7xl mx-auto">
       {/* Text Section */}
       <div className="w-full bg-gray-100 p-4 md:col-span-2">
         <h2 className="text-xl font-bold mb-2">{props.mainheading}</h2>

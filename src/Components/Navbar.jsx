@@ -2,16 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/Images/AR - BL -  logo.png";
 import { useLanguage } from "./Languagecontext";
-import india from "../Assets/Icons/27130.jpg"
-import france from "../Assets/Icons/27099.jpg"
+import india from "../Assets/Icons/27130.jpg";
+import france from "../Assets/Icons/27099.jpg";
 
 const Navbar = () => {
-
- 
   const { t, setLanguage } = useLanguage();
 
-  const langauge = sessionStorage.getItem("language")
-
+  const language = sessionStorage.getItem("language") || "en";
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -23,6 +20,16 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const switchToEnglish = () => {
+    setLanguage("en");
+    sessionStorage.setItem("language", "en");
+  };
+
+  const switchToFrench = () => {
+    setLanguage("fr");
+    sessionStorage.setItem("language", "fr");
   };
 
   // Scroll event to handle Navbar visibility
@@ -58,7 +65,6 @@ const Navbar = () => {
     { name: t("contact2"), path: "/download" },
   ];
 
-
   return (
     <nav
       className={`bg-black/65 bg-opacity-0 text-white px-4 py-3 z-50 sticky top-0 transition-transform duration-300 ${
@@ -83,7 +89,7 @@ const Navbar = () => {
         </button>
 
         {/* Full menu for larger screens */}
-        <ul className="hidden lg:flex space-x-6">
+        <ul className="hidden lg:flex space-x-6 items-center">
           {menuItems.map((item, index) => (
             <li
               key={index}
@@ -93,28 +99,27 @@ const Navbar = () => {
             </li>
           ))}
 
-          <select
-            onChange={(e) => {
-              const selectedLanguage = e.target.value;
-              setLanguage(selectedLanguage);
-              sessionStorage.setItem("language", selectedLanguage); // Store the value in local storage
-            }}
-            className="bg-black rounded-lg text-white font-semibold px-2 border-0.5 border-sky-500"
-          >
-            <option value="en" >EN
-            </option>
-            <option value="fr" >FR </option>
-          </select>
-          
-          {
-
-          
-          (sessionStorage.getItem("language") == "fr" )?
-
-          <img src={france} alt="" className="h-5" />
-           :          
-          <img src={india} alt="" className="h-5" />
-}
+          {/* Language Toggle */}
+          <div className="flex space-x-3 items-center ">
+          <a className="text-white">EN</a>
+            <img
+              src={india}
+              alt="Switch to English"
+              className={`h-5 cursor-pointer ${
+                language === "en" ? "opacity-50" : "opacity-100"
+              }`}
+              onClick={switchToEnglish}
+            />
+            <a className="text-white border-l-2 pl-2">FR</a>
+            <img
+              src={france}
+              alt="Switch to French"
+              className={`h-5 cursor-pointer ${
+                language === "fr" ? "opacity-50" : "opacity-100"
+              }`}
+              onClick={switchToFrench}
+            />
+          </div>
         </ul>
       </div>
 
@@ -137,34 +142,29 @@ const Navbar = () => {
             </li>
           ))}
 
-          <div className="flex space-x-2">
-        <div>
-          <select
-            onChange={(e) => {
-              const selectedLanguage = e.target.value;
-              setLanguage(selectedLanguage);
-              sessionStorage.setItem("language", selectedLanguage); // Store the value in local storage
-            }}
-            className="bg-black rounded-lg text-white font-semibold px-2 border-0.5 border-sky-500"
-          >
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-          </select>
+          {/* Language Toggle for Small Screens */}
+          <div className="flex space-x-3 items-center ">
+           <a className="text-white">EN</a>
+            <img
+              src={india}
+              alt="Switch to English"
+              className={`h-5 cursor-pointer ${
+                language === "en" ? "opacity-50" : "opacity-100"
+              }`}
+              onClick={switchToEnglish}
+            />
+            <a className="text-white border-l-2 pl-2">FR</a>
+            <img
+              src={france}
+              alt="Switch to French"
+              className={`h-5 cursor-pointer ${
+                language === "fr" ? "opacity-50" : "opacity-100"
+              }`}
+              onClick={switchToFrench}
+            />
           </div>
-          {
-
-(sessionStorage.getItem("language") == "fr" )?
-<img src={france} alt="" className="h-5" />
- :
-<img src={india} alt="" className="h-5" />
-
-}
-</div>
-  
         </ul>
       </div>
-
-      
     </nav>
   );
 };

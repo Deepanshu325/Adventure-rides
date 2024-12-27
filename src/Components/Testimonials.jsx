@@ -74,7 +74,7 @@ const Testimonials = () => {
               // Desktop
             }}
             autoplay={{
-              delay: 3000, // 3 seconds
+              delay: 7000, // 1 seconds
               disableOnInteraction: false,
             }}
             pagination={{ clickable: true }}

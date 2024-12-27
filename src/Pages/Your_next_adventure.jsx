@@ -33,11 +33,10 @@ const Your_next_adventure = () => {
   return (
     <>
     <div className='w-full p-8 md:p-16'>
-    <p className="text-center mt-8 text-xl  font-bold text-blue-500 md:text-3xl">
+    <p className="text-center mt-8 text-xl  font-bold text-blue-500 md:text-3xl mb-12">
         {t("advmain")}
       </p>
-      <div className=' mt-10 w-28 md:w-60 m-auto h-0.5 bg-sky-500 mb-1' data-aos="fade-right"></div>
-      <div className=' w-40 md:w-96 m-auto h-0.5 bg-sky-500 mb-12' data-aos="fade-left"></div>
+    
         
         <div className=' w-full md:pl-20 md:pr-20' data-aos="fade-down">
        <a className='  font-extrabold text-lg'>{t("advhead")}</a>

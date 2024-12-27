@@ -99,17 +99,11 @@ const Download = () => {
 
   return (
     <>
-      <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl uppercase ">
+      <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl uppercase mb-12">
         {t("contactus")}
       </p>
-      <div
-        className="mt-10 w-1/2 md:w-60 m-auto h-0.5 bg-sky-500 mb-1"
-        data-aos="fade-left"
-      ></div>
-      <div
-        className="w-96 md:w-72 m-auto h-0.5 bg-sky-500 mb-12"
-        data-aos="fade-right"
-      ></div>
+   
+   
 
       <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
         <img src={contact} alt="Contact Us" className="rounded-2xl" />

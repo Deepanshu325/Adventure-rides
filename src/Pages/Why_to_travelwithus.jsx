@@ -43,12 +43,11 @@ const Why_to_travelwithus = () => {
       {/* Title Section */}
       
       <div className="text-center py-12 ">
-        <p className="text-xl font-bold text-blue-500 md:text-3xl">
+        <p className="text-xl font-bold text-blue-500 md:text-3xl mb-12">
           {t("nextadventure")}
         </p>
         
-        <div className="mt-6 w-20 md:w-60 mx-auto h-1 bg-sky-500 rounded"></div>
-        <div className="mt-2 w-40 mx-auto h-1 bg-sky-500 rounded"></div>
+    
       </div>
 
       {/* Content Section */}
@@ -123,7 +122,7 @@ const Why_to_travelwithus = () => {
           point3={t("high3")}
         />
 
-        <div className="grid grid-col-1 md:grid-cols-2   lg:grid-cols-3 lg:grid-rows-3  h-fit gap-2">
+        <div className="grid grid-col-1 md:grid-cols-2   lg:grid-cols-3 lg:grid-rows-3  h-fit gap-2 max-w-7xl mx-auto">
          
          <div>
           <img src={image11} alt="" className="h-60 w-full rounded-xl" />

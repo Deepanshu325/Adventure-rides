@@ -86,7 +86,7 @@ const Rajasthan10daysvip = () => {
   const handleDownload = (e) => {
     e.preventDefault()
 
-
+    if (validate()) {
     if(langauge == "fr"){
       setIsLoading(true); 
       fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysvipfr", {
@@ -136,22 +136,16 @@ const Rajasthan10daysvip = () => {
       });
   };
 }
+}
 
   return (
     <>
       <div className="p-5 max-w-screen-lg mx-auto">
-        <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl">
+        <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl mb-12">
           {t("contacthead")} for 10 days [vip]
         </p>
       </div>
-      <div
-        className="mt-10 w-1/2 md:w-60 m-auto h-0.5 bg-sky-500 mb-1"
-        data-aos="fade-left"
-      ></div>
-      <div
-        className="w-96 md:w-72 m-auto h-0.5 bg-sky-500 mb-12"
-        data-aos="fade-right"
-      ></div>
+    
       <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
         <img src={raj10} alt="Rajasthan 10 Days" className="rounded-2xl" />
       </div>
@@ -224,7 +218,7 @@ const Rajasthan10daysvip = () => {
           )}
 
           {successMessage && (
-            <p className="text-green-600 text-center mb-4">{successMessage}</p>
+            <p className="text-green-500 text-center mb-4">{successMessage}</p>
           )}
           
         </div>

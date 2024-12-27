@@ -58,14 +58,14 @@ const PortraitCarousel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 5000);
+    const interval = setInterval(handleNext, 7000);
     return () => clearInterval(interval);
   }, []);
 
  
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 3000);
+    const interval = setInterval(handleNext, 7000);
     return () => clearInterval(interval);
   }, []);
 
