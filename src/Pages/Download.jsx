@@ -16,7 +16,9 @@ const Download = () => {
   }, []);
 
   const { t } = useLanguage();
-
+  
+  const [comment , setComment] = useState()
+  
   const [formData, setFormData] = useState({
     name: "",
     surname: "",
@@ -24,6 +26,7 @@ const Download = () => {
     mobile: "",
     city: "",
     currentBike: "",
+    comment : ""
   });
 
   const [errors, setErrors] = useState({});
@@ -45,7 +48,7 @@ const Download = () => {
     if (!formData.email.trim()) tempErrors.email = t("emailRequired");
     else if (!/\S+@\S+\.\S+/.test(formData.email))
       tempErrors.email = t("emailInvalid");
-    if (!formData.city.trim()) tempErrors.city = t("cityRequired");
+    if (!formData.city.trim()) tempErrors.city = t("cityRequired"); 
     setErrors(tempErrors);
 
     return Object.keys(tempErrors).length === 0;
@@ -149,7 +152,7 @@ const Download = () => {
                 )}
               </div>
             ))}
-            <textarea name="" id=""></textarea>
+            <textarea name="" id="" value={comments}>Comments</textarea>
             <div>
               <button
                 type="submit"
