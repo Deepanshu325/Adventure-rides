@@ -33,7 +33,7 @@ import image28 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.30 PM (2
 
 import Card from "../Components/Card";
 
-import image7 from "../Assets/Home/WhatsApp Image 2024-12-19 at 11.17.25 AM (1).jpeg"
+import image7 from "../Assets/Home/6. a (1).jpg"
 
 const Why_to_travelwithus = () => {
   const { t } = useLanguage();
@@ -88,7 +88,7 @@ const Why_to_travelwithus = () => {
 
         <Card
          img1={image3}
-         img2={image7}
+         img2={image8}
           mainheading={t("demandinghead")}
           point1={t("demanding1")}
 
@@ -99,7 +99,7 @@ const Why_to_travelwithus = () => {
 
         <Card
           img1={image5}
-          img2={image8}
+          img2={image7}
           mainheading={t("uniquehead")}
           point1={t("unique1")}
           point2={t("unique2")}

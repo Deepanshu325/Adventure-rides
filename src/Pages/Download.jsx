@@ -16,9 +16,7 @@ const Download = () => {
   }, []);
 
   const { t } = useLanguage();
-  
-  const [comment , setComment] = useState()
-  
+
   const [formData, setFormData] = useState({
     name: "",
     surname: "",
@@ -26,7 +24,7 @@ const Download = () => {
     mobile: "",
     city: "",
     currentBike: "",
-    comment : ""
+    comments: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -48,7 +46,7 @@ const Download = () => {
     if (!formData.email.trim()) tempErrors.email = t("emailRequired");
     else if (!/\S+@\S+\.\S+/.test(formData.email))
       tempErrors.email = t("emailInvalid");
-    if (!formData.city.trim()) tempErrors.city = t("cityRequired"); 
+    if (!formData.city.trim()) tempErrors.city = t("cityRequired");
     setErrors(tempErrors);
 
     return Object.keys(tempErrors).length === 0;
@@ -66,7 +64,7 @@ const Download = () => {
       })
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("emailSentSuccess"));
+            setSuccessMessage(t("EmailsentSucess"));
             setIsDownloadEnabled(true);
           } else {
             setSuccessMessage(t("emailSentFailure"));
@@ -105,8 +103,6 @@ const Download = () => {
       <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl uppercase mb-12">
         {t("contactus")}
       </p>
-   
-   
 
       <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
         <img src={contact} alt="Contact Us" className="rounded-2xl" />
@@ -120,16 +116,23 @@ const Download = () => {
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
             {t("contact")}
           </h2>
-          
+
           <form onSubmit={handleSubmit} className="space-y-4">
             {[
               { label: t("name1"), name: "name", required: true },
               { label: t("surname"), name: "surname", required: true },
               { label: t("email"), name: "email", type: "email", required: true },
-              { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
+              {
+                label: `${t("mob")} (${t("optional")})`,
+                name: "mobile",
+                required: false,
+              },
               { label: t("city"), name: "city", required: true },
-              { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
-              
+              {
+                label: `${t("currentbike")} (${t("optional")})`,
+                name: "currentBike",
+                required: false,
+              },
             ].map((field) => (
               <div key={field.name}>
                 <label
@@ -152,7 +155,24 @@ const Download = () => {
                 )}
               </div>
             ))}
-            <textarea name="" id="" value={comment} onChange={e=>(setComment(e.target.value))}>Comments</textarea>
+            <div>
+              <label
+                htmlFor="comments"
+                className="block text-sm font-medium text-gray-600"
+              >
+                {t("Comments")}
+              </label>
+              <textarea
+                id="comments"
+                name="comments"
+                value={formData.comments}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              {errors.comments && (
+                <p className="text-red-500 text-sm">{errors.comments}</p>
+              )}
+            </div>
             <div>
               <button
                 type="submit"
