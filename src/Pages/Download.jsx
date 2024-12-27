@@ -152,7 +152,7 @@ const Download = () => {
                 )}
               </div>
             ))}
-            <textarea name="" id="" value={comments}>Comments</textarea>
+            <textarea name="" id="" value={comment} onChange={e=>(setComment(e.target.value))}>Comments</textarea>
             <div>
               <button
                 type="submit"
