@@ -20,7 +20,7 @@ const Descriptioncard = () => {
       {/* Content Section */}
       <div className="w-full lg:w-[680px]  text-gray-700  pl-2   ">
       <div className="">
-        <h1 className="uppercase text-2xl md:text-[30px] font-bold text-blue-500 mb-[12px] h-[1em] ">
+        <h1 className="uppercase text-2xl md:text-[30px] font-bold text-blue-500 mb-[12px] h-full ">
          {t("destitle")}
         </h1>
         <p className="text-lg text-orange-500 mb-[12px] md:w-[92%]    ">
