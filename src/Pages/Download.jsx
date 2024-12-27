@@ -126,6 +126,7 @@ const Download = () => {
               { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
               { label: t("city"), name: "city", required: true },
               { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
+              
             ].map((field) => (
               <div key={field.name}>
                 <label
@@ -148,7 +149,7 @@ const Download = () => {
                 )}
               </div>
             ))}
-
+            <textarea name="" id=""></textarea>
             <div>
               <button
                 type="submit"

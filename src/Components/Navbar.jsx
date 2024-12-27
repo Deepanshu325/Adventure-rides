@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../Assets/Images/AR - BL -  logo.png";
 import { useLanguage } from "./Languagecontext";
 import india from "../Assets/Icons/27130.jpg";
@@ -67,9 +68,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-black/65 bg-opacity-0 text-white px-4 py-3 z-50 sticky top-0 transition-transform duration-300 ${
-        isNavbarVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`bg-black/65 bg-opacity-0 text-white px-4 py-3 z-50 sticky top-0 transition-transform duration-300 ${isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
     >
       <div className="flex justify-between items-center">
         {/* Logo */}
@@ -95,28 +95,35 @@ const Navbar = () => {
               key={index}
               className="pt-0.5 hover:text-sky-500 active:text-sky-500 lg:text-sm"
             >
-              <Link to={item.path}>{item.name}</Link>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-blue-500 font-bold" // Active link styles
+                    : "text-white hover:text-white/50" // Inactive link styles
+                }
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
 
           {/* Language Toggle */}
           <div className="flex space-x-3 items-center ">
-          <a className="text-white">EN</a>
+            <a className="text-white">EN</a>
             <img
               src={india}
               alt="Switch to English"
-              className={`h-5 cursor-pointer ${
-                language === "en" ? "opacity-50" : "opacity-100"
-              }`}
+              className={`h-5 cursor-pointer ${language === "en" ? "opacity-50" : "opacity-100"
+                }`}
               onClick={switchToEnglish}
             />
             <a className="text-white border-l-2 pl-2">FR</a>
             <img
               src={france}
               alt="Switch to French"
-              className={`h-5 cursor-pointer ${
-                language === "fr" ? "opacity-50" : "opacity-100"
-              }`}
+              className={`h-5 cursor-pointer ${language === "fr" ? "opacity-50" : "opacity-100"
+                }`}
               onClick={switchToFrench}
             />
           </div>
@@ -125,41 +132,42 @@ const Navbar = () => {
 
       {/* Dropdown menu for smaller screens */}
       <div
-        className={`lg:hidden mt-4 transition-all duration-500 ease-in-out overflow-hidden ${
-          menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`lg:hidden mt-4 transition-all duration-500 ease-in-out overflow-hidden ${menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <ul className="space-y-3">
           {menuItems.map((item, index) => (
             <li key={index}>
-              <Link
+              <NavLink
                 to={item.path}
                 onClick={closeMenu}
-                className="active:text-sky-500 hover:text-gray-400"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-sky-500 font-bold" // Active state styles
+                    : "hover:text-gray-400"
+                }
               >
                 {item.name}
-              </Link>
+              </NavLink>
             </li>
           ))}
 
           {/* Language Toggle for Small Screens */}
           <div className="flex space-x-3 items-center ">
-           <a className="text-white">EN</a>
+            <a className="text-white">EN</a>
             <img
               src={india}
               alt="Switch to English"
-              className={`h-5 cursor-pointer ${
-                language === "en" ? "opacity-50" : "opacity-100"
-              }`}
+              className={`h-5 cursor-pointer ${language === "en" ? "opacity-50" : "opacity-100"
+                }`}
               onClick={switchToEnglish}
             />
             <a className="text-white border-l-2 pl-2">FR</a>
             <img
               src={france}
               alt="Switch to French"
-              className={`h-5 cursor-pointer ${
-                language === "fr" ? "opacity-50" : "opacity-100"
-              }`}
+              className={`h-5 cursor-pointer ${language === "fr" ? "opacity-50" : "opacity-100"
+                }`}
               onClick={switchToFrench}
             />
           </div>

@@ -42,7 +42,7 @@ const Blog = () => {
     return (
       <>
         <div>
-        <h1 className="text-center mt-12 mb-12  text-xl font-bold text-blue-500 md:text-3xl  "  data-aos="fade-in">Blog</h1>
+        <h1 className="text-center mt-12 mb-12  text-xl font-bold text-blue-500 md:text-3xl  "  data-aos="fade-in">BLOG</h1>
      
      
           <div style={{  justifyContent: 'center' }} className='w-full'>

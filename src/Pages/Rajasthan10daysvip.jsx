@@ -97,7 +97,7 @@ const Rajasthan10daysvip = () => {
         body: JSON.stringify({ email: formData.email, name: formData.name }),
       }).then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("EmailsentSuccess"));
+          setSuccessMessage(t("MailEnvoiSucess"));
         } else {
           alert(t("downloadEmailFailure"));
         }

@@ -110,7 +110,7 @@ const Himalaya10days = () => {
       
 
         if (response.ok) {
-          setSuccessMessage(t("EmailsentSucess"));
+          setSuccessMessage(t("MailEnvoiSucess"));
         } else {
           alert(t("downloadEmailFailure"));
         }
