@@ -51,7 +51,7 @@ const Videocard = () => {
         <p className="font-thin text-white text-base sm:text-lg mt-6">
        
         </p>
-        <button className="w-16 md:w-20  mt-6   text-white text-sm font-medium rounded-md  hover:text-sky-500 transition" onClick={()=>window.open("https://www.youtube.com/watch?v=MjxTDuKfAqQ","_blank")}>
+        <button className="w-16 md:w-20  mt-2   text-white text-sm font-medium rounded-md  hover:text-sky-500 transition" onClick={()=>window.open("https://www.youtube.com/watch?v=MjxTDuKfAqQ","_blank")}>
          <img src={ytlogo} alt="" className=" object-contain  " /> 
         </button>
       
