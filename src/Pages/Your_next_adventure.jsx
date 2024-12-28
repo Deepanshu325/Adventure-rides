@@ -7,7 +7,7 @@ import Himalaya from '../Assets/Images/Himachal/WhatsApp Image 2024-12-19 at 2.4
 import him4 from "../Assets/Images/Himachal/WhatsApp Image 2024-12-19 at 2.46.05 PM.jpeg"
 import Adventurecard from '../Components/Adventurecard'
 import Goa from '../Assets/Home/Goa.webp'
-import Rajasthan from '../Assets/Images/Rajasthan/PICRAJ51.jpg'
+import Rajasthan from '../Assets/Images/Rajasthan/WhatsApp Image 2024-12-28 at 1.09.29 PM.jpeg'
 import Rajasthanvip from '../Assets/Images/Rajasthan/A4.png'
 import { useLanguage } from '../Components/Languagecontext'
 import AOS from 'aos';
