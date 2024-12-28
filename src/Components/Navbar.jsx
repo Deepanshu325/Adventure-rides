@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Logo from "../Assets/Images/AR - BL -  logo.png";
 import { useLanguage } from "./Languagecontext";
-import india from "../Assets/Icons/27130.jpg";
+import india from "../Assets/Icons/18166.jpg";
 import france from "../Assets/Icons/27099.jpg";
 
 const Navbar = () => {

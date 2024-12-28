@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Himalaya from "../Assets/Images/Himachal/himach.jpeg";
+import Himalaya from "../Assets/Images/Himachal/WhatsApp Image 2024-12-28 at 12.41.17 PM.jpeg";
 import Rajasthan from "../Assets/Images/Rajasthan/raj.png";
 import SouthIndia from "../Assets/Home/WhatsApp Image 2024-12-23 at 11.34.06 AM.jpeg";
-import Goa from "../Assets/Home/New Destination.jpeg";
+import Goa from "../Assets/Home/WhatsApp Image 2024-12-28 at 12.26.48 PM.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { HashLink } from "react-router-hash-link";
