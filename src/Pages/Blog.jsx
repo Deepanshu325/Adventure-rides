@@ -77,18 +77,7 @@ const Blog = () => {
           />
         )}
 
-{post.picture && (
-          <img
-            src={post.picture}
-            alt="Post Visual"
-            style={{
-              width: '100%',
-              height: 'auto',
-              display: 'block',
-              objectFit: 'cover',
-            }}           
-          />
-        )}
+
         <div style={{ padding: '15px' }}>
           <p style={{ margin: '10px 0', fontSize: '16px', fontWeight: 'bold', color: '#333' }}>
             {post.message || 'No message available'}
