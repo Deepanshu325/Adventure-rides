@@ -33,7 +33,7 @@ import image28 from "../Assets/Hotel/WhatsApp Image 2024-12-23 at 12.15.30 PM (2
 
 import Card from "../Components/Card";
 
-import image7 from "../Assets/Home/6. a (1).jpg"
+import image7 from "../Assets/Home/WhatsApp Image 2024-12-28 at 12.54.28 PM.jpeg"
 
 const Why_to_travelwithus = () => {
   const { t } = useLanguage();
@@ -42,7 +42,7 @@ const Why_to_travelwithus = () => {
     <div className="md:w-full bg-gray-100">
       {/* Title Section */}
       
-      <div className="text-center py-12 ">
+      <div className="text-center pt-12 ">
         <p className="text-xl font-bold text-blue-500 md:text-3xl mb-12">
           {t("nextadventure")}
         </p>

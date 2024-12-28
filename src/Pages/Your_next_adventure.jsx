@@ -32,8 +32,8 @@ const Your_next_adventure = () => {
 
   return (
     <>
-    <div className='w-full p-8 md:p-16'>
-    <p className="text-center mt-8 text-xl  font-bold text-blue-500 md:text-3xl mb-12">
+    <div className='w-full p-8 md:p-12'>
+    <p className="text-center  text-xl  font-bold text-blue-500 md:text-3xl mb-12">
         {t("advmain")}
       </p>
     

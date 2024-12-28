@@ -26,6 +26,10 @@ const Our_Fleet = () => {
      <>
 
 <div className=' w-full md:pl-20 md:pr-20 pt-8 pl-8 pr-8 overflow-hidden' data-aos="fade-down">
+<p className="text-center  text-xl  font-bold text-blue-500 md:text-3xl mb-12">
+        {t("OUR FLEET")}
+      </p>
+
        <a className=' font-extrabold text-lg'>{t("advhead")}</a>
        <div className='font-semibold  mt-3'>
        <p className='font-semibold text-justify pb-5'>{t("adv1")}</p>
