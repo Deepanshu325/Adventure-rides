@@ -1,11 +1,10 @@
 const translations = {
   en: {
-    welcome: "EXPERIENCE WORLD",
-    welcome3: "CLASS DELIVERY ",
-    welcome4: "EXCELLENCE",
-
-    destitle: "Welcome to Adventure Rides",
-    des1: "Adventure Rides is the only agency in India offering off-road tours on genuine enduro motorcycles, the most trusted and valued brand on the market, the KTM EXC-F 450. You can also experience the same thrill in astonishing environments on easy trails and small roads on a less demanding motorbike, the KTM Adventure 390."
+      welcome: "EXPERIENCE WORLD"
+    , welcome3: "CLASS DELIVERY "
+    , welcome4: "EXCELLENCE"
+    , destitle: "Welcome to Adventure Rides"
+    , des1: "Adventure Rides is the only agency in India offering off-road tours on genuine enduro motorcycles, the most trusted and valued brand on the market, the KTM EXC-F 450. You can also experience the same thrill in astonishing environments on easy trails and small roads on a less demanding motorbike, the KTM Adventure 390."
     , des2: "‣ Ride unbeaten off-road tracks in breathtaking nature from desert dunes to highest mountain peaks."
     , des3: "‣ Rely on 35+ year of experience of enduro riding and rallying across 3 continents"
     , des4: "‣ Enjoy your unique adventure safely backed by a team having 18 years on-the-ground support including mechs and docs "
@@ -28,92 +27,69 @@ const translations = {
     , safetyhead: "1. Safety and security First"
     , safety: "Safety for you"
     , safety1: "→ Every tour is accompanied by appropriate equipment and trained personnel, and we never travel without a support vehicle."
-    , safety2: "→ You are attended by first-aid trained and certified team",
-    safety3: "→ We have secured an audited medical emergency plan: global rescue including ambulance and helicopter evacuation if needed to the appropriate hospital"
-    , security: "Security for your Bike",
-    security1: "→ On each tour, your bike is daily maintained by and experienced KTM mechanic"
-    , security2: "→ The back-up vehicle carried all needed spares and repair-kits",
-    security3: "→ Additionally, we carry for you a spare motorbike in case the mechanic cannot repair your bike for the next day"
+    , safety2: "→ You are attended by first-aid trained and certified team"
+    , safety3: "→ We have secured an audited medical emergency plan: global rescue including ambulance and helicopter evacuation if needed to the appropriate hospital"
+    , security: "Security for your Bike"
+    , security1: "→ On each tour, your bike is daily maintained by and experienced KTM mechanic"
+    , security2: "→ The back-up vehicle carried all needed spares and repair-kits"
+    , security3: "→ Additionally, we carry for you a spare motorbike in case the mechanic cannot repair your bike for the next day"
     , genuinehead: "2. Genuine ENDURO or Touring Motorcycles"
     , genuine1: "→ We are the only operator to run tours on KTM EXC-F 450 enduro and KTM Adventure Motorcycles"
     , genuine2: "→ You get a genuine adventure experience with real off-road bikes"
     , genuine3: "→ For our riders preferring to explore India in Trail mode (dual purposes), we offer the latest KTM Adventure models or the it’s equivalent"
     , genuine4: "→ Our touring agency offers curated rides and tours across India's most stunning landscapes. "
     , demandinghead: "3. Demanding Off-road Tracks or pleasent trails and small roads"
-    , demanding1: "→ Our itineraries bring you on outstanding off-road trails, hiking routes, river beds and single tracks",
-    demanding2: "→ Your enduro journey consists at least of 85% daily off-road adventures",
-    demanding3: "→ Your trail journey consists of 50 to 60% easy off-road and small roads",
-    uniquehead: "4. Unique environment",
-    unique1: "→ The reward of long and hard riding days is the discovery of hidden topographical gems or cultural breaks in remote monasteries and temples"
+    , demanding1: "→ Our itineraries bring you on outstanding off-road trails, hiking routes, river beds and single tracks"
+    , demanding2: "→ Your enduro journey consists at least of 85% daily off-road adventures"
+    , demanding3: "→ Your trail journey consists of 50 to 60% easy off-road and small roads"
+    , uniquehead: "4. Unique environment"
+    , unique1: "→ The reward of long and hard riding days is the discovery of hidden topographical gems or cultural breaks in remote monasteries and temples"
     , unique2: "→ Agile and always there team : by limiting the participants to max. 8 riders, the guide can easily adapt the pace and the difficulties of the track to the expectations of the group"
-    , experiencehead: "5. Experienced Team",
-    experience1: "→ Over 18 years experience in inbound tourism with western excellence standards."
+    , experiencehead: "5. Experienced Team"
+    , experience1: "→ Over 18 years experience in inbound tourism with western excellence standards."
     , experience2: "→ Beside the Adventure Rides team, a local support team in each and every area crossed for permits, crossing natural sanctuaries, private lands improvise alternate routes in case of sudden natural topographic changes"
-    , highhead: "6. High-end lodging",
-    high1: "→ After a long-lasting and demanding day, you get a recovery treatment in exceptional accommodation",
-    high2: "→ Unique cultural Heritage resorts",
-    high3: "→ 4 or 5 stars accommodation along all the trip with western facilities"
-
-
+    , highhead: "6. High-end lodging"
+    , high1: "→ After a long-lasting and demanding day, you get a recovery treatment in exceptional accommodation",
+      high2: "→ Unique cultural Heritage resorts",
+      high3: "→ 4 or 5 stars accommodation along all the trip with western facilities"
     , advmain: "YOUR NEXT ADVENTURE"
     , advhead: "As from now, you choose your own splashing mode :",
-    adv1: "→ either hard splashing with genuine enduro motorcycles, KTM EXC-F 450",
-    adv2: "→ or soft splashing with trail bikes on KTM390Adventure or equivalent",
-    advhead2: "The surrounding sceneries will remain spectacular and breathtaking as on all our tours. You just chose your own riding mode!",
-    advdes: "For groups of 4 participants or more, Adventure Rides also offers bespoke tours. Tell us your dates, destination, riding mode, pace and expectations, and we customize the exact adventure that you want. Please contact our sales team for tailor made travel experiences you've been waiting for!",
-    himalaya: "The HIMALAYAS",
-    himalayahead: "The Highest Ride 10 Days",
-    himalaya1: "The aim of this tour is to discover Himalaya’s unbeaten offroad tracks in northern India through mountain forest tracks, donkey paths, astonishing high-altitude plateaus and passes close to 6.000m altitude."
+      adv1: "→ either hard splashing with genuine enduro motorcycles, KTM EXC-F 450",
+      adv2: "→ or soft splashing with trail bikes on KTM390Adventure or equivalent",
+      advhead2: "The surrounding sceneries will remain spectacular and breathtaking as on all our tours. You just chose your own riding mode!",
+      advdes: "For groups of 4 participants or more, Adventure Rides also offers bespoke tours. Tell us your dates, destination, riding mode, pace and expectations, and we customize the exact adventure that you want. Please contact our sales team for tailor made travel experiences you've been waiting for!",
+      himalaya: "The HIMALAYAS",
+      himalayahead: "The Highest Ride 10 Days",
+      himalaya1: "The aim of this tour is to discover Himalaya’s unbeaten offroad tracks in northern India through mountain forest tracks, donkey paths, astonishing high-altitude plateaus and passes close to 6.000m altitude."
     , himalaya2: "Riding with small groups of maximum 8 riders, the tour leader can adapt the pace, the riding duration and difficulty level to the group. You will experience a cultural immersion during chai-breaks in typical rural villages or while visiting centuries old gompas (Tibetan monasteries).This trip requires a good physical condition due to the high altitude and alert off-road skills. ...”"
     , moreinfo: "More info",
-    himalayahead2: "The Highest Ride 4 Days",
-    himalaya3: "This is our shortest tour for riders who have no time for the full tours or riders who want to experience a discovery ride including 5 enduro training sessions on the go."
+      himalayahead2: "The Highest Ride 4 Days",
+      himalaya3: "This is our shortest tour for riders who have no time for the full tours or riders who want to experience a discovery ride including 5 enduro training sessions on the go."
     , himalaya4: "We start and ends in Leh, and you need a good level of physical fitness due to the high altitude and alert off-road skills. Each day, you will participate to one or two specific training drills to improve your off-road capabilities in various terrain (sand, rocks, humid meadows, riverbed or steep up/down hills ...",
-    himalayahead3: "The Rajasthan Essentials – 10 days",
-    himalaya5: "The aim of this tour is to discover Rajasthan the land of the Maharajas, via savannah and mountain trails. We ride unbeaten offroad tracks in the Thar desert, in many sand dunes, and through various forests and mountains of the Aravillis chain."
+      himalayahead3: "The Rajasthan Essentials – 10 days",
+      himalaya5: "The aim of this tour is to discover Rajasthan the land of the Maharajas, via savannah and mountain trails. We ride unbeaten offroad tracks in the Thar desert, in many sand dunes, and through various forests and mountains of the Aravillis chain."
     , himalaya6: "This ride is a long and intense enduro journey. But when the group, limited to 8 riders, want to take our time to discover this magical historical area, we make breaks to visit a fort or a temple. We ride through the Aravalli range, combining superb nature sanctuaries with typical flora and fauna, dunes, trails through rocky hills and small village roads. … ” …"
     , himalayahead4: "The Rajasthan Essentials – VIP – 10 days"
     , himalaya7: "The aim of this tour is to discover Rajasthan, the land of the Maharajas, via savannah and mountain trails. Compared with the enduro tour, this ride is shorter and less intense. We take our time to discover this beautiful, historic region and enjoy prestigious hotels offering quality local food, swimming pools and spas or wellness facilities."
     , himalaya8: "We ride through the Aravalli range, combining superb nature sanctuaries with typical flora and fauna, dunes, trails through rocky hills and small village roads. You'll also enjoy a cultural immersion during several 'chai breaks' in typical rural villages, visiting a Jain temple or a century-old noria (well system)..."
-
-
     , beasthead: "The Beast",
-    beast1: "For more than two decades, the KTM 450 has been the absolute reference in off-road motorcycle racing. With an unmatched record of Dakar wins, world toughest rally, and tens of enduro championship titles, the bike proved to be the unparalleled benchmark.",
-    beast2: "With impressive and efficient performance, a lightweight frame and subframe, race-proven bodywork and ergonomics, a compact exhaust system as well as exceptional cooling and suspension, the KTM 450 EXC-F is sure to remain the industry standard for all others to follow. ",
-    beast3: "The bike weighs just a little 105,6kg and delivers 55 BHP. But with the necessary precaution, it can be soft and smooth as you may desire"
-
+      beast1: "For more than two decades, the KTM 450 has been the absolute reference in off-road motorcycle racing. With an unmatched record of Dakar wins, world toughest rally, and tens of enduro championship titles, the bike proved to be the unparalleled benchmark.",
+      beast2: "With impressive and efficient performance, a lightweight frame and subframe, race-proven bodywork and ergonomics, a compact exhaust system as well as exceptional cooling and suspension, the KTM 450 EXC-F is sure to remain the industry standard for all others to follow. ",
+      beast3: "The bike weighs just a little 105,6kg and delivers 55 BHP. But with the necessary precaution, it can be soft and smooth as you may desire"
     , aboutus: "About Us",
-
-
-    about1: "Experience the thrill of an off-road adventure in India on exclusive motorbikes : the KTM EXC-F450 or KTM 390 Adventure"
-
+      about1: "Experience the thrill of an off-road adventure in India on exclusive motorbikes : the KTM EXC-F450 or KTM 390 Adventure"
     , about9: "Led by a team with 35+ years of combined expertise in off-road adventures, rest assured you're in skilled hands. Our touring agency offers curated rides and tours across India's most stunning landscapes. "
     , about10: "Get ready to rev up your adrenaline and explore the uncharted on our genuine enduro and trail bikes. "
     , about11: "For your ultimate safety, our tours include a dedicated support vehicle with a trained mechanic and medical assistance on board. "
-
     , about12: " Adventure Rides offers astonishing off-road rides and training in India on a fleet of 10 KTM EXC-F 450 motorbikes."
     , about13: "The team with a cumulative 35+ years experience in motorcycle tours is the backbone for one-of-a-kind guided enduro tours (min.85% off-road) in India’s natural gems in Rajasthan, in the Himalaya mountains and soon in South India."
-
-
-
-
-
     , about3: "The company provides for its patrons on each tour a medic to ride in safe conditions in hostile areas and a mechanic to keep their bikes in pristine condition. Limiting our tours to max. 8 riders, enables the guide to adapt easily the riding level and pace to all participants.",
-    about4: " Eventually, after a gruelling day of adventures, we offer the riders to rest in exceptional lodgings."
+      about4: " Eventually, after a gruelling day of adventures, we offer the riders to rest in exceptional lodgings."
     , abouthead: "Who is Philippe ?",
-
-
-
-
-    about5: "After 20+ years in management consulting, specialised in strategic business development and implementation of corporate processes, Philippe decided to swap his predictable life for adventure. After relocating to India, he bought a fleet of KTM Enduro Rally motorbikes and started to curate unbeaten off-road trails. Adventure Rides was born.",
-    about6: "He organises enduro tours and off-road clinics all over India for motorcycle manufacturers, corporate events and also private training sessions. In 2019, Philippe was appointed by KTM India as Master trainer to support the Adventure activation events.",
-    about7: "Philippe is a seasoned enduro and hard enduro rider. He participated 15 years at the Belgian (FMB), Dutch (KNMV) and French enduro championships (FFM). His best result was 8th in the Belgian championship and hi is a finisher of world's hardest enduro rally, The Redbull Romanians "
-
+      about5: "After 20+ years in management consulting, specialised in strategic business development and implementation of corporate processes, Philippe decided to swap his predictable life for adventure. After relocating to India, he bought a fleet of KTM Enduro Rally motorbikes and started to curate unbeaten off-road trails. Adventure Rides was born.",
+      about6: "He organises enduro tours and off-road clinics all over India for motorcycle manufacturers, corporate events and also private training sessions. In 2019, Philippe was appointed by KTM India as Master trainer to support the Adventure activation events.",
+      about7: "Philippe is a seasoned enduro and hard enduro rider. He participated 15 years at the Belgian (FMB), Dutch (KNMV) and French enduro championships (FFM). His best result was 8th in the Belgian championship and hi is a finisher of world's hardest enduro rally, The Redbull Romanians "
     , about8: "He rode various solo adventure trips in 25+ countries like in Italy, Spain, Greece, Tunisia, Morocco, South Africa, Russia, India, Mongolia, Uzbekistan, Kazakhstan, Kirgizstan, Belarus, Ukraine, Georgia, Romania, Poland, Bangladesh, …). His bike clocked 0.5 million kilometres in India in 8 years",
-
-
-
-
     contacthead: "Download your Detailed Program",
     contactus: "Contact Us",
     name1: "Name",
@@ -124,7 +100,6 @@ const translations = {
     , currentbike: "Current Bike"
     , submit: "Submit",
     download: "Download"
-
     , newsletter: "SUBSCRIBE TO OUR NEWSLETTER",
     home: "HOME"
     , why: "WHY TO TRAVEL WITH US ?"
@@ -139,7 +114,7 @@ const translations = {
     , diffrently: "« Not more of the same !",
     diffrently2: "We do it differently »"
     , media: "Media Shout-out",
-   demanding4: " "
+    demanding4: " "
     , raj: "RAJASTHAN"
     , why1: "WHY SHOULD YOU CHOOSE US FOR YOUR NEXT MOTORCYCLE JOURNEY?"
     , whytitle1: "Your Safety First",
@@ -154,21 +129,20 @@ const translations = {
     whydes4: "Our journeys test your endurance level with a 90% off-road terrain ",
     whydes5: "Our small but tight-knit group of maximum 8 rides per tour, allow for group dynamics ",
     whydes6: "After a grueling day of adventures you can hardly wait to hit the clean sheets in exceptional lodgings ",
-    michael : "Michael",
-    nigel : "Nigel",
-    ktm450 : "The KTM EXC-F 450 or the KTM 390 Adventure"
-    ,optional: "optional"
-
-    ,Detail : "We are sending you the detailed program by mail",
-     Our : "Our",
-     EmailsentSucess : "EmailsentSucess"
+    michael: "Michael",
+    nigel: "Nigel",
+    ktm450: "The KTM EXC-F 450 or the KTM 390 Adventure"
+    , optional: "optional"
+    , Detail: "We are sending you the detailed program by mail",
+    Our: "Our",
+    EmailsentSucess: "EmailsentSucess"
 
   },
   fr: {
-    EmailsentSucess : "MailEnvoiSucess",
-    Our : "Nos",
-    Detail : "Nous vous envoyons le programme détaillé par mail",
-    optional : "optionnel",
+    EmailsentSucess: "MailEnvoiSucess",
+    Our: "Nos",
+    Detail: "Nous vous envoyons le programme détaillé par mail",
+    optional: "optionnel",
     why1: "POURQUOI PARTIR A l’AVENTURE AVEC NOUS?",
     whytitle1: "Votre sécurité, notre priorité !",
     whytitle2: "Des motos parfaitement entretenues",
@@ -182,14 +156,12 @@ const translations = {
     whydes4: "Nos parcours testent votre endurance : 85-90% de découvertes en tout-terrain. ",
     whydes5: "Grâce à la taille réduite du groupe, limité volontairement à max. 8 riders, notre guide adapte les difficultés aux envies et à la fatigue des participants. ",
     whydes6: "Après des heures d’aventure, vous méritez de reprendre des forces dans des logements d’exception. ",
-
     raj: "LE RAJASTHAN",
     demanding4: "→ En mode TRAIL, vous effectuez de 30 à 50% de tout terrain sur des pistes très accessibles et sur des petites routes de villages.",
     safety3: "→ Nous avons aussi mis en place un plan d’urgence pour chaque tour afin de prévoir l’imprévisible y compris une éventuelle évacuation par héliportée sur certaines destinations. ",
     media: "La presse nous dévoile",
     diffrently: "« Not more of the same ! ",
     diffrently2: "Une nouvelle dimension du voyage d’aventure »"
-
     , welcome: "Une nouvelle dimension du",
     welcome3: "voyage",
     welcome4: "aventure",
@@ -220,12 +192,10 @@ const translations = {
     safety1: "→  Sur chaque tour, une aide médicale vous accompagne dans le véhicule d’assistance avec tout le kit médical d’urgence. "
     , safety2: "→ Cet ange gardien est habilité à intervenir dans toutes les situations de médecine d’urgence et spécifiquement pour les risques liés à la pratique moto. ",
     safety3: "→ Nous avons aussi mis en place un plan d’urgence pour chaque tour afin de prévoir l’imprévisible y compris une éventuelle évacuation par héliportée sur certaines destinations."
-     
     , security: "Votre sécurité grâce à l’entretien de votre moto",
     security1: " Dans ce véhicule d’assistance, un mécanicien KTM vous suit pendant tout le trajet afin de vous assurer une moto parfaitement entretenue"
     , security2: "→ Il emporte toutes les pièces détachées et les kits de réparation pour garantir une moto au top, garantie de votre sécurité. ",
     security3: "→ Nous transportons non seulement vos bagages mais également une moto de rechange par groupe si le temps de réparation s’avère trop long."
-
     , genuinehead: "2. De vraies motos de tout-terrain"
     , genuine1: "→ Avec Adventure Rides, vous roulez sur de vraies enduros, des KTM EXC-F 450 ou de vrais trails, la KTM Adventure (ou équivalent)"
     , genuine2: "→ Vous vivez une aventure au cœur de la nature"
@@ -245,11 +215,8 @@ const translations = {
     , high1: "→ Après épuisantes journées à moto, nous vous réservons des logements exceptionnels"
     , high2: "→ Le choix hôtelier se fait en fonction du degré de confort (exclusivement des 4 et 5 étoiles sauf cas exceptionnels) et en fonction de l’héritage culturel apporté"
     , high3: "→ Dans des régions éloignées, on vous sélectionne les meilleures alternatives d’hébergement avec des équipements occidentaux"
-
-
     , advmain: " VOTRE PROCHAINE AVENTURE "
     , advhead: " Dès à présent, vous pouvez choisir votre propre mode de voyage :",
-
     adv1: "→ soit sur d'authentiques motos d'enduro, la KTM EXC-F 450",
     adv2: "→ soit sur des motos de trail, KTM Adventure ou équivalent",
     advhead2: "→ Les paysages environnants resteront spectaculaires et époustouflants comme sur tous nos circuits. Il ne vous reste plus qu'à choisir votre mode de roulage !",
@@ -264,50 +231,28 @@ const translations = {
     , himalaya4: "Le départ et l'arrivée se font à Leh, la capital du Ladakh, et vous devez avoir une bonne condition physique en raison de l'altitude, et de moyennes aptitudes en tout-terrain. Chaque jour, vous participerez à un ou deux entraînements spécifiques afin d'améliorer vos capacités tout-terrain sur des ateliers spécifiques : sable, rochers, prairies humides, lit de rivière ou collines abruptes etc. ",
     himalayahead3: "Les Essentiels du Rajasthan – 10 jours",
     himalaya5: "« Pendant 10 jours, vous parcourez le pays de Maharadjas par de longues pistes sablonneuses, des dunes infinies et des chemins montagneux. En effet, l’épine dorsale du Rajasthan, la chaîne des Aravilis offre un incroyable terrain de jeu en basse montagne."
-
     , himalaya6: "Vous découvrez une nature encore sauvage. Nous traversons de sublimes réserves naturelles et vous vous ferez surprendre par des hyènes striées, des chinkaras, des nighals et même quelques léopards. Sur notre parcours, vous croiserez certainement ces bergers nomades de la tribu Rabari reconnaissables à leurs coiffes colorées. Sur ce tour, vous ferez également une boucle sur Udaipur, la capitale historique du royaume du Mewar. Pour y arriver, on traverse la superbe réserve naturelle de Kumbhalgarh. » …. "
     , himalayahead4: "Les Essentiels du Rajasthan – VIP – 10 jours"
     , himalaya7: "L'objectif de ce circuit est de découvrir le Rajasthan, le pays des Maharajas, à travers la savane et les sentiers de montagne. Par rapport à la version ENDURO sur des KTM 450, ce circuit est plus court et moins intense sur des TRAIL KTM Adventure. Nous prenons le temps de découvrir cette belle région historique et profitons d'hébergements prestigieux offrant une cuisine locale de qualité, des piscines et des spas ou espaces de bien-être. "
     , himalaya8: "Nous parcourons la chaîne des Aravalli, alliant de superbes sanctuaires naturels à la faune et à la flore typiques, des dunes, des sentiers à travers des collines rocheuses et des petites routes de village. Vous profiterez également d'une immersion culturelle lors de plusieurs pauses « chai » dans des villages ruraux typiques, en visitant un temple Jain ou une « noria » (système de puits) centenaire. ... » …."
-
-
     , beasthead: "Nos bécanes",
     beast1: "Durant plus de deux décennies, la KTM EXC-F a été la référence absolue en matière de course tout-terrain. Avec un palmarès inégalé de victoires au Dakar, le rallye le plus éprouvant du monde, et des dizaines de titres de championne d'enduro, la moto s'est révélée être une référence inégalée.",
     beast2: "Avec des performances impressionnantes et efficaces, un cadre et un châssis légers, une carrosserie et une ergonomie éprouvées en course, un système d'échappement compact ainsi qu'un refroidissement et une suspension exceptionnels, la KTM 450 EXC-F est sûre de rester la référence de l'industrie pour tous les autres. La moto pèse à peine 105,6 kg et délivre 55 CV. Mais avec les précautions nécessaires, elle peut être douce et souple à souhait.",
-
     beast3: "L’autre, la KTM Adventure vous emmène dans les mêmes cadres exceptionnels sur une moto très polyvalente. A l’aise sur des pistes roulantes, du tout-terrain moyennement exigeant et des petites routes, elle convient à la majorité des aventuriers qui ne sont pas à la recherche du côté sportif de nos voyages."
-
     , aboutus: "À PROPOS",
-
-
-
-
     about1: "Adventure Rides vous emmène découvrir les coins les plus reculés de l’Inde au guidon de KTM EXC-F 450 ou de KTM 390 Adventure."
-
     , about9: "Notre équipe cumulant près de 35 ans d'expérience, est la colonne vertébrale de nos tours exceptionnels avec plus de 85% d’off-road sur les plus belles pistes du Rajasthan aux sommets de l’Himalaya."
     , about10: "Afin de vous assurer des conditions optimales de sécurité, on prend soin de vous et de votre moto. Une aide médicale ainsi qu’un mécano t’accompagne dans le véhicule d’assistance."
     , about11: "Après une longue journée d’aventure, nos riders reprennent des forces dans des logements d’exception. Uniquement des 4 et 5 étoiles ! Votre voyage est une découverte, pas une compétition. Le guide adapte les difficultés du parcours aux envies du groupe."
-
     , about12: "Adventure Rides vous emmène découvrir les coins les plus reculés de l’Inde au guidon de KTM EXC-F 450 ou de KTM 390 Adventure. "
     , about13: "Notre équipe cumulant près de 35 ans d'expérience, est la colonne vertébrale de nos tours exceptionnels avec plus de 85% d’off-road sur les plus belles pistes du Rajasthan aux sommets de l’Himalaya. "
-
-
-
-
-
     , about3: "Afin de vous assurer des conditions optimales de sécurité, on prend soin de vous et de votre moto. Une aide médicale ainsi qu’un mécano t’accompagne dans le véhicule d’assistance. ",
-
     about4: " Après une longue journée d’aventure, nos riders reprennent des forces dans des logements d’exception. Uniquement des 4 et 5 étoiles ! Votre voyage est une découverte, pas une compétition. Le guide adapte les difficultés du parcours aux envies du groupe.  "
     , abouthead: "Qui est Philippe ?",
-
-
     about5: "Après 20 ans de conseils en entreprise, Philippe décida de troquer sa vie professionnelle prévisible pour l’aventure. Il déménagea en Inde, importa des KTM EXC-F Enduro et se mit à découvrir des parcours de tout-terrain à couper le souffle. ",
     about6: "Adventure Rides est né !",
     about7: "ll organise des tours enduros et des formations en tout-terrain. En 2021, il est nommé Master trainer pour développer le programme de KTM Inde sur les modèles “Adventure“"
-
     , about8: "ll a réalisé plusieurs voyages d'aventure en solitaire dans plus de 25 pays (Italie, Espagne, Grèce, Tunisie, Maroc, Afrique du Sud, Russie, Inde, Mongolie, Ouzbékistan, Kazakhstan, Kirgizstan, Biélorussie, Ukraine, Géorgie, Roumanie, Pologne, Bangladesh, ...). A moto, il a déjà cumulé plus de 0,5 million de kilomètres en Inde en 8 ans».",
-
-
     contacthead: "Téléchargez votre programme détaillé",
     contactus: "Contactez-nous",
     name1: "Prénom",
@@ -318,8 +263,6 @@ const translations = {
     , currentbike: "Moto(S) actuelle(s) "
     , submit: "Soumettre",
     download: "Télécharger"
-
-
     , newsletter: "ABONNEZ-VOUS À NOTRE NEWSLETTER",
     home: "MAISON"
     , why: "POURQUOI PARTIR À L'AVENTURE AVEC NOUS ?"
@@ -333,9 +276,9 @@ const translations = {
     , south: "INDE DU SUD",
     suggest: "Suggérez-nous une nouvelle destination",
 
-    michael : "Jean-Jacque",
-    nigel : "Nathan",
-    ktm450 : "La KTM EXC-F 450 ou la KTM 390 Adventure"
+    michael: "Jean-Jacque",
+    nigel: "Nathan",
+    ktm450: "La KTM EXC-F 450 ou la KTM 390 Adventure"
 
   },
 

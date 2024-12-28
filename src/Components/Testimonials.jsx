@@ -43,14 +43,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="mt-6 mb-4 md:mt-10 ">
+    <div className="mt-6 mb-4 md:mt-10">
       {/* Title */}
       <h2 className="text-2xl 2xl:text-7xl md:text-3xl font-bold text-center text-blue-500 mb-6 uppercase">
         {t("custitle")}
       </h2>
 
-      <div className="flex flex-col-reverse md:flex-row ">
-        <div className="container mx-auto mt-10 md:w-[50%] pl-[1%] relative">
+      <div className="flex flex-col-reverse md:flex-row border border-black">
+        <div className="container mx-auto mt-10 md:w-[50%] pl-[1%] relative border border-black">
           {/* Swiper Carousel */}
           <Swiper
             modules={[Autoplay, Pagination, Navigation]}
@@ -59,10 +59,9 @@ const Testimonials = () => {
             breakpoints={{
               640: { slidesPerView: 1 }, // Mobile
               768: { slidesPerView: 2 }, // Tablet
-              // Desktop
             }}
             autoplay={{
-              delay: 12000, // 1 second
+              delay: 12000, // 12 seconds
               disableOnInteraction: false,
             }}
             pagination={{ clickable: true }}
@@ -70,11 +69,11 @@ const Testimonials = () => {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             }}
-            className="w-full h-full"
+            className="w-full h-full border border-black"
           >
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="w-auto h-[95%] bg-blue-500 rounded-lg shadow-lg p-14 pb-4 min-h-[85vh] flex flex-col ml-3 mr-3 md:ml-0 md:mr-0">
+                <div className="w-auto h-[95%] border border-black bg-blue-500 rounded-lg shadow-lg p-14 pb-4 min-h-[85vh] flex flex-col ml-3 mr-3 md:ml-0 md:mr-0">
                   <img
                     src={card.img}
                     alt={card.name}
@@ -94,10 +93,14 @@ const Testimonials = () => {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className=" bg-black max-h-8 overflow-hidden rounded-full z-50 swiper-button-prev absolute top-1/2 -left-6 transform -translate-y-1/2 text-black">
+          <div
+            className=" max-h-10 overflow-hidden bg-black swiper-button-prev absolute top-1/2 left-0 transform -translate-y-1/2 translate-x-[60%] rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-50 cursor-pointer"
+          >
             
           </div>
-          <div className="bg-black max-h-8 overflow-hidden rounded-full z-50 swiper-button-next absolute top-1/2 -right-6 transform -translate-y-1/2 text-black">
+          <div
+            className="max-h-10 overflow-hidden bg-black swiper-button-next absolute top-1/2 -right-0 transform -translate-y-1/2 -translate-x-[50%]   md:-translate-x-[1%]  rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-50 cursor-pointer"
+          >
             
           </div>
         </div>

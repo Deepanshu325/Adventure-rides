@@ -21,7 +21,7 @@ const MagazineCarousel = () => {
     {
       image: magazine2,
       title: "Moto Verte",
-      link:  articlePDF1 ,
+      link: articlePDF1,
     },
     {
       image: magazine3,
@@ -36,7 +36,7 @@ const MagazineCarousel = () => {
     },
   ];
 
-  
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(3); // Default to 3 cards for desktop
 
@@ -74,8 +74,8 @@ const MagazineCarousel = () => {
 
   return (
     <div className="relative w-full max-w-7xl mx-auto p-4">
-    
-       <h1 className=" text-2xl 2xl:text-7xl md:text-3xl font-bold text-blue-500 text-center mb-8 uppercase ">{t("media")}</h1>
+
+      <h1 className=" text-2xl 2xl:text-7xl md:text-3xl font-bold text-blue-500 text-center mb-8 uppercase ">{t("media")}</h1>
       {/* Carousel Wrapper */}
       <div className="relative overflow-hidden">
         <div
@@ -87,13 +87,12 @@ const MagazineCarousel = () => {
           {[...magazines, ...magazines].map((magazine, index) => (
             <div
               key={index}
-              className={`flex-shrink-0 ${
-                visibleCards === 1
+              className={`flex-shrink-0 ${visibleCards === 1
                   ? "w-full"
                   : visibleCards === 2
-                  ? "w-1/2"
-                  : "w-1/3"
-              } p-4`}
+                    ? "w-1/2"
+                    : "w-1/3"
+                } p-4`}
             >
               <div
                 className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer"
@@ -134,9 +133,8 @@ const MagazineCarousel = () => {
         {Array.from({ length: magazines.length }, (_, index) => (
           <div
             key={index}
-            className={`h-3 w-3 rounded-full ${
-              currentIndex === index ? "bg-blue-600" : "bg-gray-400"
-            } cursor-pointer`}
+            className={`h-3 w-3 rounded-full ${currentIndex === index ? "bg-blue-600" : "bg-gray-400"
+              } cursor-pointer`}
             onClick={() => setCurrentIndex(index)}
           ></div>
         ))}

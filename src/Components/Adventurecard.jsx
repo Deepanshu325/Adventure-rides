@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "./Languagecontext";
 import AOS from 'aos';
-
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
@@ -15,7 +14,7 @@ const Adventurecard = (props) => {
       once: true      // Whether animation should happen only once
     });
   }, []);
-  const {t} = useLanguage(); 
+  const { t } = useLanguage();
 
   return (
     <div className="max-w-5xl mx-auto p-4 mt-10">
@@ -23,7 +22,7 @@ const Adventurecard = (props) => {
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden " data-aos="fade-up">
         {/* Image at the top */}
         <img
-          src={props.image} 
+          src={props.image}
           alt="Himalayan Adventure"
           className="w-full h-60  md:h-[120vh] md:w-full object-fill border"
         />
@@ -36,7 +35,7 @@ const Adventurecard = (props) => {
               {props.heading}
             </h2>
             <p className="font-semibold ">
-              
+
               {props.text1}
             </p>
             <p className="font-semibold  mt-4">
@@ -52,9 +51,9 @@ const Adventurecard = (props) => {
 
         {/* Button Section */}
         <div className="p-4 text-center">
-      <Link to={props.link} >   <button className="px-6 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition duration-200">
+          <Link to={props.link} >   <button className="px-6 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition duration-200">
             {t("moreinfo")}
-          </button> </Link> 
+          </button> </Link>
         </div>
       </div>
     </div>

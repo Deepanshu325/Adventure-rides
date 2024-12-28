@@ -17,7 +17,6 @@ import image4 from "../Assets/Icons/High-end-lodging-70x70.png"
 import image5 from "../Assets/Icons/Genuine-OFF-ROADS-bikes-70x70.png"
 import image6 from "../Assets/Icons/Agile-and-Always-there-Team-70x70.png"
 import { Link } from 'react-router-dom'
-import HomeContact from '../Components/HomeContact'
 
 
 const Home = () => {
@@ -42,10 +41,6 @@ const Home = () => {
       <div className='w-full overflow-hidden'>
         <div>
           <div className="relative h-auto overflow-hidden">
-
-
-
-
             <Videocard />
           </div>
 
@@ -66,7 +61,7 @@ const Home = () => {
                 <div className=' mt-8 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 overflow-hidden '>
                   <Lg_card img={image2} title={t("whytitle1")} des={t("whydes1")} />
                   <Lg_card img={image1} title={t("whytitle2")} des={t("whydes2")} />
-                  <Lg_card img={image5} title={t("whytitle3")} des={t("whydes3")}/>
+                  <Lg_card img={image5} title={t("whytitle3")} des={t("whydes3")} />
 
 
                   <Lg_card img={image3} title={t("whytitle4")} des={t("whydes4")} />

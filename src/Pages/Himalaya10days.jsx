@@ -63,33 +63,7 @@ const Himalaya10days = () => {
 
   
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validate()) {
-    
-
-    
-      fetch("https://adventurerides-backend.onrender.com/send-download-email-him10daysfr", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-        .then((response) => {
-          if (response.ok) {
-            setSuccessMessage(t("EmailsentSucess"));
-            setIsDownloadEnabled(true);
-          } else {
-            setSuccessMessage(t("emailSentFailure"));
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          setSuccessMessage(t("emailSentFailure"));
-        });
-    }
-  };
+ 
 
   const handleDownload = (e) => {
      

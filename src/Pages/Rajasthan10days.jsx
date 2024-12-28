@@ -55,60 +55,7 @@ const Rajasthan10days = () => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
-
-    e.preventDefault();
-    if (validate()) {
-      fetch("https://adventurerides-backend.onrender.com/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-        .then((response) => {
-          if (response.ok) {
-            setSuccessMessage(t("EmailsentSucess"));
-            setIsDownloadEnabled(true);
-          } else {
-            setSuccessMessage(t("emailSentFailure"));
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          setSuccessMessage(t("emailSentFailure"));
-        });
-    }
-
-    e.preventDefault();
-
-    if (validate()) {
-
-      setIsLoading(true); // Show spinner when form is being processed
-
-      fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10days", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-        .then((response) => {
-          if (response.ok) {
-            setSuccessMessage(t("EmailsentSucess"));
-            setIsDownloadEnabled(true);
-          } else {
-            setSuccessMessage(t("emailSentFailure"));
-          }
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          setSuccessMessage(t("emailSentFailure"));
-        }) .finally(() => {
-          setIsLoading(false); // Hide spinner once request is done
-        });
-    }
-  };
+ 
 
   const handleDownload = (e) => {
 
