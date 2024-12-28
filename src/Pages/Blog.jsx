@@ -21,7 +21,7 @@ const Blog = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const url = `https://graph.facebook.com/v21.0/me/posts?fields=id,created_time,name,message,picture,full_picture&access_token=EAAMiiPjRbGwBO4tgZCaGbQAwg81inhUC8FTg82pqNyQx0zNlBNTZBOVZAftHlXzFBucrMgaBrZB3rQJlncZCopvIWZBYBUKZCdt8eGk5p3084IqZAXnnWy4D6IKTcWsunLthaCuO1pGqSZADAi8WQoRCZB4sWxlsURcQalCq4jXRNn54Nl5BTXubPksbTVnWfgfgZCxu4yEvgZDZD`;
+            const url = `https://graph.facebook.com/v21.0/me/posts?fields=id,created_time,name,message,picture,full_picture,permalink_url&access_token=EAAMiiPjRbGwBO4tgZCaGbQAwg81inhUC8FTg82pqNyQx0zNlBNTZBOVZAftHlXzFBucrMgaBrZB3rQJlncZCopvIWZBYBUKZCdt8eGk5p3084IqZAXnnWy4D6IKTcWsunLthaCuO1pGqSZADAi8WQoRCZB4sWxlsURcQalCq4jXRNn54Nl5BTXubPksbTVnWfgfgZCxu4yEvgZDZD`;
             try {
                 const response = await axios.get(url);
                 console.log(response.data.data)
@@ -48,6 +48,7 @@ const Blog = () => {
           <div style={{  justifyContent: 'center' }} className='w-full'>
   {posts.length > 0 ? (
     posts.map(post => (
+      <a href={post.permalink_url}>
       <div
         key={post.id}
         className='mx-auto mb-14  '
@@ -86,7 +87,7 @@ const Blog = () => {
             {new Date(post.created_time).toLocaleString()}
           </small>
         </div>
-      </div>
+      </div></a>
     ))
   ) : (
     <p style={{ fontSize: '18px', color: '#777' , height : "100vh"  }}>Please wait ...</p>
