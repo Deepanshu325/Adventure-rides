@@ -141,7 +141,7 @@ const ContactUs = () => {
                 htmlFor="comments"
                 className="block text-sm font-medium text-gray-600"
               >
-                {t("Comments")}
+                {t("Message")}
               </label>
               <textarea
                 id="comments"
