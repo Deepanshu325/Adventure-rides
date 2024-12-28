@@ -49,8 +49,8 @@ const Testimonials = () => {
         {t("custitle")}
       </h2>
 
-      <div className="flex flex-col-reverse md:flex-row border border-black">
-        <div className="container mx-auto mt-10 md:w-[50%] pl-[1%] relative border border-black">
+      <div className="flex flex-col-reverse md:flex-row ">
+        <div className="container mx-auto mt-10 md:w-[50%] pl-[1%] relative ">
           {/* Swiper Carousel */}
           <Swiper
             modules={[Autoplay, Pagination, Navigation]}
@@ -69,11 +69,11 @@ const Testimonials = () => {
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             }}
-            className="w-full h-full border border-black"
+            className="w-full h-full "
           >
             {cards.map((card, index) => (
               <SwiperSlide key={index}>
-                <div className="w-auto h-[95%] border border-black bg-blue-500 rounded-lg shadow-lg p-14 pb-4 min-h-[85vh] flex flex-col ml-3 mr-3 md:ml-0 md:mr-0">
+                <div className="w-auto h-[95%]  bg-blue-500 rounded-lg shadow-lg p-14 pb-4 min-h-[85vh] flex flex-col ml-3 mr-3 md:ml-0 md:mr-0">
                   <img
                     src={card.img}
                     alt={card.name}
