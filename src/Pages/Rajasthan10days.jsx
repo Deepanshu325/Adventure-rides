@@ -53,6 +53,30 @@ const Rajasthan10days = () => {
   };
 
   const handleSubmit = (e) => {
+
+    e.preventDefault();
+    if (validate()) {
+      fetch("https://adventurerides-backend.onrender.com/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => {
+          if (response.ok) {
+            setSuccessMessage(t("EmailsentSucess"));
+            setIsDownloadEnabled(true);
+          } else {
+            setSuccessMessage(t("emailSentFailure"));
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          setSuccessMessage(t("emailSentFailure"));
+        });
+    }
+
     e.preventDefault();
 
     if (validate()) {

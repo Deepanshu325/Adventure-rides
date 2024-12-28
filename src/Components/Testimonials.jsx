@@ -94,10 +94,10 @@ const Testimonials = () => {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="z-10 swiper-button-prev absolute top-1/2 -left-6 transform -translate-y-1/2 text-black">
+          <div className=" bg-black h-4 rounded-full z-50 swiper-button-prev absolute top-1/2 -left-6 transform -translate-y-1/2 text-black">
             ❮
           </div>
-          <div className="z-10 swiper-button-next absolute top-1/2 -right-6 transform -translate-y-1/2 text-black">
+          <div className="bg-black rounded-full z-50 swiper-button-next absolute top-1/2 -right-6 transform -translate-y-1/2 text-black">
             ❯
           </div>
         </div>

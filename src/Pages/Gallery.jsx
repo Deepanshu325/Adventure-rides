@@ -20,7 +20,7 @@ const Gallery = () => {
   return (
     <>
      <div className="p-5 max-w-screen-lg mx-auto">
-        <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl mb-12 ">
+        <p className="text-center mt-7 text-xl font-bold text-blue-500 md:text-3xl mb-12 ">
           {t("gallery")}
         </p>
       </div>
