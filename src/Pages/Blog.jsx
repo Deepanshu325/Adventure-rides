@@ -48,7 +48,7 @@ const Blog = () => {
           <div style={{  justifyContent: 'center' }} className='w-full'>
   {posts.length > 0 ? (
     posts.map(post => (
-      <a href={post.permalink_url}>
+      <a href={post.permalink_url} target='_blank'>
       <div
         key={post.id}
         className='mx-auto mb-14  '
