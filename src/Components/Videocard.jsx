@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ytlogo from "../Assets/Icons/1. YT logo on video.png"
 import { useEffect } from "react";
+import video2 from "../Assets/Videos/WhatsApp Video 2024-12-27 at 7.30.58 PM.mp4"
 
 
 
@@ -26,13 +27,23 @@ const Videocard = () => {
   return (
     <div className="relative h-[50vh] md:h-screen w-full mb-10">
       {/* Video Background */}
+
+      <video
+        src={video2}
+        autoPlay
+        loop
+        muted
+        playsInline 
+        className="absolute top-0 left-0 w-full h-full object-fill md:hidden"
+      />
+
       <video
         src={video}
         autoPlay
         loop
         muted
         playsInline 
-        className="absolute top-0 left-0 w-full h-full object-fill"
+        className="absolute top-0 left-0 w-full h-full object-fill hidden md:block"
       />
 
       {/* Text Content */}
