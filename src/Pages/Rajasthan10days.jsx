@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 import raj10 from "../Assets/Home/WhatsApp Image 2024-12-19 at 2.01.25 PM (1).jpeg";
 
 const Rajasthan10days = () => {
+
+  const langauge = sessionStorage.getItem("language")
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -107,7 +110,64 @@ const Rajasthan10days = () => {
     }
   };
 
-  const handleDownload = () => {
+  const handleDownload = (e) => {
+
+
+
+    e.preventDefault();
+    if (validate()) {
+      fetch("https://adventurerides-backend.onrender.com/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => {
+          if (response.ok) {
+            setSuccessMessage(t("EmailsentSucess"));
+            setIsDownloadEnabled(true);
+          } else {
+            setSuccessMessage(t("emailSentFailure"));
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          setSuccessMessage(t("emailSentFailure"));
+        });
+    }
+
+    
+    e.preventDefault()
+
+    if (validate()) {
+    if(langauge == "fr"){
+      setIsLoading(true); 
+      fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10daysfr", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: formData.email, name: formData.name }),
+      }).then((response) => {
+        if (response.ok) {
+          setSuccessMessage(t("MailEnvoiSucess"));
+        } else {
+          alert(t("downloadEmailFailure"));
+        }
+      })
+      .catch((error) => {
+        console.error("Error sending download email:", error);
+        alert(t("emailError"));
+      }) .finally(() => {
+        setIsLoading(false); // Hide spinner once request is done
+      });
+
+        }else{
+
+        
+     
+        setIsLoading(true); 
     fetch("https://adventurerides-backend.onrender.com/send-download-email-raj10days", {
       method: "POST",
       headers: {
@@ -117,7 +177,7 @@ const Rajasthan10days = () => {
     })
       .then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("Detail has been sent to your email"));
+          setSuccessMessage(t("EmailsentSuccess"));
         } else {
           alert(t("downloadEmailFailure"));
         }
@@ -125,8 +185,12 @@ const Rajasthan10days = () => {
       .catch((error) => {
         console.error("Error sending download email:", error);
         alert(t("emailError"));
+      }) .finally(() => {
+        setIsLoading(false); // Hide spinner once request is done
       });
   };
+}
+}
 
   return (
     <>
@@ -149,14 +213,14 @@ const Rajasthan10days = () => {
             {t("contactus")}
           </h2>
          
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleDownload} className="space-y-4">
             {[
               { label: t("name1"), name: "name", required: true },
               { label: t("surname"), name: "surname", required: true },
               { label: t("email"), name: "email", type: "email", required: true },
-              { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
+              { label: `${t("mob")} `, name: "mobile", required: false },
               { label: t("city"), name: "city", required: true },
-              { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
+              { label: `${t("currentbike")} `, name: "currentBike", required: false },
             ].map((field) => (
               <div key={field.name}>
                 <label

@@ -202,9 +202,9 @@ const Himalaya10days = () => {
               { label: t("name1"), name: "name", required: true },
               { label: t("surname"), name: "surname", required: true },
               { label: t("email"), name: "email", type: "email", required: true },
-              { label: `${t("mob")} (${t("optional")})`, name: "mobile", required: false },
+              { label: `${t("mob")} `, name: "mobile", required: false },
               { label: t("city"), name: "city", required: true },
-              { label: `${t("currentbike")} (${t("optional")})`, name: "currentBike", required: false },
+              { label: `${t("currentbike")} `, name: "currentBike", required: false },
             ].map((field) => (
               <div key={field.name}>
                 <label

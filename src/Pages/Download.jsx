@@ -123,13 +123,13 @@ const Download = () => {
               { label: t("surname"), name: "surname", required: true },
               { label: t("email"), name: "email", type: "email", required: true },
               {
-                label: `${t("mob")} (${t("optional")})`,
+                label: `${t("mob")} `,
                 name: "mobile",
                 required: false,
               },
               { label: t("city"), name: "city", required: true },
               {
-                label: `${t("currentbike")} (${t("optional")})`,
+                label: `${t("currentbike")} `,
                 name: "currentBike",
                 required: false,
               },
@@ -165,6 +165,8 @@ const Download = () => {
               <textarea
                 id="comments"
                 name="comments"
+                maxlength="1000" 
+                placeholder="Enter up to 1000 characters"
                 value={formData.comments}
                 onChange={handleChange}
                 className="w-full border border-gray-300 rounded-lg p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
