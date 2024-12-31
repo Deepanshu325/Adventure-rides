@@ -103,13 +103,13 @@ const Footer = () => {
               href="#"
               className="text-sm text-gray-400 hover:text-gray-200"
             >
-              <button onClick={() => window.open(privacy, "_blank")}>   Terms & Conditions</button>
+              <span onClick={() => window.open(term, "_blank")}>   Terms & Conditions</span>
             </a>
             <a
               href="#"
               className="text-sm text-gray-400 hover:text-gray-200"
             >
-              <button onClick={() => window.open(term, "_blank")} > Privacy Policy</button>
+              <span onClick={() => window.open(privacy, "_blank")} > Privacy Policy</span>
             </a>
           </div>
         </div>
