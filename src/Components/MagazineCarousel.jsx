@@ -10,7 +10,8 @@ import articlePDF3 from "../Assets/Articles/PPAR - NoppenNieuws1 - 2020.pdf"
 import { useLanguage } from "./Languagecontext";
 
 const MagazineCarousel = () => {
-  const { t } = useLanguage();
+ 
+  const {translang , setTranslang}  = useLanguage();
 
   const magazines = [
     {
@@ -75,7 +76,7 @@ const MagazineCarousel = () => {
   return (
     <div className="relative w-full max-w-7xl mx-auto p-4">
 
-      <h1 className=" text-2xl 2xl:text-7xl md:text-3xl font-bold text-blue-500 text-center mb-8 uppercase ">{t("media")}</h1>
+      <h1 className=" text-2xl 2xl:text-7xl md:text-3xl font-bold text-blue-500 text-center mb-8 uppercase ">{translang("media")}</h1>
       {/* Carousel Wrapper */}
       <div className="relative overflow-hidden">
         <div

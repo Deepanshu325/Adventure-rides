@@ -7,7 +7,7 @@ import india from "../Assets/Icons/18166.jpg";
 import france from "../Assets/Icons/27099.jpg";
 
 const Navbar = () => {
-  const { t, setLanguage } = useLanguage();
+  const { translang, setLanguage } = useLanguage();
 
   const language = sessionStorage.getItem("language") || "en";
 
@@ -57,13 +57,13 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   const menuItems = [
-    { name: t("why"), path: "/whytotravel" },
-    { name: t("nextadv"), path: "/yournextadventure" },
-    { name: t("ourfleet"), path: "/ourfleet" },
-    { name: t("blog"), path: "/blog" },
-    { name: t("gallery"), path: "/gallery" },
-    { name: t("about2"), path: "/aboutus" },
-    { name: t("contact2"), path: "/download" },
+    { name: translang("why"), path: "/whytotravel" },
+    { name: translang("nextadv"), path: "/yournextadventure" },
+    { name: translang("ourfleet"), path: "/ourfleet" },
+    { name: translang("blog"), path: "/blog" },
+    { name: translang("gallery"), path: "/gallery" },
+    { name: translang("about2"), path: "/aboutus" },
+    { name: translang("contact2"), path: "/contactus" },
   ];
 
   return (
@@ -73,7 +73,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <div className="w-16 lg:w-24 lg:mb-1">
+        <div className="w-16 lg:w-28 lg:mb-1">
           <Link to="/" onClick={closeMenu}>
             <img src={Logo} alt="Logo" className="rounded-lg" />
           </Link>

@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Why_to_travelwithus from './Pages/Why_to_travelwithus';
 import Our_Fleet from './Pages/Our_Fleet';
@@ -30,8 +30,7 @@ function App() {
   return (
     <>
     
-    {/* <Navbar/>
-    */}
+    {/* <Navbar/>*/}
   <Navbar/>
   <ScrollToTop/>
   <Routes>
@@ -42,13 +41,12 @@ function App() {
      <Route path='/blog' element={<Blog/>}/>
      <Route path='/gallery' element={<Gallery/>}/>
      <Route path='/aboutus' element={<About/>}/>
-     <Route path='/download' element={<ContactUs/>}/>
+     <Route path='/contactus' element={<ContactUs/>}/>
      <Route path='/rajasthan10days' element={<Rajasthan10days/>}/>
      <Route path="/rajasthan10daysvip" element={<Rajasthan10daysvip/>}/>
      <Route path="/himalaya4days" element={<Himalaya4days/>}/>
      <Route path="/himalaya10days" element={<Himalaya10days/>}/>
- 
- 
+
   </Routes>
 
     </>

@@ -15,7 +15,8 @@ const ContactUs = () => {
     });
   }, []);
 
-  const { t } = useLanguage();
+ 
+  const {translang }  = useLanguage();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -41,16 +42,46 @@ const ContactUs = () => {
 
   const validate = () => {
     let tempErrors = {};
-    if (!formData.name.trim()) tempErrors.name = t("nameRequired");
-    if (!formData.surname.trim()) tempErrors.surname = t("surnameRequired");
-    if (!formData.email.trim()) tempErrors.email = t("emailRequired");
+    if (!formData.name.trim()) tempErrors.name = translang("nameRequired");
+    if (!formData.surname.trim()) tempErrors.surname = translang("surnameRequired");
+    if (!formData.email.trim()) tempErrors.email = translang("emailRequired");
     else if (!/\S+@\S+\.\S+/.test(formData.email))
-      tempErrors.email = t("emailInvalid");
-    if (!formData.city.trim()) tempErrors.city = t("cityRequired");
+      tempErrors.email = translang("emailInvalid");
+    if (!formData.city.trim()) tempErrors.city = translang("cityRequired");
     setErrors(tempErrors);
 
     return Object.keys(tempErrors).length === 0;
   };
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (validate()) {
+  //     fetch("https://adventurerides-backend.onrender.com/send-email", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(formData),
+  //     })
+  //       .then((response) => {
+  //         if (response.ok) {
+  //           setSuccessMessage(translang("EmailsentSucess"));
+  //           setIsDownloadEnabled(true);
+  //         } else {
+  //           setSuccessMessage(translang("emailSentFailure"));
+  //         }
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error:", error);
+  //         setSuccessMessage(translang("emailSentFailure"));
+  //       });
+  //   }
+
+     
+  // };
+
+ 
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -64,25 +95,39 @@ const ContactUs = () => {
       })
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("EmailsentSucess"));
+            setSuccessMessage(translang("EmailsentSucess"));
             setIsDownloadEnabled(true);
+            // Reset form fields
+            setFormData({
+              name: "",
+              surname: "",
+              email: "",
+              mobile: "",
+              city: "",
+              currentBike: "",
+              comments: "",
+            });
+            setErrors({}); // Clear any validation errors
+
+            setTimeout(() => {
+              setSuccessMessage("")
+            }, 2000);
           } else {
-            setSuccessMessage(t("emailSentFailure"));
+            setSuccessMessage(translang("emailSentFailure"));
           }
         })
         .catch((error) => {
           console.error("Error:", error);
-          setSuccessMessage(t("emailSentFailure"));
+          setSuccessMessage(translang("emailSentFailure"));
         });
     }
   };
-
- 
+  
 
   return (
     <>
       <p className="text-center mt-12 text-xl font-bold text-blue-500 md:text-3xl uppercase mb-12">
-        {t("contactus")}
+        {translang("contactus")}
       </p>
 
       <div className="w-80 md:w-[35%] lg:w-[40%] mx-auto">
@@ -95,22 +140,22 @@ const ContactUs = () => {
       >
         <div className="bg-white p-6 rounded-lg shadow-xl w-full md:max-w-[40%]">
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
-            {t("contact")}
+            {translang("contact")}
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             {[
-              { label: t("name1"), name: "name", required: true },
-              { label: t("surname"), name: "surname", required: true },
-              { label: t("email"), name: "email", type: "email", required: true },
+              { label: translang("name1"), name: "name", required: true },
+              { label: translang("surname"), name: "surname", required: true },
+              { label: translang("email"), name: "email", type: "email", required: true },
               {
-                label: `${t("mob")} `,
+                label: `${translang("mob")} `,
                 name: "mobile",
                 required: false,
               },
-              { label: t("city"), name: "city", required: true },
+              { label: translang("city"), name: "city", required: true },
               {
-                label: `${t("currentbike")} `,
+                label: `${translang("currentbike")} `,
                 name: "currentBike",
                 required: false,
               },
@@ -141,12 +186,12 @@ const ContactUs = () => {
                 htmlFor="comments"
                 className="block text-sm font-medium text-gray-600"
               >
-                {t("Message")}
+                {translang("Message")}
               </label>
               <textarea
                 id="comments"
                 name="comments"
-                maxlength="1000" 
+                maxLength="1000" 
                 placeholder="Enter up to 1000 characters"
                 value={formData.comments}
                 onChange={handleChange}
@@ -161,7 +206,7 @@ const ContactUs = () => {
                 type="submit"
                 className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
-                {t("submit")}
+                {translang("submit")}
               </button>
             </div>
           </form>

@@ -35,7 +35,8 @@ import Card from "../Components/Card";
 import image7 from "../Assets/Home/WhatsApp Image 2024-12-28 at 12.54.28 PM.jpeg"
 
 const Why_to_travelwithus = () => {
-  const { t } = useLanguage();
+  
+  const {translang , setTranslang}  = useLanguage();
 
   return (
     <div className="md:w-full bg-gray-100">
@@ -43,7 +44,7 @@ const Why_to_travelwithus = () => {
 
       <div className="text-center pt-12 ">
         <p className="text-xl font-bold text-blue-500 md:text-3xl mb-12">
-          {t("nextadventure")}
+          {translang("nextadventure")}
         </p>
 
 
@@ -53,8 +54,8 @@ const Why_to_travelwithus = () => {
 
       <div className="w-full px-4 md:px-16 mt-12 space-y-10">
         <div>
-          <p className="text-right font-semibold md:text-3xl text-sm w-full"><i>{t("diffrently")}</i></p>
-          <p className=" text-right  font-semibold md:text-3xl text-sm w-full "><i>{t("diffrently2")}</i></p>
+          <p className="text-right font-semibold md:text-3xl text-sm w-full"><i>{translang("diffrently")}</i></p>
+          <p className=" text-right  font-semibold md:text-3xl text-sm w-full "><i>{translang("diffrently2")}</i></p>
         </div>
 
 
@@ -64,61 +65,61 @@ const Why_to_travelwithus = () => {
 
         <Md_card
           image={image1}
-          mainheading={t("safetyhead")}
-          heading1={t("safety")}
-          point1={t("safety1")}
-          point2={t("safety2")}
-          point3={t("safety3")}
-          heading2={t("security")}
-          text1={t("security1")}
-          text2={t("security2")}
-          text3={t("security3")}
+          mainheading={translang("safetyhead")}
+          heading1={translang("safety")}
+          point1={translang("safety1")}
+          point2={translang("safety2")}
+          point3={translang("safety3")}
+          heading2={translang("security")}
+          text1={translang("security1")}
+          text2={translang("security2")}
+          text3={translang("security3")}
         />
 
         <Card
           img1={image2}
           img2={image4}
-          mainheading={t("genuinehead")}
-          point1={t("genuine1")}
-          point2={t("genuine2")}
-          point3={t("genuine3")}
-          text1={t("genuine4")}
+          mainheading={translang("genuinehead")}
+          point1={translang("genuine1")}
+          point2={translang("genuine2")}
+          point3={translang("genuine3")}
+          text1={translang("genuine4")}
         />
 
         <Card
           img1={image3}
           img2={image8}
-          mainheading={t("demandinghead")}
-          point1={t("demanding1")}
+          mainheading={translang("demandinghead")}
+          point1={translang("demanding1")}
 
-          point2={t("demanding2")}
-          point3={t("demanding4")}
-          text1={t("demanding3")}
+          point2={translang("demanding2")}
+          point3={translang("demanding4")}
+          text1={translang("demanding3")}
         />
 
         <Card
           img1={image5}
           img2={image7}
-          mainheading={t("uniquehead")}
-          point1={t("unique1")}
-          point2={t("unique2")}
+          mainheading={translang("uniquehead")}
+          point1={translang("unique1")}
+          point2={translang("unique2")}
 
         />
 
         <Card
           img1={image9}
           img2={image10}
-          mainheading={t("experiencehead")}
-          point1={t("experience1")}
-          point2={t("experience2")}
+          mainheading={translang("experiencehead")}
+          point1={translang("experience1")}
+          point2={translang("experience2")}
         />
 
         <Card
 
-          mainheading={t("highhead")}
-          point1={t("high1")}
-          point2={t("high2")}
-          point3={t("high3")}
+          mainheading={translang("highhead")}
+          point1={translang("high1")}
+          point2={translang("high2")}
+          point3={translang("high3")}
         />
 
         <div className="grid grid-col-1 md:grid-cols-2   lg:grid-cols-3 lg:grid-rows-3  h-fit gap-2 max-w-7xl mx-auto">

@@ -18,7 +18,7 @@ const Rajasthan10days = () => {
     });
   }, []);
 
-  const { t } = useLanguage();
+  const {translang} = useLanguage();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -44,12 +44,12 @@ const Rajasthan10days = () => {
 
   const validate = () => {
     let tempErrors = {};
-    if (!formData.name.trim()) tempErrors.name = t("nameRequired");
-    if (!formData.surname.trim()) tempErrors.surname = t("surnameRequired");
-    if (!formData.email.trim()) tempErrors.email = t("emailRequired");
+    if (!formData.name.trim()) tempErrors.name = translang("nameRequired");
+    if (!formData.surname.trim()) tempErrors.surname = translang("surnameRequired");
+    if (!formData.email.trim()) tempErrors.email = translang("emailRequired");
     else if (!/\S+@\S+\.\S+/.test(formData.email))
-      tempErrors.email = t("emailInvalid");
-    if (!formData.city.trim()) tempErrors.city = t("cityRequired");
+      tempErrors.email = translang("emailInvalid");
+    if (!formData.city.trim()) tempErrors.city = translang("cityRequired");
     setErrors(tempErrors);
 
     return Object.keys(tempErrors).length === 0;
@@ -72,15 +72,15 @@ const Rajasthan10days = () => {
       })
         .then((response) => {
           if (response.ok) {
-            setSuccessMessage(t("EmailsentSucess"));
+            setSuccessMessage(translang("EmailsentSucess"));
             setIsDownloadEnabled(true);
           } else {
-            setSuccessMessage(t("emailSentFailure"));
+            setSuccessMessage(translang("emailSentFailure"));
           }
         })
         .catch((error) => {
           console.error("Error:", error);
-          setSuccessMessage(t("emailSentFailure"));
+          setSuccessMessage(translang("emailSentFailure"));
         });
     }
 
@@ -98,14 +98,14 @@ const Rajasthan10days = () => {
         body: JSON.stringify({ email: formData.email, name: formData.name }),
       }).then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("MailEnvoiSucess"));
+          setSuccessMessage(translang("MailEnvoiSucess"));
         } else {
-          alert(t("downloadEmailFailure"));
+          alert(translang("downloadEmailFailure"));
         }
       })
       .catch((error) => {
         console.error("Error sending download email:", error);
-        alert(t("emailError"));
+        alert(translang("emailError"));
       }) .finally(() => {
         setIsLoading(false); // Hide spinner once request is done
       });
@@ -124,14 +124,14 @@ const Rajasthan10days = () => {
     })
       .then((response) => {
         if (response.ok) {
-          setSuccessMessage(t("EmailsentSuccess"));
+          setSuccessMessage(translang("EmailsentSuccess"));
         } else {
-          alert(t("downloadEmailFailure"));
+          alert(translang("downloadEmailFailure"));
         }
       })
       .catch((error) => {
         console.error("Error sending download email:", error);
-        alert(t("emailError"));
+        alert(translang("emailError"));
       }) .finally(() => {
         setIsLoading(false); // Hide spinner once request is done
       });
@@ -143,7 +143,7 @@ const Rajasthan10days = () => {
     <>
       <div className="p-5 max-w-screen-lg mx-auto">
         <p className="text-center mt-8 text-xl font-bold text-blue-500 md:text-3xl mb-12 ">
-          {t("contacthead")} for 10 days
+          {translang("contacthead")} for 10 days
         </p>
       </div>
     
@@ -157,17 +157,17 @@ const Rajasthan10days = () => {
       >
         <div className="bg-white p-6 rounded-lg shadow-xl w-full md:max-w-[40%]">
           <h2 className="text-2xl font-bold text-gray-700 text-center mb-4">
-            {t("contactus")}
+            {translang("contactus")}
           </h2>
          
           <form onSubmit={handleDownload} className="space-y-4">
             {[
-              { label: t("name1"), name: "name", required: true },
-              { label: t("surname"), name: "surname", required: true },
-              { label: t("email"), name: "email", type: "email", required: true },
-              { label: `${t("mob")} `, name: "mobile", required: false },
-              { label: t("city"), name: "city", required: true },
-              { label: `${t("currentbike")} `, name: "currentBike", required: false },
+              { label: translang("name1"), name: "name", required: true },
+              { label: translang("surname"), name: "surname", required: true },
+              { label: translang("email"), name: "email", type: "email", required: true },
+              { label: `${translang("mob")} `, name: "mobile", required: false },
+              { label: translang("city"), name: "city", required: true },
+              { label: `${translang("currentbike")} `, name: "currentBike", required: false },
             ].map((field) => (
               <div key={field.name}>
                 <label
@@ -196,7 +196,7 @@ const Rajasthan10days = () => {
                 type="submit"
                 className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
-                {t("submit")}
+                {translang("submit")}
               </button>
             </div>
           </form>
@@ -205,7 +205,7 @@ const Rajasthan10days = () => {
          {isLoading && (
             
             <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-50 z-10">
-                <h1 className="font-bold text-blue-500">{t("Detail")}</h1>
+                <h1 className="font-bold text-blue-500">{translang("Detail")}</h1>
               
               <div className="spinner-dot-circle">
                 <div className="spinner-dot"></div>

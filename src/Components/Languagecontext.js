@@ -6,10 +6,10 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("en");
 
-  const t = (key) => translations[language][key] || key;
+  const translang = (key) => translations[language][key] || key;
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, translang }}>
       {children}
     </LanguageContext.Provider>
   );

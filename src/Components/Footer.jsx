@@ -9,7 +9,7 @@ import term from "../Assets/Privacypolicy/PPAR - T&C 2024.pdf"
 import Linkedin from "../Assets/Icons/linkedinlogo.webp"
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { translang } = useLanguage();
   return (
     <footer className="bg-gray-800 text-white py-10">
       <div className="container mx-auto px-4">
@@ -17,9 +17,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* About Us */}
           <div>
-            <Link to="/aboutus"> <h3 className="text-lg font-bold mb-4">{t("about")}</h3> </Link>
+            <Link to="/aboutus"> <h3 className="text-lg font-bold mb-4">{translang("about")}</h3> </Link>
             <p className="text-sm text-gray-400">
-              {t("aboutdes")}
+              {translang("aboutdes")}
             </p>
           </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
 
           {/* Contact Details */}
           <div>
-            <Link to="/download">    <h3 className="text-lg font-bold mb-4">{t('letsconnect')}</h3> </Link>
+            <Link to="/contactus">    <h3 className="text-lg font-bold mb-4">{translang('letsconnect')}</h3> </Link>
             <ul className="font-thin text-sm text-gray-400 space-y-2">
 
               <li>Address: DE 153, Block DE, Tagore Garden, Tagore Garden Extension, New Delhi,
@@ -39,17 +39,17 @@ const Footer = () => {
             </ul>
             <br />
             <button
-              onClick={() => window.location.href = "/download"}
+              onClick={() => window.location.href = "/contactus"}
               className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm"
             >
-              {t('contact')}
+              {translang('contact')}
             </button>
 
           </div>
 
           {/* Follow Us */}
           <div>
-            <h3 className="text-lg font-bold mb-4">{t('follow')}</h3>
+            <h3 className="text-lg font-bold mb-4">{translang('follow')}</h3>
             <div className="flex space-x-1  ">
               <a
 

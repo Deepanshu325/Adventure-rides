@@ -12,7 +12,7 @@ import video2 from "../Assets/Videos/WhatsApp Video 2024-12-27 at 7.30.58 PM.mp4
 const Videocard = () => {
 
   
-  const { t, setLanguage } = useLanguage(); 
+  const { translang } = useLanguage(); 
 
   useEffect(() => {
     AOS.init({
@@ -53,9 +53,9 @@ const Videocard = () => {
       
         <h1 className="text-white text-2xl mt-16 sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-tight">
           
-        {t("welcome")} <br></br>
-        {t("welcome3")} <br></br>
-        {t("welcome4")} 
+        {translang("welcome")} <br></br>
+        {translang("welcome3")} <br></br>
+        {translang("welcome4")} 
       
         </h1>
        

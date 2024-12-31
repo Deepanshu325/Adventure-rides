@@ -90,7 +90,9 @@ const Blog = () => {
                 </div></a>
             ))
           ) : (
-            <p style={{ fontSize: '18px', color: '#777', height: "100vh" }}>Please wait ...</p>
+            <div className="w-full h-auto flex justify-center items-center ">
+            <div className="rounded-md h-16 w-16 border-4 border-t-4 border-blue-500 animate-spin  mx-auto "></div>
+            </div>
           )}
         </div>
       </div>

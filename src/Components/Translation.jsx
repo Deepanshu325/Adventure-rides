@@ -191,8 +191,8 @@ const translations = {
     , safety: "Votre sécurité grâce à l’équipe",
     safety1: "→  Sur chaque tour, une aide médicale vous accompagne dans le véhicule d’assistance avec tout le kit médical d’urgence. "
     , safety2: "→ Cet ange gardien est habilité à intervenir dans toutes les situations de médecine d’urgence et spécifiquement pour les risques liés à la pratique moto. ",
-    safety3: "→ Nous avons aussi mis en place un plan d’urgence pour chaque tour afin de prévoir l’imprévisible y compris une éventuelle évacuation par héliportée sur certaines destinations."
-    , security: "Votre sécurité grâce à l’entretien de votre moto",
+    
+     security: "Votre sécurité grâce à l’entretien de votre moto",
     security1: " Dans ce véhicule d’assistance, un mécanicien KTM vous suit pendant tout le trajet afin de vous assurer une moto parfaitement entretenue"
     , security2: "→ Il emporte toutes les pièces détachées et les kits de réparation pour garantir une moto au top, garantie de votre sécurité. ",
     security3: "→ Nous transportons non seulement vos bagages mais également une moto de rechange par groupe si le temps de réparation s’avère trop long."

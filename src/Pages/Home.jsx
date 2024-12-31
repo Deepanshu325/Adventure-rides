@@ -33,7 +33,7 @@ const Home = () => {
 
 
 
-  const { t, setLanguage } = useLanguage();
+  const {translang , setTranslang}  = useLanguage();
 
 
   return (
@@ -56,17 +56,17 @@ const Home = () => {
           <div className='  lg:w-full  mx-auto  md:mt-20' data-aos="fade-down">
             <Link to="/whytotravel">
               <div className='lg:max-w-7xl mx-auto'>
-                <h1 className=' mx-auto w-full  text-center uppercase text-2xl 2xl:text-7xl md:text-3xl font-bold text-blue-500'>{t("why1")}</h1>
+                <h1 className=' mx-auto w-full  text-center uppercase text-2xl 2xl:text-7xl md:text-3xl font-bold text-blue-500'>{translang("why1")}</h1>
 
                 <div className=' mt-8 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 overflow-hidden '>
-                  <Lg_card img={image2} title={t("whytitle1")} des={t("whydes1")} />
-                  <Lg_card img={image1} title={t("whytitle2")} des={t("whydes2")} />
-                  <Lg_card img={image5} title={t("whytitle3")} des={t("whydes3")} />
+                  <Lg_card img={image2} title={translang("whytitle1")} des={translang("whydes1")} />
+                  <Lg_card img={image1} title={translang("whytitle2")} des={translang("whydes2")} />
+                  <Lg_card img={image5} title={translang("whytitle3")} des={translang("whydes3")} />
 
 
-                  <Lg_card img={image3} title={t("whytitle4")} des={t("whydes4")} />
-                  <Lg_card img={image6} title={t("whytitle5")} des={t("whydes5")} />
-                  <Lg_card img={image4} title={t("whytitle6")} des={t("whydes6")} />
+                  <Lg_card img={image3} title={translang("whytitle4")} des={translang("whydes4")} />
+                  <Lg_card img={image6} title={translang("whytitle5")} des={translang("whydes5")} />
+                  <Lg_card img={image4} title={translang("whytitle6")} des={translang("whydes6")} />
 
 
                 </div>

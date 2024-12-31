@@ -13,40 +13,40 @@ import testi4 from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-18 at 1
 import testiback from "../Assets/Images/Testimonials/WhatsApp Image 2024-12-23 at 1.55.34 PM.jpeg";
 
 const Testimonials = () => {
-  const { t } = useLanguage();
+  const { translang } = useLanguage();
 
   const cards = [
     {
       img: testi1,
-      name: t("michael"),
+      name: translang("michael"),
       country: "New York, USA",
-      comment: t("testimonials1"),
+      comment: translang("testimonials1"),
     },
     {
       img: testi2,
       name: "Eva",
       country: "Berlin, Germany",
-      comment: t("testimonials2"),
+      comment: translang("testimonials2"),
     },
     {
       img: testi3,
       name: "John",
       country: "Sydney, Australia",
-      comment: t("testimonials3"),
+      comment: translang("testimonials3"),
     },
     {
       img: testi4,
-      name: t("nigel"),
+      name: translang("nigel"),
       country: "London, UK",
-      comment: t("testimonials4"),
+      comment: translang("testimonials4"),
     },
-  ];
+  ]
 
   return (
     <div className="mt-6 mb-4 md:mt-10">
       {/* Title */}
       <h2 className="text-2xl 2xl:text-7xl md:text-3xl font-bold text-center text-blue-500 mb-6 uppercase">
-        {t("custitle")}
+        {translang("custitle")}
       </h2>
 
       <div className="flex flex-col-reverse md:flex-row ">

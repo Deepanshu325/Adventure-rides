@@ -3,7 +3,9 @@ import Footer from '../Components/Footer';
 import { useLanguage } from '../Components/Languagecontext';
 
 const Gallery = () => {
-  const { t } = useLanguage();
+
+  
+  const {translang , setTranslang}  = useLanguage();
   useEffect(() => {
     // Load Instagram embed script
     const script = document.createElement('script');
@@ -21,7 +23,7 @@ const Gallery = () => {
     <>
       <div className="p-5 max-w-screen-lg mx-auto">
         <p className="text-center mt-7 text-xl font-bold text-blue-500 md:text-3xl mb-12 ">
-          {t("gallery")}
+          {translang("gallery")}
         </p>
       </div>
 

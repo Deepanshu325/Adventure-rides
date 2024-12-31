@@ -20,27 +20,28 @@ const Our_Fleet = () => {
   }, []);
 
 
-  const { t } = useLanguage();
+  
+  const {translang , setTranslang}  = useLanguage();
 
   return (
     <>
 
       <div className=' w-full md:pl-20 md:pr-20 pt-12 pl-8 pr-8 overflow-hidden' data-aos="fade-down">
         <p className="text-center  text-xl  font-bold text-blue-500 md:text-3xl mb-12">
-          {t("ourfleet")}
+          {translang("ourfleet")}
         </p>
 
-        <a className=' font-extrabold text-lg'>{t("advhead")}</a>
+        <a className=' font-extrabold text-lg'>{translang("advhead")}</a>
         <div className='font-semibold  mt-3'>
-          <p className='font-semibold text-justify pb-5'>{t("adv1")}</p>
-          <p className='font-semibold text-justify '>{t("adv2")}</p>
+          <p className='font-semibold text-justify pb-5'>{translang("adv1")}</p>
+          <p className='font-semibold text-justify '>{translang("adv2")}</p>
 
           <div className="w-full mb-16 bg-orange-500 h-0.5 mt-12"></div>
         </div>
       </div>
 
 
-      <h1 className="text-center mt-1 mb-6 text-xl font-bold text-blue-500 md:text-3xl md:mb-1" data-aos="fade-down">{t("ktm450")} </h1>
+      <h1 className="text-center mt-1 mb-6 text-xl font-bold text-blue-500 md:text-3xl md:mb-1" data-aos="fade-down">{translang("ktm450")} </h1>
       <div className='w-full md:flex md:mt-14'>
         <div className='md:w-1/2'>
           <img src={ktm} alt="" className='w-full h-96  object-contain ' data-aos="fade-right" />
@@ -51,12 +52,11 @@ const Our_Fleet = () => {
       </div>
 
       <div className='p-6 text-justify break-words  md:pl-28 md:pr-28  overflow-hidden '>
-        <h1 className="text-center mt-12 mb-6  text-xl font-bold text-blue-500 md:text-3xl  " data-aos="fade-in">{t("beasthead")}</h1>
-        <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{t("beast1")}</p>
+        <h1 className="text-center mt-12 mb-6  text-xl font-bold text-blue-500 md:text-3xl  " data-aos="fade-in">{translang("beasthead")}</h1>
+        <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{translang("beast1")}</p>
 
-        <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-left">{t("beast2")}</p>
-
-        <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{t("beast3")}</p>
+        <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-left">{translang("beast2")}</p>
+        <p className='font-semibold text-lg pb-6  md:text-lg' data-aos="fade-right">{translang("beast3")}</p>
       </div>
       <div className='w-full' data-aos="fade-up">
         <img src={fleetposter} alt="" className='mx-auto md:h-96 rounded-2xl' />

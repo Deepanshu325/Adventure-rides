@@ -9,7 +9,7 @@ import { HashLink } from "react-router-hash-link";
 import { useLanguage } from "./Languagecontext";
 
 const PortraitCarousel = () => {
-  const { t } = useLanguage();
+  const { translang } = useLanguage();
 
   useEffect(() => {
     AOS.init({
@@ -23,8 +23,8 @@ const PortraitCarousel = () => {
   const images = [
     { src: Himalaya, title: "HIMALAYA", id: "himalaya", route: "/yournextadventure" },
     { src: Rajasthan, title: "RAJASTHAN", id: "rajasthan", route: "/yournextadventure" },
-    { src: SouthIndia, title: t("south"), id: "south-india", route: "/yournextadventure" },
-    { src: Goa, title: t("suggest"), id: "goa", route: "/download" },
+    { src: SouthIndia, title: translang("south"), id: "south-india", route: "/yournextadventure" },
+    { src: Goa, title: translang("suggest"), id: "goa", route: "/contactus" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,7 +72,7 @@ const PortraitCarousel = () => {
   return (
     <>
       <h1 className=" text-2xl 2xl:text-7xl md:text-3xl  text-blue-500 font-bold mb-[4%] md:tracking-wider text-center uppercase mt-4">
-        {t("Our")} Destinations
+        {translang("Our")} Destinations
       </h1>
 
       <div className="relative w-full max-w-full mx-auto overflow-hidden" data-aos="fade-up">
